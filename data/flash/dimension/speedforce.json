@@ -1,0 +1,19 @@
+{
+    "type": "flash:speedforce",
+    "generator" :{
+        "type": "minecraft:flat",
+        "settings": {
+            "lakes": false,
+            "features": false,
+            "biome": "basalt_deltas",
+            "layers": [
+                {
+                    "height": 16,
+                    "block": "minecraft:barrier"
+                }
+            ],
+            "structure_overrides": "minecraft:nether_fossils"
+        }
+    },
+    "settings": "minecraft:overworld"
+}

@@ -1,0 +1,11 @@
+scoreboard players set @s Lag_Run 0
+scoreboard players set @s Lag_Suit 0
+scoreboard players set @s Time_Running 0
+scoreboard players set @s Time_Dim_Travel 0
+scoreboard players set @s Time_Spawn_Protect 0
+scoreboard players set @s Time_Velocity9 0
+scoreboard players set @s Level_Height 0
+scoreboard players set @s Level_Speed 0
+scoreboard players set @s Selected_Slot 0
+scoreboard players set @s Rotation 0
+scoreboard players set @s Potion 0

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "dnaShifter": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "items:positive_particle"
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:p_particle_get"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "dnaShifter": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "items:zoom_helmet"
+            }
+        }
+    },
+    "rewards": {
+        "function": "suits:zoom_helmet"
+    }
+}

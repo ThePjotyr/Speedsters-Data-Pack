@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "dnaShifter": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "items:flash_boots"
+            }
+        }
+    },
+    "rewards": {
+        "function": "suits:flash_boots"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "#L#",
+        "R R"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:black_dye"
+        },
+        "L": {
+            "item": "minecraft:leather_boots"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

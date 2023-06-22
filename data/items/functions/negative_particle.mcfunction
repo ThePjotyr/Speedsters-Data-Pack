@@ -1,0 +1,1 @@
+give @s redstone{PA_Fuel:1b,NegativeSpeedForceFuel:1b,display:{Name:'[{"text":"Negative Particle","italic":false,"color":"white","bold": false}]'},HideFlags:255,Enchantments:[{}]} 1

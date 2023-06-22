@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "dnaShifter": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "items:velocity9"
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:v9_get"
+    }
+}
