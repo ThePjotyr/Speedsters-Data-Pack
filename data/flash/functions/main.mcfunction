@@ -3,7 +3,7 @@ execute if entity @a[tag=Speedster] as @a[tag=Speedster] at @s run function flas
 execute if entity @e[type=marker,tag=liquid_run_block] as @e[type=marker,tag=liquid_run_block] at @s run function main:liquid_marker
 execute if entity @e[type=marker,tag=SpeedBlur] as @e[type=marker,tag=SpeedBlur] at @s run function main:speed_blur
 
-execute store result score .test test if entity @e[type=!player]
+#execute store result score .test test if entity @e[type=!player]
 
 #INTERDIMENSIONAL TRAVEL
 execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s run function main:dim_portal
