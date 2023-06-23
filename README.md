@@ -5,7 +5,7 @@ This Data pack adds to your Minecraft game speedster super powers, which are hea
 Obtain super speed, run faster than ever, defy rules of physics and become the impossible.
 
 ## Installation
-This data pack doesn't require any additonal resource pack or any mod, so it's fairly simple to install into any Minecraft world.|
+This data pack doesn't require any additonal resource pack or any mod, so it's fairly simple to install into any Minecraft world.
 
  - You can add the data pack to your world during it's creation in "More" tab. In "Data Packs" option click on the "Open Pack Folder" and drop .zip file containing data pack files into opened folder. Then make sure that this datapack is selected and proceed with world creation.
 
@@ -13,7 +13,7 @@ This data pack doesn't require any additonal resource pack or any mod, so it's f
 > %AppData%/Roaming/.minecraft/saves/\<world>/datapacks
 
 - It is also possible to add this data pack to any server, since it's multiplayer compatible. It's depended on where server files are located, but installing should be pretty much the same like for pre-existing world.
->  /<server's directory>/world\datapacks
+>  /<server's directory>/world/datapacks
 
 ## Getting powers
 
@@ -72,4 +72,4 @@ In future versions this system will be reworked.
 
 ### Recipes
 
-<img src="https://i.imgur.com/3lZ5KDz.jpeg" alt="Recipes.png " style="width:128px;height:128px;">
+<img src="https://docs.google.com/uc?export=download&id=1VKUaLu4DK5QpRWoZ_wdmgmdeCjobDdNm" alt="Recipes.png " style="width:128px;height:128px;">
