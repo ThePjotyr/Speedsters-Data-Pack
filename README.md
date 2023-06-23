@@ -46,13 +46,13 @@ There are certain drawback that come with it, but more about it later.
 
 Every speedster will have name of their speed source displayed above their hotbar, so players will know whether they are speedsters or not.
 To access speed related abilities, player must first select last slot on hotbar. Then the display above the hotbar would change to **Speed Level Indicator**.
-By running with selected last slot, player will gain speed. Continous running increases player's speed, and not running decreases it.
+By running with selected last slot, player will gain speed. Continuous running increases player's speed, and not running decreases it.
 
 With selected last slot, player can also press shift to begin **phasing**. In this state, player is invulnerable, but also cannot harm anything or anyone. Other than that, if player looks straight down, the player will **phase** through the floor. The same can be achieved horizontally by looking straight forward and being close to any wall.
 
 While running, if the player reaches 10th **Speed Level**, the indicator above hotbar will slowly turn white. When whole indicator is white, the player will create a wormhole and will be teleported into the **Speed Force** or **Negative Speed Force**, depending on player's speed source. In there, the player can travel great distances, because like in the nether, 1 block in Speed Force is equal to 8 blocks in overworld. To escape from **Speed Force**, player must do the same thing, that got the player there - reach 10th **Speed Level**. Leaving **Speed Force** has a small chance of leaving player in the nether or in the end.
 
-It should also be noted, that by doing absolutely nothing and having selected last slot in hotbar, the player will have visual electric sparks around him, which only purpouse is to make the player look cool.
+It should also be noted, that by doing absolutely nothing and having selected last slot in hotbar, the player will have visual electric sparks around him, which only purpose is to make the player look cool.
 
 ## Speedster Suits
 
@@ -74,8 +74,8 @@ Users of this source will have a red lightning. While travelling dimensions, use
 
 ### Velocity 9
 
-The riskiest option. Users of this source will have a blue lightning. They will reach any **Speed Level** faster than other speedsters, but after some time, they will get small debuffs, like nausea or taking some random damage. Those effects will strengthen in time, and after preciselly 5 minutes from taking speed drug, users will die from those effects. They can prolong the inevitable, by drinking another **Velocity 9** potion, but each time they would do that, the rate of their body decay will only get faster and faster. The only permanent cure for this condition is obtaining speed from different source in **Particle Accelerator** explosion.
-After dying from **Velocity 9** posioning, player cannot obtain speed power from any other source than **Velocity 9**.
+The riskiest option. Users of this source will have a blue lightning. They will reach any **Speed Level** faster than other speedsters, but after some time, they will get small debuffs, like nausea or taking some random damage. Those effects will strengthen in time, and after precisely 5 minutes from taking speed drug, users will die from those effects. They can prolong the inevitable, by drinking another **Velocity 9** potion, but each time they would do that, the rate of their body decay will only get faster and faster. The only permanent cure for this condition is obtaining speed from different source in **Particle Accelerator** explosion.
+After dying from **Velocity 9** poisoning, player cannot obtain speed power from any other source than **Velocity 9**.
 In future versions this system will be reworked.
 
 ## Recipes
