@@ -72,4 +72,4 @@ In future versions this system will be reworked.
 
 ### Recipes
 
-<img src="https://docs.google.com/uc?export=download&id=1VKUaLu4DK5QpRWoZ_wdmgmdeCjobDdNm" alt="Recipes.png " style="width:128px;height:128px;">
+<img src="https://docs.google.com/uc?export=download&id=18yoEHUPlqSI9lXUq4ekii3wlnx2pF6Hb" alt="FlashDatapackRecipes.png" style="width:128px;height:128px;">
