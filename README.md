@@ -20,16 +20,16 @@ This data pack doesn't require any additonal resource pack or any mod, so it's f
 In order to became a speedster, player needs to find a source for their power.
 Listed below are available sources.
 
-##### Thunder Strike
+### Thunder Strike
 
 If player is affected by speed, regeneration and poison effects simultaneously and then is struck by lightning bolt, there's a small chance that the player will be granted connection to the Speed Force.
 
-##### Particle Accelerator
+### Particle Accelerator
 
 Player can build a **Particle Accelerator**, which is a single-block contraption. During storm, if it's powered with redstone and has **Positive** or **Negative Particle** inside of it, **Particle Accelerator** after couple of seconds will explode. One random player within the explosion radius will have a great chance of being granted connection to the **Speed Force**, if the particle was **Positive**, or **Negative Speed Force**, if the particle was **Negative**. 
 There is also a really small possibility, that no player would get speedster powers from explosion.
 
-##### Velocity 9 Potion**
+### Velocity 9 Potion
 
 Player can also craft the **Velocity 9** potion, which will surely grant anyone who drinks it temporary speedster powers. 
 There are certain drawback that come with it, but more about it later.
@@ -56,15 +56,15 @@ By holding the **Suit Ring** with a suit inside, if the player presses shift, th
 
 For now, there are only three sources - **Speed Force**, **Negative Speed Force** and **Velocity 9**. Every speedster can use the same abilities, but there are slight or not so slight differences between sources.
 
-##### Speed Force
+### Speed Force
 
 The safest option. Users lightning color will be yellow. In future versions, **Speed Force** users will be debuffed around **Negative Speed Force** users.
 
-##### Negative Speed Force
+### Negative Speed Force
 
 Users of this source will have a red lightning. While travelling dimensions, users of this source will have their own seperate dimension called **Negative Speed Force**. In future versions, those users will debuff any **Speed Force** user in close proximity, but they will have a drawback to that.
 
-##### Velocity 9
+### Velocity 9
 
 The riskiest option. Users of this source will have a blue lightning. They will reach any **Speed Level** faster than other speedsters, but after some time, they will get a small debuffs, like nausea or taking random damage. Those effects will strengthen in time, and after preciselly 5 minutes from taking speed drug, users will die from those effects. They can prolong the inevitable, by drinking another **Velocity 9** potion, but each time they would do that, the rate their body decays will get faster and faster. The only permanent cure for this condition is obtaining speed from different source in **Particle Accelerator** explosion.
 After dying from **Velocity 9** posioning, player cannot obtain speed power from any other source than **Velocity 9**.
