@@ -1,7 +1,7 @@
 
 # ThePjotyr's Flash Data pack
 
-This Data pack adds to your Minecraft game speedster super powers, which are heavily inspired by CW TV show **"The Flash"**.
+This Data Pack adds to your game speedster super powers, which are heavily inspired by CW TV show **"The Flash"**.
 Obtain super speed, run faster than ever, defy rules of physics and become the impossible.
 
 ## Installation
