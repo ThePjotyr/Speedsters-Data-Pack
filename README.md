@@ -78,6 +78,6 @@ The riskiest option. Users of this source will have a blue lightning. They will 
 After dying from **Velocity 9** posioning, player cannot obtain speed power from any other source than **Velocity 9**.
 In future versions this system will be reworked.
 
-### Recipes
+## Recipes
 
 <img src="https://docs.google.com/uc?export=download&id=18yoEHUPlqSI9lXUq4ekii3wlnx2pF6Hb" alt="FlashDatapackRecipes.png" style="width:800px;height:1100px;">
