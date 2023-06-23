@@ -6,11 +6,11 @@ Obtain super speed, run faster than ever, defy rules of physics and become the i
 
 ## Installation
 
-This data pack doesn't require any additonal resource pack or any mod, so it's fairly simple to install into any Minecraft world.
+This data pack doesn't require any additonal resource pack or any mod, so it's fairly simple to install into any Minecraft world. Just download .zip file containing this data pack, unpack it and do one of the following:
 
-- You can add the data pack to your world during it's creation in "More" tab. In "Data Packs" option click on the "Open Pack Folder" and drop .zip file containing data pack files into opened folder. Then make sure that this datapack is selected and proceed with world creation.
+- You can add the data pack to your world during it's creation in "More" tab. In "Data Packs" option click on the "Open Pack Folder" and drop this data pack folder into opened directory. Then make sure that this datapack is selected and proceed with world creation.
 
-- Adding data pack to pre-existing world is also relatively easy. Just drop the .zip file containing data pack files into "datapacks" folder inside saved game folder. Below is displayed default directory for this folder:
+- Adding data pack to pre-existing world is also relatively easy. Just drop this data pack folder into "datapacks" folder inside saved game directory. Below is displayed default directory for this folder:
 
 > %AppData%/Roaming/.minecraft/saves/\<world>/datapacks
 
