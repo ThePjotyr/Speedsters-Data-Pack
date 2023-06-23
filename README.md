@@ -72,4 +72,4 @@ In future versions this system will be reworked.
 
 ### Recipes
 
-<img src="pic_trulli.jpg" alt="Recipes.png">
+<img src="https://imgur.com/gallery/sxalLlG" alt="Recipes.png " style="width:128px;height:128px;">
