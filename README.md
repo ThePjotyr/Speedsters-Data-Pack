@@ -10,10 +10,10 @@ This data pack doesn't require any additonal resource pack or any mod, so it's f
  - You can add the data pack to your world during it's creation in "More" tab. In "Data Packs" option click on the "Open Pack Folder" and drop .zip file containing data pack files into opened folder. Then make sure that this datapack is selected and proceed with world creation.
 
 - Adding data pack to pre-existing world is also relatively easy. Just drop the .zip file containing data pack files into "datapacks" folder inside saved game folder. Below is displayed default directory for this folder:
-> %AppData%\Roaming\.minecraft\saves\\<world>\datapacks
+> %AppData%/Roaming/.minecraft/saves/\<world>/datapacks
 
 - It is also possible to add this data pack to any server, since it's multiplayer compatible. It's depended on where server files are located, but installing should be pretty much the same like for pre-existing world.
->  \<server's directory>\world\datapacks
+>  /<server's directory>/world\datapacks
 
 ## Getting powers
 
