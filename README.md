@@ -48,6 +48,8 @@ Every speedster will have name of their speed source displayed above their hotba
 To access speed related abilities, player must first select last slot on hotbar. Then the display above the hotbar would change to **Speed Level Indicator**.
 By running with selected last slot, player will gain speed. Continuous running increases player's speed, and not running decreases it.
 
+Any speedster can also run on water or powder snow surface, whenever they reach 6th Speed Level. Jumping on water/powder snow, or losing velocity will lead to stopping this ability, and the player will fall.
+
 With selected last slot, player can also press shift to begin **phasing**. In this state, player is invulnerable, but also cannot harm anything or anyone. Other than that, if player looks straight down, the player will **phase** through the floor. The same can be achieved horizontally by looking straight forward and being close to any wall.
 
 While running, if the player reaches 10th **Speed Level**, the indicator above hotbar will slowly turn white. When whole indicator is white, the player will create a wormhole and will be teleported into the **Speed Force** or **Negative Speed Force**, depending on player's speed source. In there, the player can travel great distances, because like in the nether, 1 block in Speed Force is equal to 8 blocks in overworld. To escape from **Speed Force**, player must do the same thing, that got the player there - reach 10th **Speed Level**. Leaving **Speed Force** has a small chance of leaving player in the nether or in the end.
