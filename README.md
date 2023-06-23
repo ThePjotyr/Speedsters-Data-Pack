@@ -5,15 +5,18 @@ This Data Pack adds to your game speedster super powers, which are heavily inspi
 Obtain super speed, run faster than ever, defy rules of physics and become the impossible.
 
 ## Installation
+
 This data pack doesn't require any additonal resource pack or any mod, so it's fairly simple to install into any Minecraft world.
 
- - You can add the data pack to your world during it's creation in "More" tab. In "Data Packs" option click on the "Open Pack Folder" and drop .zip file containing data pack files into opened folder. Then make sure that this datapack is selected and proceed with world creation.
+- You can add the data pack to your world during it's creation in "More" tab. In "Data Packs" option click on the "Open Pack Folder" and drop .zip file containing data pack files into opened folder. Then make sure that this datapack is selected and proceed with world creation.
 
 - Adding data pack to pre-existing world is also relatively easy. Just drop the .zip file containing data pack files into "datapacks" folder inside saved game folder. Below is displayed default directory for this folder:
+
 > %AppData%/Roaming/.minecraft/saves/\<world>/datapacks
 
 - It is also possible to add this data pack to any server, since it's multiplayer compatible. It's depended on where server files are located, but installing should be pretty much the same like for pre-existing world.
->  /<server's directory>/world/datapacks
+
+> /<server's directory>/world/datapacks
 
 ## Getting powers
 
@@ -26,12 +29,12 @@ If player is affected by speed, regeneration and poison effects simultaneously a
 
 ### Particle Accelerator
 
-Player can build a **Particle Accelerator**, which is a single-block contraption. During storm, if it's powered with redstone and has **Positive** or **Negative Particle** inside of it, **Particle Accelerator** after couple of seconds will explode. One random player within the explosion radius will have a great chance of being granted connection to the **Speed Force**, if the particle was **Positive**, or **Negative Speed Force**, if the particle was **Negative**. 
+Player can build a **Particle Accelerator**, which is a single-block contraption. During storm, if it's powered with redstone and has **Positive** or **Negative Particle** inside of it, **Particle Accelerator** after couple of seconds will explode. One random player within the explosion radius will have a great chance of being granted connection to the **Speed Force**, if the particle was **Positive**, or **Negative Speed Force**, if the particle was **Negative**.
 There is also a really small possibility, that no player would get speedster powers from explosion.
 
 ### Velocity 9 Potion
 
-Player can also craft the **Velocity 9** potion, which will surely grant anyone who drinks it temporary speedster powers. 
+Player can also craft the **Velocity 9** potion, which will surely grant anyone who drinks it temporary speedster powers.
 There are certain drawback that come with it, but more about it later.
 
 ## Using powers
