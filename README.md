@@ -80,4 +80,9 @@ In future versions this system will be reworked.
 
 ## Recipes
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
 <img src="https://docs.google.com/uc?export=download&id=18yoEHUPlqSI9lXUq4ekii3wlnx2pF6Hb" alt="FlashDatapackRecipes.png" style="width:800px;height:1100px;">
