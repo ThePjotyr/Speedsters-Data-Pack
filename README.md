@@ -72,4 +72,4 @@ In future versions this system will be reworked.
 
 ### Recipes
 
-<img src="https://i.imgur.com/AZUDlII.mp4" alt="Recipes.png " style="width:128px;height:128px;">
+<img src="https://i.imgur.com/3lZ5KDz.jpeg" alt="Recipes.png " style="width:128px;height:128px;">
