@@ -10,7 +10,7 @@ execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Porta
 
 #SPEED FORCE AND NEGATIVE SPEED FORCE
 execute if entity @a[nbt={Dimension:"flash:speedforce"}] as @a[nbt={Dimension:"flash:speedforce"}] at @s run function flash:inside_sf
-execute if entity @a[nbt={Dimension:"flash:negative_speedforce"}] as @a[nbt={Dimension:"flash:negative_speedforce"}] at @s run function flash:inside_nsf
+execute if entity @a[nbt={Dimension:"flash:negative_speedforce"}] as @a[nbt={Dimension:"flash:negative_speedforce"}] at @s run function flash:inside_sf
 
 #SUITS
 execute if entity @a[nbt={SelectedItem:{id:"minecraft:gold_nugget",tag:{SuitRing:1b}}},predicate=main:is_sneaking] as @a[nbt={SelectedItem:{id:"minecraft:gold_nugget",tag:{SuitRing:1b}}},predicate=main:is_sneaking] run function suits:use_ring
@@ -36,7 +36,3 @@ execute if entity @a as @a store result score @s Rotation run data get entity @s
 execute if entity @a[tag=Ring] as @a[tag=Ring] run scoreboard players add @s Lag_Suit 1
 execute if entity @a[tag=Ring,scores={Lag_Suit=1..}] as @a[tag=Ring,scores={Lag_Suit=1..}] if score @s Lag_Suit >= .LAG_SUIT Lag_Suit run tag @s remove Ring
 execute if entity @a[tag=!Ring,scores={Lag_Suit=1..}] as @a[tag=!Ring,scores={Lag_Suit=1..}] run scoreboard players set @s Lag_Suit 0
-
-#NOTES
-#-dodać unique abilitki dla każdego source (1/3)
-#-dodać metody otrzymywania mocy

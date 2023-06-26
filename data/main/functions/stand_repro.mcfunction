@@ -1,0 +1,6 @@
+execute at @s positioned ~ ~ ~32 unless entity @e[type=marker,tag=SpeedForceDim,distance=..16] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
+execute at @s positioned ~ ~ ~-32 unless entity @e[type=marker,tag=SpeedForceDim,distance=..16] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
+execute at @s positioned ~32 ~ ~ unless entity @e[type=marker,tag=SpeedForceDim,distance=..16] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
+execute at @s positioned ~-32 ~ ~ unless entity @e[type=marker,tag=SpeedForceDim,distance=..16] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
+
+execute at @s positioned ~ ~ ~32 if entity @e[type=marker,tag=SpeedForceDim,distance=..16] positioned ~ ~ ~-32 if entity @e[type=marker,tag=SpeedForceDim,distance=..16] positioned ~32 ~ ~ if entity @e[type=marker,tag=SpeedForceDim,distance=..16] positioned ~-32 ~ ~ if entity @e[type=marker,tag=SpeedForceDim,distance=..16] run tag @s remove ReproduceStand

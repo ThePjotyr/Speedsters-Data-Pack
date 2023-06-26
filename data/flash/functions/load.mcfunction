@@ -61,8 +61,9 @@ scoreboard players set @a[scores={Level_Speed=1..}] Level_Speed 0
 scoreboard players reset @a Level_Height
 scoreboard players set .MIN_Y Level_Height -64
 scoreboard players set @a[scores={SelectedSlot=1..}] Selected_Slot 0
-scoreboard players set .MAX_ROT Rotation 12
-scoreboard players set .MIN_ROT Rotation 0
+scoreboard players set .MAX_ROT Rotation 40
+scoreboard players set .MIN_ROT Rotation -40
+scoreboard players set .RIGHT_MIN_ROT Rotation 70
 scoreboard players set .RIGHT_ROT Rotation 90
 scoreboard players set .SUMMON_MAX_ROT Rotation 35
 scoreboard players set .SUMMON_MIN_ROT Rotation -40
