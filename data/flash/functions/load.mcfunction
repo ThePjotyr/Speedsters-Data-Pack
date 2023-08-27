@@ -20,6 +20,7 @@ scoreboard objectives add Level_Height dummy
 scoreboard objectives add Selected_Slot dummy
 scoreboard objectives add Rotation dummy
 scoreboard objectives add Velocity9_Rate dummy
+scoreboard objectives add Liquid_Block_Count dummy
 scoreboard objectives add Potion minecraft.used:minecraft.potion
 scoreboard objectives add PlacedPA minecraft.used:minecraft.blast_furnace
 
@@ -41,6 +42,9 @@ scoreboard players set .LVL_SPEED_6 Time_Running 390
 scoreboard players set .LVL_SPEED_7 Time_Running 840
 scoreboard players set .LVL_SPEED_8 Time_Running 1000
 scoreboard players set .LVL_SPEED_9 Time_Running 1200
+scoreboard players set .MAX_LIQUID_TIME Time_Liquid_Block 15
+scoreboard players set .MAX_LIQUID_B_TIME Time_Liquid_Block 40
+scoreboard players set .ONE Time_Liquid_Block 1
 scoreboard players set @a[scores={Time_Dim_Travel=1..}] Time_Dim_Travel 0
 scoreboard players set .DIM_TRAVEL Time_Dim_Travel 220
 scoreboard players set .SPEED_BLUR Time_Speed_Blur 20
@@ -67,5 +71,6 @@ scoreboard players set .RIGHT_MIN_ROT Rotation 70
 scoreboard players set .RIGHT_ROT Rotation 90
 scoreboard players set .SUMMON_MAX_ROT Rotation 35
 scoreboard players set .SUMMON_MIN_ROT Rotation -40
+scoreboard players set .MAX_LIQUID_COUNT Liquid_Block_Count 100
 scoreboard players set @a Potion 0
 scoreboard players set @a PlacedPA 0
