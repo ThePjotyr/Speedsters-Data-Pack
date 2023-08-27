@@ -1,11 +1,11 @@
-execute if entity @s[scores={Time_Liquid_Block=0..3}] run fill ~-6 ~-1 ~-2 ~6 ~-1 ~2 barrier replace #flash:liquid_run
-execute if entity @s[scores={Time_Liquid_Block=0..3}] run fill ~-2 ~-1 ~-6 ~2 ~-1 ~6 barrier replace #flash:liquid_run
-execute if entity @s[scores={Time_Liquid_Block=0..3}] run fill ~-5 ~-1 ~-4 ~5 ~-1 ~4 barrier replace #flash:liquid_run
-execute if entity @s[scores={Time_Liquid_Block=0..3}] run fill ~-4 ~-1 ~-5 ~4 ~-1 ~5 barrier replace #flash:liquid_run
+scoreboard players add @s Time_Liquid_Block 1
+execute unless entity @s[tag=Powder_Snow] unless entity @s[tag=Water] if block ~ ~ ~ powder_snow run tag @s add Powder_Snow
+execute unless entity @s[tag=Powder_Snow] unless entity @s[tag=Water] if block ~ ~ ~ water run tag @s add Water
 
-execute if entity @s[scores={Time_Liquid_Block=10..}] run fill ~-6 ~-1 ~-2 ~6 ~-1 ~2 air replace barrier
-execute if entity @s[scores={Time_Liquid_Block=10..}] run fill ~-2 ~-1 ~-6 ~2 ~-1 ~6 air replace barrier
-execute if entity @s[scores={Time_Liquid_Block=10..}] run fill ~-5 ~-1 ~-4 ~5 ~-1 ~4 air replace barrier
-execute if entity @s[scores={Time_Liquid_Block=10..}] run fill ~-4 ~-1 ~-5 ~4 ~-1 ~5 air replace barrier
+execute if score @s Time_Liquid_Block < .MAX_LIQUID_B_TIME Time_Liquid_Block unless block ~ ~ ~ barrier run fill ~-1 ~ ~-1 ~1 ~ ~1 barrier replace #flash:liquid_run
+execute if score @s Time_Liquid_Block >= .MAX_LIQUID_B_TIME Time_Liquid_Block if entity @s[tag=Powder_Snow] if block ~ ~ ~ barrier run fill ~-1 ~ ~-1 ~1 ~ ~1 powder_snow replace barrier
+execute if score @s Time_Liquid_Block >= .MAX_LIQUID_B_TIME Time_Liquid_Block if entity @s[tag=Water] if block ~ ~ ~ barrier run fill ~-1 ~ ~-1 ~1 ~ ~1 water replace barrier
 
-execute if block ~ ~-1 ~ barrier run particle cloud ~ ~ ~ 2.5 0.1 2.5 0.01 5 force
+execute if score @s Time_Liquid_Block > .MAX_LIQUID_B_TIME Time_Liquid_Block run kill @s
+execute if entity @s[scores={Time_Liquid_Block=0..1}] as @s[scores={Time_Liquid_Block=0..1}] at @s run playsound weather.rain block @a ~ ~-0.5 ~ 1 1 1
+execute if block ~ ~ ~ barrier run particle cloud ~ ~ ~ 0.5 0.5 0.5 0.0001 1 force

@@ -1,5 +1,8 @@
 #SPEEDSTER
-execute if entity @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] at @s run function main:liquid_running
+execute if entity @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] at @s rotated ~ 0 positioned ^ ^ ^ run function main:liquid_running
+execute if entity @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] at @s rotated ~ 0 positioned ^ ^ ^3 run function main:liquid_running
+execute if entity @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] at @s rotated ~ 0 positioned ^ ^ ^6 run function main:liquid_running
+execute if entity @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] store result score @s Liquid_Block_Count if entity @e[type=marker,tag=liquid_run_block,distance=..10]
 #Speed Effects
 function main:slots
 execute if entity @s[scores={Time_Running=..0}] as @s[scores={Time_Running=..0}] run scoreboard players set @s Time_Running 0
