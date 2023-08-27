@@ -12,6 +12,6 @@ scoreboard objectives remove Time_PA_Stand
 scoreboard objectives remove Level_Speed
 scoreboard objectives remove Level_Height
 scoreboard objectives remove Selected_Slot
-scoreboard objectives remove Rotation
+scoreboard objectives remove RotationY
 scoreboard objectives remove Potion
 scoreboard objectives remove Velocity9_Rate

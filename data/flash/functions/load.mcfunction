@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":">> ","bold":true,"italic":true,"color":"aqua"},{"text":"ThePjotyr's Flash v1.0 - Datapack for Minecraft 1.20","bold":true,"italic":true,"color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"haha szwagier","obfuscated":true,"color":"dark_purple"}]}},{"text":" << ","bold":true,"italic":true,"color":"aqua"},{"text":"successfully loaded!","italic":true,"color":"yellow"}]
+tellraw @a ["",{"text":">> ","bold":true,"italic":true,"color":"aqua"},{"text":"ThePjotyr's Speedsters v1.2 - Datapack for Minecraft 1.20","bold":true,"italic":true,"color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"haha szwagier","obfuscated":true,"color":"dark_purple"}]}},{"text":" << ","bold":true,"italic":true,"color":"aqua"},{"text":"successfully loaded!","italic":true,"color":"yellow"}]
 execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~
 
 #scoreboard objectives add test dummy
@@ -18,7 +18,7 @@ scoreboard objectives add Time_PA_Stand dummy
 scoreboard objectives add Level_Speed dummy
 scoreboard objectives add Level_Height dummy
 scoreboard objectives add Selected_Slot dummy
-scoreboard objectives add Rotation dummy
+scoreboard objectives add RotationY dummy
 scoreboard objectives add Velocity9_Rate dummy
 scoreboard objectives add Liquid_Block_Count dummy
 scoreboard objectives add Potion minecraft.used:minecraft.potion
@@ -52,12 +52,12 @@ scoreboard players set .PA_EXP_3 Time_PA_Stand 275
 scoreboard players set .PA_EXP_4 Time_PA_Stand 290
 scoreboard players set .PA_EXP_5 Time_PA_Stand 310
 scoreboard players set .MIN_Y Level_Height -64
-scoreboard players set .MAX_ROT Rotation 40
-scoreboard players set .MIN_ROT Rotation -40
-scoreboard players set .RIGHT_MIN_ROT Rotation 70
-scoreboard players set .RIGHT_ROT Rotation 90
-scoreboard players set .SUMMON_MAX_ROT Rotation 35
-scoreboard players set .SUMMON_MIN_ROT Rotation -40
+scoreboard players set .MAX_ROT RotationY 40
+scoreboard players set .MIN_ROT RotationY -40
+scoreboard players set .RIGHT_MIN_ROT RotationY 70
+scoreboard players set .RIGHT_ROT RotationY 90
+scoreboard players set .SUMMON_MAX_ROT RotationY 35
+scoreboard players set .SUMMON_MIN_ROT RotationY -40
 
 #Configurable Constant Values
 scoreboard players set .TIME_RUNNING_RATE Time_Running 1

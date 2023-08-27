@@ -33,7 +33,7 @@ execute if entity @a as @a run function main:v9_check
 #SCORES
 execute if entity @a[predicate=main:sprint,scores={Lag_Run=..19}] as @a[predicate=main:sprint,scores={Lag_Run=..19}] run scoreboard players set @s Lag_Run 20
 execute if entity @a[scores={Lag_Run=1..}] as @a[scores={Lag_Run=1..}] unless entity @s[predicate=main:sprint] run scoreboard players remove @s Lag_Run 1
-execute if entity @a as @a store result score @s Rotation run data get entity @s Rotation[1] 1
+execute if entity @a as @a store result score @s RotationY run data get entity @s Rotation[1] 1
 execute if entity @a[tag=Ring] as @a[tag=Ring] run scoreboard players add @s Lag_Suit 1
 execute if entity @a[tag=Ring,scores={Lag_Suit=1..}] as @a[tag=Ring,scores={Lag_Suit=1..}] if score @s Lag_Suit >= .LAG_SUIT Lag_Suit run tag @s remove Ring
 execute if entity @a[tag=!Ring,scores={Lag_Suit=1..}] as @a[tag=!Ring,scores={Lag_Suit=1..}] run scoreboard players set @s Lag_Suit 0
