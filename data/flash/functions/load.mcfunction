@@ -43,7 +43,7 @@ scoreboard players set .LVL_SPEED_7 Time_Running 840
 scoreboard players set .LVL_SPEED_8 Time_Running 1000
 scoreboard players set .LVL_SPEED_9 Time_Running 1200
 scoreboard players set .MAX_LIQUID_TIME Time_Liquid_Block 15
-scoreboard players set .MAX_LIQUID_B_TIME Time_Liquid_Block 40
+scoreboard players set .MAX_LIQUID_B_TIME Time_Liquid_Block 20
 scoreboard players set .ONE Time_Liquid_Block 1
 scoreboard players set @a[scores={Time_Dim_Travel=1..}] Time_Dim_Travel 0
 scoreboard players set .DIM_TRAVEL Time_Dim_Travel 220

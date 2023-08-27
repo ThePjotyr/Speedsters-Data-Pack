@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ #flash:half_blocks unless block ~ ~-1 ~ #flash:stairs anchored eyes positioned ~ ~ ~ rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #flash:air_stand unless block ~ ~ ~ #flash:half_blocks_2 if block ~ ~1 ~ #flash:air_stand at @s anchored eyes rotated ~ 0 positioned ~ ~1 ~ run teleport @s ^ ^ ^0.01
