@@ -32,20 +32,14 @@ Also, this pack uses experimental features, which may result in this data pack n
 In order to became a speedster, player needs to find a source for their power.
 Listed below are available sources.
 
-&nbsp;
-
 ### Thunder Strike
 
 If player is affected by speed, regeneration and poison effects simultaneously and then is struck by lightning bolt, there's a small chance that the player will be granted connection to the Speed Force.
-
-&nbsp;
 
 ### Particle Accelerator
 
 Player can build a **Particle Accelerator**, which is a single-block contraption. During storm, if it's powered with redstone and has **Positive** or **Negative Particle** inside of it, **Particle Accelerator** after couple of seconds will explode. One random player within the explosion radius will have a great chance of being granted connection to the **Speed Force**, if the particle was **Positive**, or **Negative Speed Force**, if the particle was **Negative**.
 There is also a really small possibility, that no player would get speedster powers from explosion.
-
-&nbsp;
 
 ### Velocity 9 Potion
 
