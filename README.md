@@ -12,11 +12,11 @@ This data pack doesn't require any additonal resource pack or any mod, so it's f
 
 - Adding data pack to pre-existing world is also relatively easy. Just drop this data pack folder into "datapacks" folder inside saved game directory. Below is displayed default directory for this folder:
 
-> %AppData%/Roaming/.minecraft/saves/\<world>/datapacks
+> %AppData%/Roaming/.minecraft/saves/<\world>/datapacks
 
 - It is also possible to add this data pack to any server, since it's multiplayer compatible. It's depended on where server files are located, but installing should be pretty much the same like for pre-existing world.
 
-> /<server's directory>/world/datapacks
+> /<\server's directory>/world/datapacks
 
 ### **Warning!**
 
@@ -83,3 +83,33 @@ In future versions this system will be reworked.
 ## Recipes
 
 <img src="https://docs.google.com/uc?export=download&id=18yoEHUPlqSI9lXUq4ekii3wlnx2pF6Hb" alt="FlashDatapackRecipes.png" width="100%" height="auto">
+
+## Commands
+
+All of the commands below will work on the player/entity that executed the command. In order to use them on other players/entities, add this line in front of them:
+> /execute as \<player/entity> run \<command>
+
+&nbsp;
+
+### List of useful commands
+
+*Reload the Data Pack. It won't erase any progress. Use them whenever something stops working or works incorrectly*.
+> /reload  *-> reloads all files inside Data Pack folder and resets all scores*
+> /function flash:load  *-> resets all scores*
+
+*Turn player into a Speedster or remove player powers*.
+> /function speed_source:<\speedforce | negative_speedforce | velocity9 | remove>
+
+*Give player items from this Data Pack*.
+> /function items:<\id>
+
+*Teleport player from/into Speed Force/Negative Speed Force*.
+>/function flash:<\travel_into_sf | travel_from_sf>
+
+## Customization
+
+In order to customize certain aspects of this Data Pack, you can of course modify source code, which is not particularly recommended. You can also change couple of values manually inside Data Pack folder, or via commands in your world (if you know how to do that). To begin, find the file "load.mcfunction" in the directory below:
+
+> <\world>/datapacks/<\Data Pack name>/data/flash/functions/load.mcfunction
+
+Open this file with your favourite text editor (you can just use Windows Notepad). To ensure this Data Pack working correctly, just edit the values under the line "#Configurable Constant Values". After each command there is a comment describing usage of the constant value above. After reloading the Data Pack, all changes should be applied.
