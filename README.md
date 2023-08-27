@@ -105,18 +105,21 @@ All of the commands below will work on the player/entity that executed the comma
 
 ### List of useful commands
 
-*Reload the Data Pack. It won't erase any progress. Use them whenever something stops working or works incorrectly*.
+*Reload the Data Pack. It won't erase any progress. Use them whenever something stops working or works incorrectly.*
 > /reload  *-> reloads all files inside Data Pack folder and resets all scores*
 > /function flash:load  *-> resets all scores*
 
-*Turn player into a Speedster or remove player powers*.
+*Turn player into a Speedster or remove player powers.*
 > /function speed_source:<\speedforce | negative_speedforce | velocity9 | remove>
 
-*Give player items from this Data Pack*.
+*Give player items from this Data Pack.*
 > /function items:<\id>
 
-*Teleport player from/into Speed Force/Negative Speed Force*.
+*Teleport player from/into Speed Force/Negative Speed Force.*
 >/function flash:<\travel_into_sf | travel_from_sf>
+
+*Deletes scores for safe removal of Data Pack. Reloading world without removed Data Pack will load again default scores.*
+>/function main:remove
 
 &nbsp;
 
