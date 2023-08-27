@@ -4,6 +4,8 @@
 This Data Pack adds to your game speedster super powers, which are heavily inspired by CW TV show **"The Flash"**.
 Obtain super speed, run faster than ever, defy rules of physics and become the impossible.
 
+&nbsp;
+
 ## Installation
 
 This data pack doesn't require any additonal resource pack or any mod, so it's fairly simple to install into any Minecraft world. Just download .zip file containing this data pack, unpack it and do one of the following:
@@ -23,24 +25,34 @@ This data pack doesn't require any additonal resource pack or any mod, so it's f
 Before installing this or any other data pack, make sure to backup your world/worlds. This is to ensure that you won't lose your work in case of an error.
 Also, this pack uses experimental features, which may result in this data pack not working some day or even corrupting your save files. As of now, there wasn't any reported issues with this, but just keep that in mind before playing.
 
+&nbsp;
+
 ## Getting powers
 
 In order to became a speedster, player needs to find a source for their power.
 Listed below are available sources.
 
+&nbsp;
+
 ### Thunder Strike
 
 If player is affected by speed, regeneration and poison effects simultaneously and then is struck by lightning bolt, there's a small chance that the player will be granted connection to the Speed Force.
+
+&nbsp;
 
 ### Particle Accelerator
 
 Player can build a **Particle Accelerator**, which is a single-block contraption. During storm, if it's powered with redstone and has **Positive** or **Negative Particle** inside of it, **Particle Accelerator** after couple of seconds will explode. One random player within the explosion radius will have a great chance of being granted connection to the **Speed Force**, if the particle was **Positive**, or **Negative Speed Force**, if the particle was **Negative**.
 There is also a really small possibility, that no player would get speedster powers from explosion.
 
+&nbsp;
+
 ### Velocity 9 Potion
 
 Player can also craft the **Velocity 9** potion, which will surely grant anyone who drinks it temporary speedster powers.
 There are certain drawback that come with it, but more about it later.
+
+&nbsp;
 
 ## Using powers
 
@@ -56,11 +68,15 @@ While running, if the player reaches 10th **Speed Level**, the indicator above h
 
 It should also be noted, that by doing absolutely nothing and having selected last slot in hotbar, the player will have visual electric sparks around him, which only purpose is to make the player look cool.
 
+&nbsp;
+
 ## Speedster Suits
 
 Any speedster without special suit will not reach any **Speed Level** above 7th. To get one of the suits, player must craft them in the crafting table . Player can also craft the **Suit Ring**, in order to store suits and quickly equip them.
 By wearing the speedster suit, if the player presses shift while holding empty ring, the suit will be stored inside the ring.
 By holding the **Suit Ring** with a suit inside, if the player presses shift, the suit will spawn into the world. Running into the suit will equip it.
+
+&nbsp;
 
 ## Speed Sources
 
@@ -80,16 +96,18 @@ The riskiest option. Users of this source will have a blue lightning. They will 
 After dying from **Velocity 9** poisoning, player cannot obtain speed power from any other source than **Velocity 9**.
 In future versions this system will be reworked.
 
+&nbsp;
+
 ## Recipes
 
 <img src="https://docs.google.com/uc?export=download&id=18yoEHUPlqSI9lXUq4ekii3wlnx2pF6Hb" alt="FlashDatapackRecipes.png" width="100%" height="auto">
+
+&nbsp;
 
 ## Commands
 
 All of the commands below will work on the player/entity that executed the command. In order to use them on other players/entities, add this line in front of them:
 > /execute as \<player/entity> run \<command>
-
-&nbsp;
 
 ### List of useful commands
 
@@ -106,6 +124,8 @@ All of the commands below will work on the player/entity that executed the comma
 *Teleport player from/into Speed Force/Negative Speed Force*.
 >/function flash:<\travel_into_sf | travel_from_sf>
 
+&nbsp;
+
 ## Customization
 
 In order to customize certain aspects of this Data Pack, you can of course modify source code, which is not particularly recommended. You can also change couple of values manually inside Data Pack folder, or via commands in your world (if you know how to do that). To begin, find the file "load.mcfunction" in the directory below:
@@ -113,3 +133,5 @@ In order to customize certain aspects of this Data Pack, you can of course modif
 > <\world>/datapacks/<\Data Pack name>/data/flash/functions/load.mcfunction
 
 Open this file with your favourite text editor (you can just use Windows Notepad). To ensure this Data Pack working correctly, just edit the values under the line "#Configurable Constant Values". After each command there is a comment describing usage of the constant value above. After reloading the Data Pack, all changes should be applied.
+
+&nbsp;
