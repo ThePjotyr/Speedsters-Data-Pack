@@ -15,3 +15,5 @@ scoreboard objectives remove Selected_Slot
 scoreboard objectives remove RotationY
 scoreboard objectives remove Potion
 scoreboard objectives remove Velocity9_Rate
+scoreboard objectives remove PlacedPA
+scoreboard objectives remove Liquid_Block_Count
