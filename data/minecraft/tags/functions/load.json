@@ -1,5 +1,6 @@
 {
     "values": [
-    "flash:load"
+    "flash:load",
+    "flash:config"
 ]
 }
