@@ -107,6 +107,7 @@ All of the commands below will work on the player/entity that executed the comma
 
 *Reload the Data Pack. It won't erase any progress. Use them whenever something stops working or works incorrectly.*
 > /reload  *-> reloads all files inside Data Pack folder and resets all scores*
+&nbsp;
 > /function flash:load  *-> resets all scores*
 
 *Turn player into a Speedster or remove player powers.*
