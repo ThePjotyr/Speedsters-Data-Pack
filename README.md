@@ -125,10 +125,10 @@ All of the commands below will work on the player/entity that executed the comma
 
 ## Customization
 
-In order to customize certain aspects of this Data Pack, you can of course modify source code, which is not particularly recommended. You can also change couple of values manually inside Data Pack folder, or via commands in your world (if you know how to do that). To begin, find the file "load.mcfunction" in the directory below:
+In order to customize certain aspects of this Data Pack, you can of course modify source code, which is not particularly recommended. You can also change couple of values manually inside Data Pack folder, or via commands in your world (if you know how to do that). To begin, find the file **"load.mcfunction"** in the directory below:
 
 > <\world>/datapacks/<\Data Pack name>/data/flash/functions/load.mcfunction
 
-Open this file with your favourite text editor (you can just use Windows Notepad). To ensure this Data Pack working correctly, just edit the values under the line "#Configurable Constant Values". After each command there is a comment describing usage of the constant value above. After reloading the Data Pack, all changes should be applied.
+Open this file with your favourite text editor (you can just use Windows Notepad). To ensure this Data Pack working correctly, just edit the values under the line **"#Configurable Constant Values"**. After each command there is a comment describing usage of the constant value above. After reloading the Data Pack, all changes should be applied.
 
 &nbsp;
