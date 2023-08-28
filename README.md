@@ -14,11 +14,11 @@ This data pack doesn't require any additonal resource pack or any mod, so it's f
 
 - Adding data pack to pre-existing world is also relatively easy. Just drop this data pack folder into "datapacks" folder inside saved game directory. Below is displayed default directory for this folder:
 
-> %AppData%/Roaming/.minecraft/saves/<\world>/datapacks
+> %AppData%/Roaming/.minecraft/saves/\<world>/datapacks
 
 - It is also possible to add this data pack to any server, since it's multiplayer compatible. It's depended on where server files are located, but installing should be pretty much the same like for pre-existing world.
 
-> /<\server's directory>/world/datapacks
+> /\<server's directory>/world/datapacks
 
 ### **Warning!**
 
@@ -110,13 +110,13 @@ All of the commands below will work on the player/entity that executed the comma
 > /function flash:load  *-> resets all scores*
 
 *Turn player into a Speedster or remove player powers.*
-> /function speed_source:<\speedforce | negative_speedforce | velocity9 | remove>
+> /function speed_source:\<speedforce | negative_speedforce | velocity9 | remove>
 
 *Give player items from this Data Pack.*
-> /function items:<\id>
+> /function items:\<id>
 
 *Teleport player from/into Speed Force/Negative Speed Force.*
->/function flash:<\travel_into_sf | travel_from_sf>
+>/function flash:\<travel_into_sf | travel_from_sf>
 
 *Deletes scores for safe removal of Data Pack. Reloading world without removed Data Pack will load again default scores.*
 >/function main:remove
@@ -127,7 +127,7 @@ All of the commands below will work on the player/entity that executed the comma
 
 In order to customize certain aspects of this Data Pack, you can of course modify source code, which is not particularly recommended. You can also change couple of values manually inside Data Pack folder, or via commands in your world (if you know how to do that). To begin, find the file **"config.mcfunction"** in the directory below:
 
-> <\world>/datapacks/<\Data Pack name>/data/flash/functions/config.mcfunction
+> \<world>/datapacks/\<Data Pack name>/data/flash/functions/config.mcfunction
 
 Open this file with your favourite text editor (you can just use Windows Notepad) and edit the values. After each command there is a comment describing usage of the constant value above it. After reloading the Data Pack, all changes should be applied.
 
