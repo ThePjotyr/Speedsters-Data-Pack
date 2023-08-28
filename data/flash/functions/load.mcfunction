@@ -5,6 +5,7 @@ execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~
 #scoreboard objectives setdisplay sidebar test
 
 #Create Scoreboards
+scoreboard objectives add Config dummy
 scoreboard objectives add Lag_Run dummy
 scoreboard objectives add Lag_Suit dummy
 scoreboard objectives add Time_Running dummy
@@ -24,6 +25,7 @@ scoreboard objectives add Liquid_Block_Count dummy
 scoreboard objectives add Potion minecraft.used:minecraft.potion
 scoreboard objectives add PlacedPA minecraft.used:minecraft.blast_furnace
 
+
 #Reset Scores
 scoreboard players set @a[tag=Speedster] Lag_Run 0
 scoreboard players set @a[scores={Time_Running=1..}] Time_Running 0
@@ -34,9 +36,11 @@ scoreboard players set @a[scores={SelectedSlot=1..}] Selected_Slot 0
 scoreboard players set @a Potion 0
 scoreboard players set @a PlacedPA 0
 
+
 #Constant Values (Don't touch these ones!)
+scoreboard players set .ZERO Config 0
+scoreboard players set .ONE Config 1
 scoreboard players set .LAG_SUIT Lag_Suit 10
-scoreboard players set .ONE Time_Liquid_Block 1
 scoreboard players set .DIM_TRAVEL Time_Dim_Travel 220
 scoreboard players set .SPEED_BLUR Time_Speed_Blur 20
 scoreboard players set .SPAWN_PROTECT Time_Spawn_Protect 60
@@ -58,6 +62,7 @@ scoreboard players set .RIGHT_MIN_ROT RotationY 70
 scoreboard players set .RIGHT_ROT RotationY 90
 scoreboard players set .SUMMON_MAX_ROT RotationY 35
 scoreboard players set .SUMMON_MIN_ROT RotationY -40
+
 
 #Configurable Constant Values
 scoreboard players set .TIME_RUNNING_RATE Time_Running 1
@@ -85,3 +90,22 @@ scoreboard players set .MAX_LIQUID_B_TIME Time_Liquid_Block 20
 #Higher number means longer time for trail left by player running on liquid to disappear. For optimization puropouses, it's better to leave at 20. Can impact performace
 scoreboard players set .MAX_LIQUID_COUNT Liquid_Block_Count 100
 #Higher number means more precission on creating walkable area under players feet while running on liquid. For optimization puropouses, it's better to leave between 75-120. Will impact performance
+scoreboard players set .LIQUID_RUNNING Config 1
+#Turn on/off speedsters ability to run on liquid. (1 - on, 0 - off)
+scoreboard players set .WALL_RUNNING Config 1
+#Turn on/off speedsters ability to run on walls. (1 - on, 0 - off)
+scoreboard players set .SKIP_BLOCK Config 1
+#Turn on/off speedsters ability to skip blocks while running. (1 - on, 0 - off)
+scoreboard players set .DIMENSION_TRAVEL Config 1
+#Turn on/off speedsters ability to travel between dimensions. (1 - on, 0 - off)
+
+
+#Config fix
+execute if score .LIQUID_RUNNING Config <= .ZERO Config run scoreboard players set .LIQUID_RUNNING Config 0
+execute if score .LIQUID_RUNNING Config >= .ONE Config run scoreboard players set .LIQUID_RUNNING Config 1
+execute if score .WALL_RUNNING Config <= .ZERO Config run scoreboard players set .WALL_RUNNING Config 0
+execute if score .WALL_RUNNING Config >= .ONE Config run scoreboard players set .WALL_RUNNING Config 1
+execute if score .SKIP_BLOCK Config <= .ZERO Config run scoreboard players set .SKIP_BLOCK Config 0
+execute if score .SKIP_BLOCK Config >= .ONE Config run scoreboard players set .SKIP_BLOCK Config 1
+execute if score .DIMENSION_TRAVEL Config <= .ZERO Config run scoreboard players set .DIMENSION_TRAVEL Config 0
+execute if score .DIMENSION_TRAVEL Config >= .ONE Config run scoreboard players set .DIMENSION_TRAVEL Config 1

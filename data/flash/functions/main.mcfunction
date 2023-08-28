@@ -1,17 +1,17 @@
 #SPEEDSTER
 execute if entity @a[tag=Speedster] as @a[tag=Speedster] at @s run function flash:speedster
-execute if entity @e[type=marker,tag=liquid_run_block] as @e[type=marker,tag=liquid_run_block] at @s run function main:liquid_marker
-execute if entity @e[type=marker,tag=liquid_block] as @e[type=marker,tag=liquid_block] at @s run function main:liquid_block
+execute if score .LIQUID_RUNNING Config matches 1 if entity @e[type=marker,tag=liquid_run_block] as @e[type=marker,tag=liquid_run_block] at @s run function main:liquid_marker
+execute if score .LIQUID_RUNNING Config matches 1 if entity @e[type=marker,tag=liquid_block] as @e[type=marker,tag=liquid_block] at @s run function main:liquid_block
 execute if entity @e[type=marker,tag=SpeedBlur] as @e[type=marker,tag=SpeedBlur] at @s run function main:speed_blur
 
 #execute store result score .test test if entity @e[type=!player]
 
 #INTERDIMENSIONAL TRAVEL
-execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s run function main:dim_portal
+execute if score .DIMENSION_TRAVEL Config matches 1 if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s run function main:dim_portal
 
 #SPEED FORCE AND NEGATIVE SPEED FORCE
-execute if entity @a[nbt={Dimension:"flash:speedforce"}] as @a[nbt={Dimension:"flash:speedforce"}] at @s run function flash:inside_sf
-execute if entity @a[nbt={Dimension:"flash:negative_speedforce"}] as @a[nbt={Dimension:"flash:negative_speedforce"}] at @s run function flash:inside_sf
+execute if score .DIMENSION_TRAVEL Config matches 1 if entity @a[nbt={Dimension:"flash:speedforce"}] as @a[nbt={Dimension:"flash:speedforce"}] at @s run function flash:inside_sf
+execute if score .DIMENSION_TRAVEL Config matches 1 if entity @a[nbt={Dimension:"flash:negative_speedforce"}] as @a[nbt={Dimension:"flash:negative_speedforce"}] at @s run function flash:inside_sf
 
 #SUITS
 execute if entity @a[nbt={SelectedItem:{id:"minecraft:gold_nugget",tag:{SuitRing:1b}}},predicate=main:is_sneaking] as @a[nbt={SelectedItem:{id:"minecraft:gold_nugget",tag:{SuitRing:1b}}},predicate=main:is_sneaking] run function suits:use_ring

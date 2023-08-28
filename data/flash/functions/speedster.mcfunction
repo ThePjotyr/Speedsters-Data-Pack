@@ -1,7 +1,7 @@
 #SPEEDSTER
-execute unless dimension flash:speedforce unless dimension flash:negative_speedforce if entity @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] at @s anchored eyes positioned ~ ~ ~ rotated ~ 0 run function main:liquid_running_exec
-execute if entity @s[predicate=main:is_running,scores={Level_Speed=1..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=1..},nbt={OnGround:1b}] at @s run function main:skip_block
-execute if entity @s[predicate=main:is_running,scores={Level_Speed=4..}] as @s[predicate=main:is_running,scores={Level_Speed=4..}] at @s run function main:wall_run
+execute if score .LIQUID_RUNNING Config matches 1 unless dimension flash:speedforce unless dimension flash:negative_speedforce if entity @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] at @s anchored eyes positioned ~ ~ ~ rotated ~ 0 run function main:liquid_running_exec
+execute if score .SKIP_BLOCK Config matches 1 if entity @s[predicate=main:is_running,scores={Level_Speed=1..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=1..},nbt={OnGround:1b}] at @s run function main:skip_block
+execute if score .WALL_RUNNING Config matches 1 if entity @s[predicate=main:is_running,scores={Level_Speed=4..}] as @s[predicate=main:is_running,scores={Level_Speed=4..}] at @s run function main:wall_run
 #Speed Effects
 function main:slots
 execute if entity @s[scores={Time_Running=..0}] as @s[scores={Time_Running=..0}] run scoreboard players set @s Time_Running 0
@@ -21,9 +21,9 @@ execute if entity @s[scores={Selected_Slot=8},predicate=main:is_sneaking] as @s[
 function main:passive
 
 #INTERDIMENSIONAL TRAVEL
-execute if entity @s[scores={Level_Speed=10}] as @s[scores={Level_Speed=10}] at @s run function main:dim_travel
-execute if entity @s[tag=DimTravel] as @s[tag=DimTravel] at @s run function main:spawn_dim
-execute if entity @s[tag=!DimTravel,scores={Time_Spawn_Protect=1..}] as @s[tag=!DimTravel,scores={Time_Spawn_Protect=1..}] run scoreboard players set @s Time_Spawn_Protect 0
+execute if score .DIMENSION_TRAVEL Config matches 1 if entity @s[scores={Level_Speed=10}] as @s[scores={Level_Speed=10}] at @s run function main:dim_travel
+execute if score .DIMENSION_TRAVEL Config matches 1 if entity @s[tag=DimTravel] as @s[tag=DimTravel] at @s run function main:spawn_dim
+execute if score .DIMENSION_TRAVEL Config matches 1 if entity @s[tag=!DimTravel,scores={Time_Spawn_Protect=1..}] as @s[tag=!DimTravel,scores={Time_Spawn_Protect=1..}] run scoreboard players set @s Time_Spawn_Protect 0
 
 #SCOREBOARDS
 execute store result score @s Level_Height run data get entity @s Pos[1] 1
