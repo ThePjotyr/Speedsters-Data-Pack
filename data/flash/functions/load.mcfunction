@@ -60,13 +60,3 @@ scoreboard players set .RIGHT_MIN_ROT RotationY 70
 scoreboard players set .RIGHT_ROT RotationY 90
 scoreboard players set .SUMMON_MAX_ROT RotationY 35
 scoreboard players set .SUMMON_MIN_ROT RotationY -40
-
-#Config fix
-execute if score .LIQUID_RUNNING Config <= .ZERO Config run scoreboard players set .LIQUID_RUNNING Config 0
-execute if score .LIQUID_RUNNING Config >= .ONE Config run scoreboard players set .LIQUID_RUNNING Config 1
-execute if score .WALL_RUNNING Config <= .ZERO Config run scoreboard players set .WALL_RUNNING Config 0
-execute if score .WALL_RUNNING Config >= .ONE Config run scoreboard players set .WALL_RUNNING Config 1
-execute if score .SKIP_BLOCK Config <= .ZERO Config run scoreboard players set .SKIP_BLOCK Config 0
-execute if score .SKIP_BLOCK Config >= .ONE Config run scoreboard players set .SKIP_BLOCK Config 1
-execute if score .DIMENSION_TRAVEL Config <= .ZERO Config run scoreboard players set .DIMENSION_TRAVEL Config 0
-execute if score .DIMENSION_TRAVEL Config >= .ONE Config run scoreboard players set .DIMENSION_TRAVEL Config 1
