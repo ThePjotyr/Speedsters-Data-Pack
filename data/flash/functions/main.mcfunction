@@ -37,3 +37,12 @@ execute if entity @a as @a store result score @s RotationY run data get entity @
 execute if entity @a[tag=Ring] as @a[tag=Ring] run scoreboard players add @s Lag_Suit 1
 execute if entity @a[tag=Ring,scores={Lag_Suit=1..}] as @a[tag=Ring,scores={Lag_Suit=1..}] if score @s Lag_Suit >= .LAG_SUIT Lag_Suit run tag @s remove Ring
 execute if entity @a[tag=!Ring,scores={Lag_Suit=1..}] as @a[tag=!Ring,scores={Lag_Suit=1..}] run scoreboard players set @s Lag_Suit 0
+#Config fix
+execute if score .LIQUID_RUNNING Config <= .ZERO Config run scoreboard players set .LIQUID_RUNNING Config 0
+execute if score .LIQUID_RUNNING Config >= .ONE Config run scoreboard players set .LIQUID_RUNNING Config 1
+execute if score .WALL_RUNNING Config <= .ZERO Config run scoreboard players set .WALL_RUNNING Config 0
+execute if score .WALL_RUNNING Config >= .ONE Config run scoreboard players set .WALL_RUNNING Config 1
+execute if score .SKIP_BLOCK Config <= .ZERO Config run scoreboard players set .SKIP_BLOCK Config 0
+execute if score .SKIP_BLOCK Config >= .ONE Config run scoreboard players set .SKIP_BLOCK Config 1
+execute if score .DIMENSION_TRAVEL Config <= .ZERO Config run scoreboard players set .DIMENSION_TRAVEL Config 0
+execute if score .DIMENSION_TRAVEL Config >= .ONE Config run scoreboard players set .DIMENSION_TRAVEL Config 1
