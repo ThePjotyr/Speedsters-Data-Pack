@@ -1,8 +1,11 @@
-execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s unless entity @e[type=marker,tag=SpeedForceDim,distance=..16] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
-execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s unless entity @e[type=marker,tag=SpeedForceDim,distance=..1] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
+execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s if dimension flash:speedforce unless entity @e[type=marker,tag=SpeedForceDim,distance=..16] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
+execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s if dimension flash:speedforce unless entity @e[type=marker,tag=SpeedForceDim,distance=..1] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
+execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s if dimension flash:negative_speedforce unless entity @e[type=marker,tag=SpeedForceDim,distance=..16] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
+execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s if dimension flash:negative_speedforce unless entity @e[type=marker,tag=SpeedForceDim,distance=..1] run summon marker ~ ~ ~ {Tags:["SpeedForceDim","ReproduceStand"]}
 execute if entity @e[type=marker,tag=SpeedForceDim,tag=ReproduceStand] as @e[type=marker,tag=SpeedForceDim,tag=ReproduceStand] at @s if entity @a[distance=..32] run function main:stand_repro
 
 execute if entity @e[type=marker,tag=SpeedForceDim,tag=!ReproduceStand] as @e[type=marker,tag=SpeedForceDim,tag=!ReproduceStand] at @s if dimension flash:speedforce if entity @a[distance=..32] run particle dust_color_transition 0.024 0.357 0.741 5 0.961 0.98 1 ~ ~1 ~ 16 10 16 10 20 force
+#execute if entity @e[type=marker,tag=SpeedForceDim,tag=!ReproduceStand] as @e[type=marker,tag=SpeedForceDim,tag=!ReproduceStand] at @s if dimension flash:speedforce if entity @a[distance=..32] run particle dust_color_transition 0.024 0.357 0.741 5 0.961 0.98 1 ~ ~1 ~ 0.1 0.1 0.1 10 2 force
 execute if entity @e[type=marker,tag=SpeedForceDim,tag=!ReproduceStand] as @e[type=marker,tag=SpeedForceDim,tag=!ReproduceStand] at @s if dimension flash:negative_speedforce if entity @a[distance=..32] run particle dust_color_transition 0.514 0.043 0.043 1 1 0 0 ~ ~1 ~ 16 10 16 10 50 force
 
 execute if predicate flash:lightning_bolt as @s positioned ^24 ^-16 ^13 unless entity @e[tag=!SpeedForceDim,distance=..20] run summon lightning_bolt ~ ~ ~
