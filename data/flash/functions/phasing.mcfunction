@@ -17,9 +17,9 @@ execute if score @s RotationY < .RIGHT_MIN_ROT RotationY if block ~ ~-0.1 ~ #fla
 execute if score @s RotationY < .RIGHT_MIN_ROT RotationY if block ~ ~-0.1 ~ #flash:half_blocks unless block ~ ~ ~ #flash:half_blocks positioned ~ ~2 ~ unless block ^ ^ ^1 #flash:phase run execute positioned ~ ~1 ~ if block ^ ^ ^1 #flash:phase at @s positioned ~ ~1 ~ run function main:phasing_teleport
 execute if score @s RotationY < .RIGHT_MIN_ROT RotationY if block ~ ~-0.1 ~ #flash:half_blocks unless block ~ ~ ~ #flash:half_blocks positioned ~ ~2 ~ unless block ^ ^ ^1 #flash:phase run execute positioned ~ ~1 ~ unless block ^ ^ ^1 #flash:phase at @s positioned ~ ~1 ~ run function main:phasing_teleport
 
-execute if score @s RotationY >= .RIGHT_MIN_ROT RotationY if score @s RotationY <= .RIGHT_ROT RotationY unless block ~ ~-0.1 ~ #flash:phase run teleport @s ~ ~-0.5 ~ ~ 90
-execute if score @s RotationY >= .RIGHT_MIN_ROT RotationY if score @s RotationY <= .RIGHT_ROT RotationY if block ~ ~-0.1 ~ #flash:phase if block ~ ~-0.1 ~ #flash:half_blocks run teleport @s ~ ~-0.5 ~ ~ 90
+execute if score @s RotationY >= .RIGHT_MIN_ROT RotationY if score @s RotationY <= .RIGHT_ROT RotationY unless block ~ ~-0.1 ~ #flash:phase rotated ~ 90 run teleport @s ~ ~-0.5 ~
+execute if score @s RotationY >= .RIGHT_MIN_ROT RotationY if score @s RotationY <= .RIGHT_ROT RotationY if block ~ ~-0.1 ~ #flash:phase if block ~ ~-0.1 ~ #flash:half_blocks rotated ~ 90 run teleport @s ~ ~-0.5 ~
 
-execute if score @s RotationY >= .MIN_ROT RotationY if score @s RotationY <= .MAX_ROT RotationY if block ~ ~ ~ #flash:phase unless block ~ ~1 ~ #flash:phase at @s run teleport @s ^ ^0.3 ^1.5 ~ ~
-execute if score @s RotationY >= .MIN_ROT RotationY if score @s RotationY <= .MAX_ROT RotationY unless block ~ ~ ~ #flash:phase if block ~ ~1 ~ #flash:phase at @s run teleport @s ^ ^0.3 ^1.5 ~ ~
-execute if score @s RotationY >= .MIN_ROT RotationY if score @s RotationY <= .MAX_ROT RotationY unless block ~ ~ ~ #flash:phase unless block ~ ~1 ~ #flash:phase at @s run teleport @s ^ ^0.3 ^1.5 ~ ~
+execute if score @s RotationY >= .MIN_ROT RotationY if score @s RotationY <= .MAX_ROT RotationY if block ~ ~ ~ #flash:phase unless block ~ ~1 ~ #flash:phase at @s rotated ~ 0 run teleport @s ^ ^0.3 ^1.5
+execute if score @s RotationY >= .MIN_ROT RotationY if score @s RotationY <= .MAX_ROT RotationY unless block ~ ~ ~ #flash:phase if block ~ ~1 ~ #flash:phase at @s rotated ~ 0 run teleport @s ^ ^0.3 ^1.5
+execute if score @s RotationY >= .MIN_ROT RotationY if score @s RotationY <= .MAX_ROT RotationY unless block ~ ~ ~ #flash:phase unless block ~ ~1 ~ #flash:phase at @s rotated ~ 0 run teleport @s ^ ^0.3 ^1.5
