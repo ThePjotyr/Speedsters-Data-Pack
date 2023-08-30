@@ -109,7 +109,6 @@ All of the commands below will work on the player/entity that executed the comma
 > /reload  *-> reloads all files inside Data Pack folder and resets all scores*
 
 &nbsp;
-
 > /function flash:load  *-> resets all scores*
 
 *Turn player into a Speedster or remove player powers.*
@@ -142,6 +141,8 @@ To make this permanent you can put it in always active repeating command block, 
 The second method includes working on Data Pack files. It will not only make changes more efficient, but it will also give you access to other configurable options. Locate two files that directories are shown below:
 
 > \<world>/datapacks/\<Data Pack name>/data/flash/functions/config.mcfunction
+
+&nbsp;
 > \<world>/datapacks/\<Data Pack name>/data/flash/functions/config_default.mcfunction
 
 Open those files with your favourite text editor (you can just use Windows Notepad) and edit the values. After each command there is a comment describing usage of the constant value above it. After reloading the Data Pack, all changes should be applied.
