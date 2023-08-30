@@ -1,5 +1,5 @@
 #SPEEDSTER
-execute if score .LIQUID_RUNNING Config matches 1 unless dimension flash:speedforce unless dimension flash:negative_speedforce if entity @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b}] at @s anchored eyes positioned ~ ~ ~ rotated ~ 0 run function main:liquid_running_exec
+execute if score .LIQUID_RUNNING Config matches 1 unless dimension flash:speedforce unless dimension flash:negative_speedforce if entity @s[predicate=main:is_running,scores={Level_Speed=6..}] as @s[predicate=main:is_running,scores={Level_Speed=6..}] at @s anchored eyes positioned ~ ~ ~ rotated ~ 0 run function main:liquid_running_exec
 execute if score .SKIP_BLOCK Config matches 1 if entity @s[predicate=main:is_running,scores={Level_Speed=1..},nbt={OnGround:1b}] as @s[predicate=main:is_running,scores={Level_Speed=1..},nbt={OnGround:1b}] at @s run function main:skip_block
 execute if score .WALL_RUNNING Config matches 1 if entity @s[predicate=main:is_running,predicate=main:is_looking_up,scores={Level_Speed=4..}] as @s[predicate=main:is_running,predicate=main:is_looking_up,scores={Level_Speed=4..}] run function main:wall_run
 #Speed Effects
