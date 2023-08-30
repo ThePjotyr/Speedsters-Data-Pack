@@ -107,7 +107,6 @@ All of the commands below will work on the player/entity that executed the comma
 
 *Reload the Data Pack. It won't erase any progress. Use them whenever something stops working or works incorrectly.*
 > /reload  *-> reloads all files inside Data Pack folder and resets all scores*
-
 &nbsp;
 
 > /function flash:load  *-> resets all scores*
@@ -130,18 +129,20 @@ All of the commands below will work on the player/entity that executed the comma
 
 Recommended way to customize certain aspects of this Data Pack is via command below. It will show a mini menu in chat and player would have to just follow instructions on screen.
 
-> \trigger Config
+> /trigger Config
 
 Those changes are local, which means, that they will only affect player that set them up. There are two ways to make those changes global, for any player on the server.
 The first method includes using command blocks or external Data Pack. Using command below you can change players setting, where "1" means "on", and "0" means "off":
 
-> \scoreboard players set \<player> \<LiquidRunning | WallRunning | SkipBlock | DimensionTravel | Phasing> \<0 | 1>
+> /scoreboard players set \<player> \<LiquidRunning | WallRunning | SkipBlock | DimensionTravel | Phasing> \<0 | 1>
 
 To make this permanent you can put it in always active repeating command block, and to make it affect all players just replace \<player> with selector "@a".
 
 The second method includes working on Data Pack files. It will not only make changes more efficient, but it will also give you access to other configurable options. Locate two files that directories are shown below:
 
 > \<world>/datapacks/\<Data Pack name>/data/flash/functions/config.mcfunction
+&nbsp;
+
 > \<world>/datapacks/\<Data Pack name>/data/flash/functions/config_default.mcfunction
 
 Open those files with your favourite text editor (you can just use Windows Notepad) and edit the values. After each command there is a comment describing usage of the constant value above it. After reloading the Data Pack, all changes should be applied.
