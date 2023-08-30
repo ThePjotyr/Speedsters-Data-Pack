@@ -11,4 +11,4 @@ execute if entity @s[tag=liquid_block] as @s[tag=liquid_block] run scoreboard pl
 execute if score @s[scores={Time_Liquid_Block=2..}] Time_Liquid_Block <= .MAX_LIQUID_TIME Time_Liquid_Block run teleport ^ ^ ^1
 
 execute if score @s Time_Liquid_Block >= .MAX_LIQUID_TIME Time_Liquid_Block run kill @s
-execute unless entity @a[predicate=main:is_running,scores={Level_Speed=6..},nbt={OnGround:1b},distance=..7] run kill @s
+execute unless entity @a[predicate=main:is_running,scores={Level_Speed=6..},distance=..7] run kill @s
