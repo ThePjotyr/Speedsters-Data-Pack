@@ -26,6 +26,7 @@ execute unless score .LVL_V9_0 Time_Velocity9 matches -2147483648..2147483647 ru
 execute unless score .LVL_V9_1 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_1 Time_Velocity9 400
 execute unless score .LVL_V9_2 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_2 Time_Velocity9 600
 execute unless score .LVL_V9_3 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_3 Time_Velocity9 800
+execute unless score .LVL_V9_4 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_4 Time_Velocity9 860
 #Tick after which speedster that is under the influence of Velocity 9 will get more poisoned. For example, to gain Velocity 9 poisoning of level 1, Speedster must run for at least X ticks of time. One tick is equivalent to 1/20 of a second. (Default: X, X, X, X)
 
 execute unless score .MAX_LIQUID_TIME Time_Liquid_Block matches -2147483648..2147483647 run scoreboard players set .MAX_LIQUID_TIME Time_Liquid_Block 15
