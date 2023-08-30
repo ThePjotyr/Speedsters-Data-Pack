@@ -108,6 +108,7 @@ All of the commands below will work on the player/entity that executed the comma
 *Reload the Data Pack. It won't erase any progress. Use them whenever something stops working or works incorrectly.*
 > /reload  *-> reloads all files inside Data Pack folder and resets all scores*
 &nbsp;
+
 > /function flash:load  *-> resets all scores*
 
 *Turn player into a Speedster or remove player powers.*
@@ -141,6 +142,7 @@ The second method includes working on Data Pack files. It will not only make cha
 
 > \<world>/datapacks/\<Data Pack name>/data/flash/functions/config.mcfunction
 &nbsp;
+
 > \<world>/datapacks/\<Data Pack name>/data/flash/functions/config_default.mcfunction
 
 Open those files with your favourite text editor (you can just use Windows Notepad) and edit the values. After each command there is a comment describing usage of the constant value above it. After reloading the Data Pack, all changes should be applied.
