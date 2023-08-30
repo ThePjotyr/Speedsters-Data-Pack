@@ -54,7 +54,7 @@ Every speedster will have name of their speed source displayed above their hotba
 To access speed related abilities, player must first select last slot on hotbar. Then the display above the hotbar would change to **Speed Level Indicator**.
 By running with selected last slot, player will gain speed. Continuous running increases player's speed, and not running decreases it.
 
-Any speedster can also run on water or powder snow surface, whenever they reach 6th Speed Level. Jumping on water/powder snow, or losing velocity will lead to stopping this ability, and the player will fall.
+Speedsters with 4th Speed Level are able to run on vertical surfaces for short periods of time. In order to do so, just look up while running and close to the wall. Reaching 6th Speed Level gives them also the ability to run on water or powder snow.
 
 With selected last slot, player can also press shift to begin **phasing**. In this state, player is invulnerable, but also cannot harm anything or anyone. Other than that, if player looks straight down, the player will **phase** through the floor. The same can be achieved horizontally by looking straight forward and being close to any wall.
 
@@ -128,10 +128,22 @@ All of the commands below will work on the player/entity that executed the comma
 
 ## Customization
 
-In order to customize certain aspects of this Data Pack, you can of course modify source code, which is not particularly recommended. You can also change couple of values manually inside Data Pack folder, or via commands in your world (if you know how to do that). To begin, find the file **"config.mcfunction"** in the directory below:
+Recommended way to customize certain aspects of this Data Pack is via command below. It will show a mini menu in chat and player would have to just follow instructions on screen.
+
+> \trigger Config
+
+Those changes are local, which means, that they will only affect player that set them up. There are two ways to make those changes global, for any player on the server.
+The first method includes using command blocks or external Data Pack. Using command below you can change players setting:
+
+> \scoreboard players set \<player> \<LiquidRunning | WallRunning | SkipBlock | DimensionTravel | Phasing> 0
+
+To make this permanent you can put it in always active repeating command block, and to make it affect all players just replace \<player> with selector "@a".
+
+The second method includes working on Data Pack files. It will not only make changes more efficient, but it will also give you access to other configurable options. Locate two files that directories are shown below:
 
 > \<world>/datapacks/\<Data Pack name>/data/flash/functions/config.mcfunction
+> \<world>/datapacks/\<Data Pack name>/data/flash/functions/config_default.mcfunction
 
-Open this file with your favourite text editor (you can just use Windows Notepad) and edit the values. After each command there is a comment describing usage of the constant value above it. After reloading the Data Pack, all changes should be applied.
+Open those files with your favourite text editor (you can just use Windows Notepad) and edit the values. After each command there is a comment describing usage of the constant value above it. After reloading the Data Pack, all changes should be applied.
 
 &nbsp;

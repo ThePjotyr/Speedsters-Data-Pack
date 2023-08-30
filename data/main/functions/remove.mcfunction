@@ -1,5 +1,6 @@
 execute as @a at @a run function speed_source:remove
 scoreboard objectives remove Config
+scoreboard objectives remove Config
 scoreboard objectives remove Lag_Run
 scoreboard objectives remove Lag_Suit
 scoreboard objectives remove Time_Running

@@ -1,6 +1,6 @@
 {
     "values": [
     "flash:load",
-    "flash:config"
+    "flash:config_default"
 ]
 }
