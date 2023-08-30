@@ -5,7 +5,6 @@ execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~
 #scoreboard objectives setdisplay sidebar test
 
 #Create Scoreboards
-scoreboard objectives add Config dummy
 scoreboard objectives add Lag_Run dummy
 scoreboard objectives add Lag_Suit dummy
 scoreboard objectives add Time_Running dummy
@@ -24,6 +23,14 @@ scoreboard objectives add Velocity9_Rate dummy
 scoreboard objectives add Liquid_Block_Count dummy
 scoreboard objectives add Potion minecraft.used:minecraft.potion
 scoreboard objectives add PlacedPA minecraft.used:minecraft.blast_furnace
+scoreboard objectives add LiquidRunning dummy
+scoreboard objectives add SkipBlock dummy
+scoreboard objectives add WallRunning dummy
+scoreboard objectives add DimensionTravel dummy
+scoreboard objectives add Phasing dummy
+
+#Create Triggers
+scoreboard objectives add Config trigger
 
 #Reset Scores
 scoreboard players set @a[tag=Speedster] Lag_Run 0
