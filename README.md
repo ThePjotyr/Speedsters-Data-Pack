@@ -133,9 +133,9 @@ Recommended way to customize certain aspects of this Data Pack is via command be
 > \trigger Config
 
 Those changes are local, which means, that they will only affect player that set them up. There are two ways to make those changes global, for any player on the server.
-The first method includes using command blocks or external Data Pack. Using command below you can change players setting:
+The first method includes using command blocks or external Data Pack. Using command below you can change players setting, where "1" means "on", and "0" means "off":
 
-> \scoreboard players set \<player> \<LiquidRunning | WallRunning | SkipBlock | DimensionTravel | Phasing> 0
+> \scoreboard players set \<player> \<LiquidRunning | WallRunning | SkipBlock | DimensionTravel | Phasing> \<0 | 1>
 
 To make this permanent you can put it in always active repeating command block, and to make it affect all players just replace \<player> with selector "@a".
 
