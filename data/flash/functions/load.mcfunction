@@ -17,6 +17,7 @@ scoreboard objectives add Time_Velocity9 dummy
 scoreboard objectives add Time_PA_Stand dummy
 scoreboard objectives add Level_Speed dummy
 scoreboard objectives add Level_Height dummy
+scoreboard objectives add Level_V9 dummy
 scoreboard objectives add Selected_Slot dummy
 scoreboard objectives add RotationY dummy
 scoreboard objectives add Velocity9_Rate dummy

@@ -22,6 +22,12 @@ execute unless score .LVL_SPEED_8 Time_Running matches -2147483648..2147483647 r
 execute unless score .LVL_SPEED_9 Time_Running matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_9 Time_Running 1200
 #Tick after which speedster will gain certain level of speed. For example, to gain Speed of level 1, Speedster must run for at least 5 ticks of time. One tick is equivalent to 1/20 of a second. (Default: 1, 5, 15, 30, 80, 160, 390, 840, 1000, 1200)
 
+execute unless score .LVL_V9_0 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_0 Time_Velocity9 200
+execute unless score .LVL_V9_1 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_1 Time_Velocity9 400
+execute unless score .LVL_V9_2 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_2 Time_Velocity9 600
+execute unless score .LVL_V9_3 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_3 Time_Velocity9 800
+#Tick after which speedster that is under the influence of Velocity 9 will get more poisoned. For example, to gain Velocity 9 poisoning of level 1, Speedster must run for at least X ticks of time. One tick is equivalent to 1/20 of a second. (Default: X, X, X, X)
+
 execute unless score .MAX_LIQUID_TIME Time_Liquid_Block matches -2147483648..2147483647 run scoreboard players set .MAX_LIQUID_TIME Time_Liquid_Block 15
 #Higher number means higher distances of walkable area under players feet while running on liquids. For optimization puropouses, it's better to leave at 15. Will impact performance. (Default: 15)
 

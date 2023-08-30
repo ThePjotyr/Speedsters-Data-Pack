@@ -147,4 +147,10 @@ The second method includes working on Data Pack files. It will not only make cha
 
 Open those files with your favourite text editor (you can just use Windows Notepad) and edit the values. After each command there is a comment describing usage of the constant value above it. After reloading the Data Pack, all changes should be applied.
 
+### **Warning!**
+
+For all changes inside config files to be applied, you must first reset all those values via command below.
+
+> /function main:reset_config
+
 &nbsp;

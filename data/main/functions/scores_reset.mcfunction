@@ -6,6 +6,14 @@ scoreboard players set @s Time_Spawn_Protect 0
 scoreboard players set @s Time_Velocity9 0
 scoreboard players set @s Level_Height 0
 scoreboard players set @s Level_Speed 0
+scoreboard players set @s Level_V9 0
 scoreboard players set @s Selected_Slot 0
 scoreboard players set @s RotationY 0
 scoreboard players set @s Potion 0
+scoreboard players set @s Liquid_Block_Count 0
+scoreboard players set @s LiquidRunning 1
+scoreboard players set @s SkipBlock 1
+scoreboard players set @s WallRunning 1
+scoreboard players set @s DimensionTravel 1
+scoreboard players set @s Phasing 1
+scoreboard players set @s Config 0

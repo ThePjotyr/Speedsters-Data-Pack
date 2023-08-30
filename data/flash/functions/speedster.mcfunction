@@ -11,7 +11,6 @@ execute if entity @s[scores={Selected_Slot=8}] as @s[scores={Selected_Slot=8}] r
 execute if entity @s[scores={Level_Speed=1..10}] as @s[scores={Level_Speed=1..10}] run function main:speed_effects
 execute if entity @s[predicate=main:is_running,scores={Level_Speed=1..10}] as @s[predicate=main:is_running,scores={Level_Speed=1..10}] at @s if predicate flash:sound run function main:running_sound
 execute if entity @s[predicate=main:not_running,scores={Level_Speed=1..10}] as @s[predicate=main:not_running,scores={Level_Speed=1..10}] at @s run stopsound @a[distance=..1] ambient item.elytra.flying
-execute if entity @s[tag=Velocity9] as @s[tag=Velocity9] run function flash:velocity9
 #Speed blur
 execute if entity @s[predicate=main:is_running,scores={Lag_Run=20,Level_Speed=1..10}] as @s[predicate=main:is_running,scores={Lag_Run=20,Level_Speed=1..10}] at @s run function main:speed_blur_player
 execute if entity @s[predicate=main:not_running,predicate=main:not_sneaking,scores={Selected_Slot=8}] as @s[predicate=main:not_running,predicate=main:not_sneaking,scores={Selected_Slot=8}] at @s run function main:speed_sparks
