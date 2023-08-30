@@ -54,6 +54,7 @@ scoreboard players set .PA_EXP_3 Time_PA_Stand 275
 scoreboard players set .PA_EXP_4 Time_PA_Stand 290
 scoreboard players set .PA_EXP_5 Time_PA_Stand 310
 scoreboard players set .MIN_Y Level_Height -64
+scoreboard players set .SPEEDFORCE_ROOF Level_Height 1620000
 scoreboard players set .MAX_ROT RotationY 40
 scoreboard players set .MIN_ROT RotationY -40
 scoreboard players set .RIGHT_MIN_ROT RotationY 70
