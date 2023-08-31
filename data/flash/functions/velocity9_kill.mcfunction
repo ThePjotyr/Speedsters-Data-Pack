@@ -7,7 +7,7 @@ function main:scores_reset
 title @s actionbar {"text":""}
 effect clear @s
 
-tag @s add AfterVelocity9
+execute if entity @s[tag=!AfterVelocity9] as @s[tag=!AfterVelocity9] run tag @s add AfterVelocity9
 effect give @s wither infinite 0 true
 effect give @s blindness infinite 255 true
 effect give @s slowness infinite 1 true
