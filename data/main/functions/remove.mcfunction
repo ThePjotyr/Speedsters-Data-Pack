@@ -1,6 +1,5 @@
 execute as @a at @a run function speed_source:remove
 scoreboard objectives remove Config
-scoreboard objectives remove Config
 scoreboard objectives remove Lag_Run
 scoreboard objectives remove Lag_Suit
 scoreboard objectives remove Time_Running
@@ -13,9 +12,15 @@ scoreboard objectives remove Time_Velocity9
 scoreboard objectives remove Time_PA_Stand
 scoreboard objectives remove Level_Speed
 scoreboard objectives remove Level_Height
+scoreboard objectives remove Level_V9
 scoreboard objectives remove Selected_Slot
 scoreboard objectives remove RotationY
 scoreboard objectives remove Potion
 scoreboard objectives remove Velocity9_Rate
 scoreboard objectives remove PlacedPA
 scoreboard objectives remove Liquid_Block_Count
+scoreboard objectives remove LiquidRunning
+scoreboard objectives remove SkipBlock
+scoreboard objectives remove WallRunning
+scoreboard objectives remove DimensionTravel
+scoreboard objectives remove Phasing
