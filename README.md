@@ -46,6 +46,10 @@ There is also a really small possibility, that no player would get speedster pow
 Player can also craft the **Velocity 9** potion, which will surely grant anyone who drinks it temporary speedster powers.
 There are certain drawback that come with it, but more about it later.
 
+### Tachyon Device
+
+This is the safest and the least resource efficient way to obtain super speed. Player must first craft **Tachyon Device Frame** and then put it into powered **Particle Accelerator** during thunderstorm. After a while a thunderbolt will hit the **Particle Accelerator**, but it won't cause explosion. Inside it, player should find **Tachyon Device**. Then a speedster must take this item into **Speed Force** or **Negative Speed Force** and run with it in hand utilising powers of super speed. **Tachyon Device** will then absorb nearby tachyons, which will be indicated by glowing particles around the speedster. After some time **Tachion Device** should get fully charged with positive or negative tachions, dependent on realm it was absorbing tachions from. Any player holding fully charged **Tachion Device** in hand and pressing **Shift** will be granted super speed from **Speed Force** or **Negative Speed Force**.
+
 &nbsp;
 
 ## Using powers
@@ -86,9 +90,8 @@ Users of this source will have a red lightning. While travelling dimensions, use
 
 ### Velocity 9
 
-The riskiest option. Users of this source will have a blue lightning. They will reach any **Speed Level** faster than other speedsters, but after some time, they will get small debuffs, like nausea or taking some random damage. Those effects will strengthen in time, and after precisely 5 minutes from taking speed drug, users will die from those effects. They can prolong the inevitable, by drinking another **Velocity 9** potion, but each time they would do that, the rate of their body decay will only get faster and faster. The only permanent cure for this condition is obtaining speed from different source in **Particle Accelerator** explosion.
-After dying from **Velocity 9** poisoning, player cannot obtain speed power from any other source than **Velocity 9**.
-In future versions this system will be reworked.
+The riskiest option. Users of this source will have a blue lightning. They will reach any **Speed Level** faster than other speedsters, but after some time, they will experience random negative effect or effects. Those effects will strengthen in time, and after a total of 10 minutes of running with super speed, users will die from those effects. They can prolong the inevitable, by drinking another **Velocity 9** potion, but each time they would do that, the rate of their body decay will only get faster and faster. The only permanent cure for this condition is obtaining speed from different source in **Particle Accelerator** explosion or using **Tachion Device**.
+After dying from **Velocity 9** poisoning, player cannot obtain speed power from any other source than **Velocity 9** and the only way to change that is to use **Tachion Device**.
 
 &nbsp;
 

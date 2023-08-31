@@ -31,6 +31,8 @@ execute if entity @a[tag=ObtainNSF,tag=!NegativeSpeedForce] as @a[tag=ObtainNSF,
 #Velocity 9
 execute if entity @a as @a run function main:v9_check
 #Tachyon Device
+execute if entity @a[nbt={SelectedItem:{tag:{TachyonDevice:1b,Charged:1b,Negative:0b,Positive:1b}}},tag=!SpeedForce,predicate=main:is_sneaking] as @a[nbt={SelectedItem:{tag:{TachyonDevice:1b,Charged:1b,Negative:0b,Positive:1b}}},tag=!SpeedForce,predicate=main:is_sneaking] at @s run function main:td_sf
+execute if entity @a[nbt={SelectedItem:{tag:{TachyonDevice:1b,Charged:1b,Negative:1b,Positive:0b}}},tag=!NegativeSpeedForce,predicate=main:is_sneaking] as @a[nbt={SelectedItem:{tag:{TachyonDevice:1b,Charged:1b,Negative:1b,Positive:0b}}},tag=!NegativeSpeedForce,predicate=main:is_sneaking] at @s run function main:td_nsf
 execute if entity @a as @a run function main:td_check
 execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDevice:1b}}]}] as @a[nbt={Inventory:[{tag:{t_TachyonDevice:1b}}]}] run function main:td_get
 execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDeviceP:1b}}]}] as @a[nbt={Inventory:[{tag:{t_TachyonDeviceP:1b}}]}] run function main:td_get_p
