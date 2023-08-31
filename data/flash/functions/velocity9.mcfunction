@@ -6,10 +6,11 @@ execute if entity @s[scores={Level_V9=2}] as @s[scores={Level_V9=2}] run functio
 execute if entity @s[scores={Level_V9=3}] as @s[scores={Level_V9=3}] run function main:v9_slots_3
 execute if entity @s[scores={Level_V9=4}] as @s[scores={Level_V9=4}] run function main:v9_slots_4
 
-execute if entity @s[scores={Level_V9=1}] as @s[scores={Level_V9=1}] if predicate flash:effects_1 run effect give @s nausea 5 255 true
-#execute if entity @s[scores={Time_Velocity9=3000..4800}] as @s[scores={Time_Velocity9=3000..4800}] if predicate flash:effects run effect give @s nausea 5 255 true
-#execute if entity @s[scores={Time_Velocity9=4800..5400}] as @s[scores={Time_Velocity9=4800..5400}] if predicate flash:effects run effect give @s nausea 10 255 true
-#execute if entity @s[scores={Time_Velocity9=5400..}] as @s[scores={Time_Velocity9=5400..}] if predicate flash:effects_1 run effect give @s nausea 20 255 true
-#execute if entity @s[scores={Time_Velocity9=4800..}] as @s[scores={Time_Velocity9=4800..}] if predicate flash:effects_1 run effect give @s instant_damage 1 0 true
+execute if entity @s[scores={Level_V9=1}] as @s[scores={Level_V9=1}] at @s if predicate flash:effects_3 run function main:n_effects_poll
+execute if entity @s[scores={Level_V9=2}] as @s[scores={Level_V9=2}] at @s if predicate flash:effects_2 run function main:n_effects_poll
+execute if entity @s[scores={Level_V9=3}] as @s[scores={Level_V9=3}] at @s if predicate flash:effects_1 run function main:n_effects_poll
+execute if entity @s[scores={Level_V9=3}] as @s[scores={Level_V9=3}] run effect give @s weakness 1 0 true
+execute if entity @s[scores={Level_V9=4}] as @s[scores={Level_V9=4}] at @s if predicate flash:effects run function main:n_effects_poll
+execute if entity @s[scores={Level_V9=4}] as @s[scores={Level_V9=4}] run effect give @s weakness 1 1 true
 
 execute if entity @s[scores={Level_V9=5..}] as @s[scores={Level_V9=5..}] run function flash:velocity9_kill
