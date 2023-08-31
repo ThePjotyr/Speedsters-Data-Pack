@@ -10,9 +10,15 @@ execute unless score .TIME_RUN_SUIT_RATE Time_Running matches -2147483648..21474
 execute unless score .TIME_RUN_SUIT_RATE_VEL Time_Running matches -2147483648..2147483647 run scoreboard players set .TIME_RUN_SUIT_RATE_VEL Time_Running 5
 #Rate at which speedster with suit that is under the influence of Velocity 9 gains velocity. Higher number means greater speeds at shorter period of time. (Default: 5)
 
-execute unless score .TD_CHARGE_MAX TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MAX TD_Charge 100
-execute unless score .TD_CHARGE_MIN TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MIN TD_Charge -100
-#Tick after which Tachyon Device will be charged with positive or negative tachyons. (Default: 100, -100)
+execute unless score .TD_CHARGE_MIN TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MIN TD_Charge -400
+execute unless score .TD_CHARGE_N_3 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_3 TD_Charge -300
+execute unless score .TD_CHARGE_N_2 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_2 TD_Charge -200
+execute unless score .TD_CHARGE_N_1 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_1 TD_Charge -100
+execute unless score .TD_CHARGE_P_1 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_1 TD_Charge 100
+execute unless score .TD_CHARGE_P_2 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_2 TD_Charge 200
+execute unless score .TD_CHARGE_P_3 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_3 TD_Charge 300
+execute unless score .TD_CHARGE_MAX TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MAX TD_Charge 400
+#Tick after which Tachyon Device will be charged with positive or negative tachyons. (Default: -400, 400)
 
 execute unless score .LVL_SPEED_0 Time_Running matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_0 Time_Running 1
 execute unless score .LVL_SPEED_1 Time_Running matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_1 Time_Running 5
