@@ -10,6 +10,8 @@ scoreboard players set @s Level_V9 0
 scoreboard players set @s Selected_Slot 0
 scoreboard players set @s RotationY 0
 scoreboard players set @s Potion 0
+scoreboard players set @s PlacedPA 0
+scoreboard players set @s PlacedTD 0
 scoreboard players set @s Liquid_Block_Count 0
 scoreboard players set @s LiquidRunning 1
 scoreboard players set @s SkipBlock 1

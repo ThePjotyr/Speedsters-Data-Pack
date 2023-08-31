@@ -10,6 +10,16 @@ execute unless score .TIME_RUN_SUIT_RATE Time_Running matches -2147483648..21474
 execute unless score .TIME_RUN_SUIT_RATE_VEL Time_Running matches -2147483648..2147483647 run scoreboard players set .TIME_RUN_SUIT_RATE_VEL Time_Running 5
 #Rate at which speedster with suit that is under the influence of Velocity 9 gains velocity. Higher number means greater speeds at shorter period of time. (Default: 5)
 
+execute unless score .TD_CHARGE_MIN TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MIN TD_Charge -400
+execute unless score .TD_CHARGE_N_3 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_3 TD_Charge -300
+execute unless score .TD_CHARGE_N_2 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_2 TD_Charge -200
+execute unless score .TD_CHARGE_N_1 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_1 TD_Charge -100
+execute unless score .TD_CHARGE_P_1 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_1 TD_Charge 100
+execute unless score .TD_CHARGE_P_2 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_2 TD_Charge 200
+execute unless score .TD_CHARGE_P_3 TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_3 TD_Charge 300
+execute unless score .TD_CHARGE_MAX TD_Charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MAX TD_Charge 400
+#Tick after which Tachyon Device will be charged with positive or negative tachyons. (Default: -400, 400)
+
 execute unless score .LVL_SPEED_0 Time_Running matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_0 Time_Running 1
 execute unless score .LVL_SPEED_1 Time_Running matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_1 Time_Running 5
 execute unless score .LVL_SPEED_2 Time_Running matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_2 Time_Running 15
@@ -22,11 +32,11 @@ execute unless score .LVL_SPEED_8 Time_Running matches -2147483648..2147483647 r
 execute unless score .LVL_SPEED_9 Time_Running matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_9 Time_Running 1200
 #Tick after which speedster will gain certain level of speed. For example, to gain Speed of level 1, Speedster must run for at least 5 ticks of time. One tick is equivalent to 1/20 of a second. (Default: 1, 5, 15, 30, 80, 160, 390, 840, 1000, 1200)
 
-execute unless score .LVL_V9_0 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_0 Time_Velocity9 200
-execute unless score .LVL_V9_1 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_1 Time_Velocity9 400
-execute unless score .LVL_V9_2 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_2 Time_Velocity9 600
-execute unless score .LVL_V9_3 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_3 Time_Velocity9 800
-execute unless score .LVL_V9_4 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_4 Time_Velocity9 860
+execute unless score .LVL_V9_0 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_0 Time_Velocity9 6000
+execute unless score .LVL_V9_1 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_1 Time_Velocity9 9000
+execute unless score .LVL_V9_2 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_2 Time_Velocity9 10500
+execute unless score .LVL_V9_3 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_3 Time_Velocity9 12000
+execute unless score .LVL_V9_4 Time_Velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_4 Time_Velocity9 12200
 #Tick after which speedster that is under the influence of Velocity 9 will get more poisoned. For example, to gain Velocity 9 poisoning of level 1, Speedster must run for at least X ticks of time. One tick is equivalent to 1/20 of a second. (Default: X, X, X, X)
 
 execute unless score .MAX_LIQUID_TIME Time_Liquid_Block matches -2147483648..2147483647 run scoreboard players set .MAX_LIQUID_TIME Time_Liquid_Block 15
