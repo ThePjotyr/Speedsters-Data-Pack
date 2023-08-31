@@ -18,6 +18,7 @@ scoreboard objectives remove RotationY
 scoreboard objectives remove Potion
 scoreboard objectives remove Velocity9_Rate
 scoreboard objectives remove PlacedPA
+scoreboard objectives remove PlacedTD
 scoreboard objectives remove Liquid_Block_Count
 scoreboard objectives remove LiquidRunning
 scoreboard objectives remove SkipBlock

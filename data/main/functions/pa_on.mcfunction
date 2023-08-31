@@ -22,6 +22,7 @@ execute if score @s Time_PA_Stand >= .PA_EXP_5 Time_PA_Stand if score @s Time_PA
 execute if entity @a[tag=ParticleACCProximity,tag=!ParticleACCEffects] as @a[tag=ParticleACCProximity,tag=!ParticleACCEffects] run function main:pa_effects
 execute if entity @s[tag=PA_fueled_sf] as @s[tag=PA_fueled_sf] at @s run function main:pa_on_sf
 execute if entity @s[tag=PA_fueled_nsf] as @s[tag=PA_fueled_nsf] at @s run function main:pa_on_nsf
+execute if entity @s[tag=PA_fueled_tachyon] as @s[tag=PA_fueled_tachyon] at @s run function main:pa_on_tachyon
 
 execute if score @s Time_PA_Stand >= .PA_3 Time_PA_Stand if score @s Time_PA_Stand < .PA_MAX Time_PA_Stand as @s at @s positioned ~ ~ ~ unless entity @e[type=lightning_bolt,distance=..1] run summon lightning_bolt ~ ~ ~
 execute if score @s Time_PA_Stand >= .PA_3 Time_PA_Stand if score @s Time_PA_Stand < .PA_MAX Time_PA_Stand as @s at @s run particle explosion ~ ~0.5 ~ 2 2 2 0.1 5 force

@@ -30,6 +30,12 @@ execute if entity @a[tag=ObtainSF,tag=!SpeedForce] as @a[tag=ObtainSF,tag=!Speed
 execute if entity @a[tag=ObtainNSF,tag=!NegativeSpeedForce] as @a[tag=ObtainNSF,tag=!NegativeSpeedForce] at @s run function main:obtain_nsf
 #Velocity 9
 execute if entity @a as @a run function main:v9_check
+#Tachyon Device
+execute if entity @a as @a run function main:td_check
+execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDevice:1b}}]}] as @a[nbt={Inventory:[{tag:{t_TachyonDevice:1b}}]}] run function main:td_get
+execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDeviceP:1b}}]}] as @a[nbt={Inventory:[{tag:{t_TachyonDeviceP:1b}}]}] run function main:td_get_p
+execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDeviceN:1b}}]}] as @a[nbt={Inventory:[{tag:{t_TachyonDeviceN:1b}}]}] run function main:td_get_n
+execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDeviceFrame:1b}}]}] as @a[nbt={Inventory:[{tag:{t_TachyonDeviceFrame:1b}}]}] run function main:td_get_f
 
 #SCORES
 execute if entity @a[predicate=main:sprint,scores={Lag_Run=..19}] as @a[predicate=main:sprint,scores={Lag_Run=..19}] run scoreboard players set @s Lag_Run 20

@@ -24,6 +24,7 @@ scoreboard objectives add Velocity9_Rate dummy
 scoreboard objectives add Liquid_Block_Count dummy
 scoreboard objectives add Potion minecraft.used:minecraft.potion
 scoreboard objectives add PlacedPA minecraft.used:minecraft.blast_furnace
+scoreboard objectives add PlacedTD minecraft.used:minecraft.structure_void
 scoreboard objectives add LiquidRunning dummy
 scoreboard objectives add SkipBlock dummy
 scoreboard objectives add WallRunning dummy
