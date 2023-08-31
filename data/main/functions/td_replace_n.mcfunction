@@ -1,0 +1,2 @@
+item replace entity @s weapon.mainhand with structure_void{TachyonDevice:1b,Charged:1b,Negative:1b,Positive:0b,display:{Name:'[{"text":"Tachyon Device ","italic":false,"color":"white","bold": false},{"text":"(-)","italic":false,"color":"red","bold": false}]'},HideFlags:255,Enchantments:[{}]} 1
+scoreboard players set @s TD_Charge 0

@@ -30,6 +30,7 @@ scoreboard objectives add SkipBlock dummy
 scoreboard objectives add WallRunning dummy
 scoreboard objectives add DimensionTravel dummy
 scoreboard objectives add Phasing dummy
+scoreboard objectives add TD_Charge dummy
 
 #Create Triggers
 scoreboard objectives add Config trigger

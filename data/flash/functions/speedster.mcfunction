@@ -24,7 +24,12 @@ execute if score @s DimensionTravel matches 1 if entity @s[scores={Level_Speed=1
 execute if score @s DimensionTravel matches 1 if entity @s[tag=DimTravel] as @s[tag=DimTravel] at @s run function main:spawn_dim
 execute if score @s DimensionTravel matches 1 if entity @s[tag=!DimTravel,scores={Time_Spawn_Protect=1..}] as @s[tag=!DimTravel,scores={Time_Spawn_Protect=1..}] run scoreboard players set @s Time_Spawn_Protect 0
 
+#TACHYON DEVICE
+execute if entity @s[nbt={Dimension:"flash:speedforce",SelectedItem:{tag:{TachyonDevice:1b,Positive:0b,Negative:0b},Count:1b}},predicate=main:is_running] if score @s TD_Charge >= .TD_CHARGE_MAX TD_Charge run function main:td_replace_p
+execute if entity @s[nbt={Dimension:"flash:negative_speedforce",SelectedItem:{tag:{TachyonDevice:1b,Positive:0b,Negative:0b},Count:1b}},predicate=main:is_running] if score @s TD_Charge <= .TD_CHARGE_MIN TD_Charge run function main:td_replace_n
+
 #SCOREBOARDS
+execute unless score @s TD_Charge matches -2147483648..2147483647 run scoreboard players set @s TD_Charge 0
 execute store result score @s Level_Height run data get entity @s Pos[1] 1
 execute if entity @s[tag=!DimTravel,tag=!Velocity9,predicate=main:is_running,predicate=main:not_suited,scores={Selected_Slot=8,Level_Speed=0..6}] as @s[tag=!DimTravel,tag=!Velocity9,predicate=main:is_running,predicate=main:not_suited,scores={Selected_Slot=8,Level_Speed=0..7}] if score @s Level_Height >= .MIN_Y Level_Height run scoreboard players operation @s Time_Running += .TIME_RUNNING_RATE Time_Running
 execute if entity @s[tag=!DimTravel,tag=Velocity9,predicate=main:is_running,predicate=main:not_suited,scores={Selected_Slot=8,Level_Speed=0..6}] as @s[tag=!DimTravel,tag=Velocity9,predicate=main:is_running,predicate=main:not_suited,scores={Selected_Slot=8,Level_Speed=0..7}] if score @s Level_Height >= .MIN_Y Level_Height run scoreboard players operation @s Time_Running += .TIME_RUNNING_RATE_VEL Time_Running
@@ -33,3 +38,7 @@ execute if entity @s[tag=!DimTravel,tag=Velocity9,predicate=main:is_running,pred
 execute if entity @s[scores={Selected_Slot=0..7}] run scoreboard players set @s[scores={Selected_Slot=0..7}] Time_Running 0
 execute if entity @s[predicate=main:not_running,scores={Time_Dim_Travel=1..}] as @s[predicate=main:not_running,scores={Time_Dim_Travel=1..}] run scoreboard players set @s Time_Dim_Travel 0
 execute if entity @s[scores={Time_Dim_Travel=1..,Selected_Slot=0..7}] as @s[scores={Time_Dim_Travel=1..,Selected_Slot=0..7}] run scoreboard players set @s Time_Dim_Travel 0
+execute if entity @s[nbt={Dimension:"flash:speedforce",SelectedItem:{tag:{TachyonDevice:1b,Positive:0b,Negative:0b},Count:1b}},predicate=main:is_running] if score @s TD_Charge < .TD_CHARGE_MAX TD_Charge run scoreboard players add @s TD_Charge 1
+execute unless entity @s[nbt={Dimension:"flash:speedforce",SelectedItem:{tag:{TachyonDevice:1b,Positive:0b,Negative:0b},Count:1b}},predicate=main:is_running] run scoreboard players remove @s[scores={TD_Charge=1..}] TD_Charge 1
+execute if entity @s[nbt={Dimension:"flash:negative_speedforce",SelectedItem:{tag:{TachyonDevice:1b,Positive:0b,Negative:0b},Count:1b}},predicate=main:is_running] if score @s TD_Charge > .TD_CHARGE_MIN TD_Charge run scoreboard players remove @s TD_Charge 1
+execute unless entity @s[nbt={Dimension:"flash:negative_speedforce",SelectedItem:{tag:{TachyonDevice:1b,Positive:0b,Negative:0b},Count:1b}},predicate=main:is_running,scores={TD_Charge=-100..}] run scoreboard players add @s[scores={TD_Charge=..-1}] TD_Charge 1
