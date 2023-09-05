@@ -9,6 +9,7 @@ execute if entity @e[type=marker,tag=SpeedBlur] as @e[type=marker,tag=SpeedBlur]
 
 #INTERDIMENSIONAL TRAVEL
 execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s run function main:dim_portal
+execute if entity @a[tag=NetherTP] as @a[tag=NetherTP] at @s run function main:travel_failsafe
 
 #SPEED FORCE AND NEGATIVE SPEED FORCE
 execute if entity @a[nbt={Dimension:"flash:speedforce"}] as @a[nbt={Dimension:"flash:speedforce"}] at @s run function flash:inside_sf
