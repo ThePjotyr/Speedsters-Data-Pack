@@ -1,11 +1,10 @@
 #SPEEDSTER
 execute if entity @a[tag=Speedster] as @a[tag=Speedster] at @s run function flash:speedster
 execute if entity @a[tag=Velocity9] as @a[tag=Velocity9] run function flash:velocity9
-execute if entity @e[type=marker,tag=liquid_run_block] as @e[type=marker,tag=liquid_run_block] at @s run function main:liquid_marker
 execute if entity @e[type=marker,tag=liquid_block] as @e[type=marker,tag=liquid_block] at @s run function main:liquid_block
 execute if entity @e[type=marker,tag=SpeedBlur] as @e[type=marker,tag=SpeedBlur] at @s run function main:speed_blur
 
-#execute store result score .test test if entity @e[type=!player]
+#function main:entity_count
 
 #INTERDIMENSIONAL TRAVEL
 execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s run function main:dim_portal
