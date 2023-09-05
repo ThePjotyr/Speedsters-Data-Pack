@@ -20,8 +20,6 @@ scoreboard players reset .LVL_V9_2
 scoreboard players reset .LVL_V9_3
 scoreboard players reset .LVL_V9_4
 scoreboard players reset .MAX_LIQUID_TIME
-scoreboard players reset .MAX_LIQUID_B_TIME
-scoreboard players reset .MAX_LIQUID_COUNT
 scoreboard players reset .TD_CHARGE_MIN
 scoreboard players reset .TD_CHARGE_N_3
 scoreboard players reset .TD_CHARGE_N_2

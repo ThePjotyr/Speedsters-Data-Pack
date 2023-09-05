@@ -1,8 +1,5 @@
-tellraw @a ["",{"text":">> ","bold":true,"italic":true,"color":"aqua"},{"text":"ThePjotyr's Speedsters v1.2 - Datapack for Minecraft 1.20","bold":true,"italic":true,"color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"haha szwagier","obfuscated":true,"color":"dark_purple"}]}},{"text":" << ","bold":true,"italic":true,"color":"aqua"},{"text":"successfully loaded!","italic":true,"color":"yellow"}]
+tellraw @a ["",{"text":">> ","bold":true,"italic":true,"color":"aqua"},{"text":"ThePjotyr's Speedsters v1.3 - Datapack for Minecraft 1.20","bold":true,"italic":true,"color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"haha szwagier","obfuscated":true,"color":"dark_purple"}]}},{"text":" << ","bold":true,"italic":true,"color":"aqua"},{"text":"successfully loaded!","italic":true,"color":"yellow"}]
 execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~
-
-#scoreboard objectives add test dummy
-#scoreboard objectives setdisplay sidebar test
 
 #Create Scoreboards
 scoreboard objectives add Lag_Run dummy
@@ -64,6 +61,7 @@ scoreboard players set .PA_EXP_3 Time_PA_Stand 275
 scoreboard players set .PA_EXP_4 Time_PA_Stand 290
 scoreboard players set .PA_EXP_5 Time_PA_Stand 310
 scoreboard players set .MIN_Y Level_Height -64
+scoreboard players set .NETHER_ROOF Level_Height 128
 scoreboard players set .SPEEDFORCE_ROOF Level_Height 1620000
 scoreboard players set .MAX_ROT RotationY 40
 scoreboard players set .MIN_ROT RotationY -40
