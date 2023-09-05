@@ -15,7 +15,7 @@ execute if entity @s[predicate=main:not_running,scores={Level_Speed=1..10}] as @
 execute if entity @s[predicate=main:is_running,scores={Lag_Run=20,Level_Speed=1..10}] as @s[predicate=main:is_running,scores={Lag_Run=20,Level_Speed=1..10}] at @s run function main:speed_blur_player
 execute if entity @s[predicate=main:not_running,predicate=main:not_sneaking,scores={Selected_Slot=8}] as @s[predicate=main:not_running,predicate=main:not_sneaking,scores={Selected_Slot=8}] at @s run function main:speed_sparks
 #Phasing
-execute if score @s Phasing matches 1 if entity @s[scores={Selected_Slot=8},predicate=main:is_sneaking] as @s[scores={Selected_Slot=8},predicate=main:is_sneaking] at @s run function flash:phasing
+execute if score @s Phasing matches 1 if entity @s[scores={Selected_Slot=8},predicate=main:is_sneaking] as @s[scores={Selected_Slot=8},predicate=main:is_sneaking] at @s run function main:phasing
 #Passive Effects
 function main:passive
 

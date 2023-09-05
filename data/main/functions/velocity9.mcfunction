@@ -13,4 +13,4 @@ execute if entity @s[scores={Level_V9=3}] as @s[scores={Level_V9=3}] run effect 
 execute if entity @s[scores={Level_V9=4}] as @s[scores={Level_V9=4}] at @s if predicate flash:effects run function main:n_effects_poll
 execute if entity @s[scores={Level_V9=4}] as @s[scores={Level_V9=4}] run effect give @s weakness 1 1 true
 
-execute if entity @s[scores={Level_V9=5..}] as @s[scores={Level_V9=5..}] run function flash:velocity9_kill
+execute if entity @s[scores={Level_V9=5..}] as @s[scores={Level_V9=5..}] run function main:velocity9_kill
