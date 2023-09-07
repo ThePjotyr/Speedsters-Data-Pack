@@ -3,5 +3,5 @@ execute if entity @s[tag=NegativeSpeedForce] as @s[tag=NegativeSpeedForce] run t
 execute if entity @s[tag=!Velocity9] as @s[tag=!Velocity9] run tag @s add Velocity9
 execute if entity @s[tag=!Speedster] as @s[tag=!Speedster] run tag @s add Speedster
 execute as @s run function main:scores_reset
-execute as @s unless entity @s[scores={Velocity9_Rate=-2147483648..2147483647}] run scoreboard players set @s Velocity9_Rate 0
-execute as @s if entity @s[scores={Velocity9_Rate=-2147483648..2147483647}] run scoreboard players add @s Velocity9_Rate 1
+execute as @s unless entity @s[scores={flash.rate_velocity9=-2147483648..2147483647}] run scoreboard players set @s flash.rate_velocity9 0
+execute as @s if entity @s[scores={flash.rate_velocity9=-2147483648..2147483647}] run scoreboard players add @s flash.rate_velocity9 1

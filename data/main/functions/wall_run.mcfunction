@@ -4,4 +4,4 @@ execute if block ~ ~-1 ~ #flash:air_stand anchored eyes positioned ~ ~ ~ rotated
 execute if block ~ ~ ~ #flash:half_blocks_2[type=bottom] anchored eyes positioned ~ ~0.7 ~ rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #flash:air_stand unless block ~ ~ ~ #flash:half_blocks_2[type=bottom] unless block ~ ~1 ~ #flash:air_stand at @s anchored eyes rotated ~ 0 positioned ~ ~1.75 ~ run teleport @s ~ ~ ~
 execute if block ~ ~-1 ~ #flash:air_stand anchored eyes positioned ~ ~ ~ rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #flash:air_stand unless block ~ ~ ~ #flash:half_blocks_2[type=bottom] if block ~ ~1 ~ #flash:half_blocks_2[type=bottom] at @s anchored eyes rotated ~ 0 positioned ~ ~1.75 ~ run teleport @s ^ ^ ^0.1
 
-execute if score @s SkipBlock matches 0 as @s at @s run function main:skip_block
+execute if score @s flash.set_skip_block matches 0 as @s at @s run function main:skip_block

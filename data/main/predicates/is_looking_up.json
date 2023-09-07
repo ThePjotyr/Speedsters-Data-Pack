@@ -2,7 +2,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "RotationY": {
+      "flash.rot_y": {
         "min": -90,
         "max": -40
       }

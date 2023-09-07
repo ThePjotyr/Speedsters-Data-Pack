@@ -5,4 +5,3 @@ execute if entity @s[nbt={OnGround:0b}] positioned ~ ~-1 ~ positioned ^ ^ ^-3 un
 execute if entity @s[nbt={OnGround:0b}] positioned ~ ~-1 ~ positioned ^ ^ ^ unless block ~ ~ ~ barrier unless block ~ ~1 ~ #flash:liquid_run run function main:liquid_running
 execute if entity @s[nbt={OnGround:0b}] positioned ~ ~-1 ~ positioned ^ ^ ^3 unless block ~ ~ ~ barrier unless block ~ ~1 ~ #flash:liquid_run run function main:liquid_running
 
-execute store result score @s Liquid_Block_Count if entity @e[type=marker,tag=liquid_run_block,distance=..10]

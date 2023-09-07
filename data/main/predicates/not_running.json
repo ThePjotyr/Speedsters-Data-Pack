@@ -22,7 +22,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "Lag_Run": {
+              "flash.lag_run": {
                 "min": 1,
                 "max": 20
               }

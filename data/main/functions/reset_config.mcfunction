@@ -29,11 +29,11 @@ scoreboard players reset .TD_CHARGE_P_2
 scoreboard players reset .TD_CHARGE_P_3
 scoreboard players reset .TD_CHARGE_MAX
 
-scoreboard players reset @a LiquidRunning
-scoreboard players reset @a WallRunning
-scoreboard players reset @a SkipBlock
-scoreboard players reset @a DimensionTravel
-scoreboard players reset @a Phasing
+scoreboard players reset @a flash.set_liquid_running
+scoreboard players reset @a flash.set_wall_running
+scoreboard players reset @a flash.set_skip_block
+scoreboard players reset @a flash.set_dim_travel
+scoreboard players reset @a flash.set_phasing
 
 function flash:config_default
 function flash:config

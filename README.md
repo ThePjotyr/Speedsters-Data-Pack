@@ -41,7 +41,7 @@ If player is affected by speed, regeneration and poison effects simultaneously a
 Player can build a **Particle Accelerator**, which is a single-block contraption. During storm, if it's powered with redstone and has **Positive** or **Negative Particle** inside of it, **Particle Accelerator** after couple of seconds will explode. One random player within the explosion radius will have a great chance of being granted connection to the **Speed Force**, if the particle was **Positive**, or **Negative Speed Force**, if the particle was **Negative**.
 There is also a really small possibility, that no player would get speedster powers from explosion.
 
-### Velocity 9 Potion
+### Velocity 9 flash.use_potion
 
 Player can also craft the **Velocity 9** potion, which will surely grant anyone who drinks it temporary speedster powers.
 There are certain drawback that come with it, but more about it later.
@@ -132,12 +132,12 @@ All of the commands below will work on the player/entity that executed the comma
 
 Recommended way to customize certain aspects of this Data Pack is via command below. It will show a mini menu in chat and player would have to just follow instructions on screen.
 
-> /trigger Config
+> /trigger flash.config
 
 Those changes are local, which means, that they will only affect player that set them up. There are two ways to make those changes global, for any player on the server.
 The first method includes using command blocks or external Data Pack. Using command below you can change players setting, where "1" means "on", and "0" means "off":
 
-> /scoreboard players set \<player> \<LiquidRunning | WallRunning | SkipBlock | DimensionTravel | Phasing> \<0 | 1>
+> /scoreboard players set \<player> \<flash.set_liquid_running | flash.set_wall_running | flash.set_skip_block | flash.set_dim_travel | flash.set_phasing> \<0 | 1>
 
 To make this permanent you can put it in always active repeating command block, and to make it affect all players just replace \<player> with selector "@a".
 

@@ -40,14 +40,14 @@ execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDeviceN:1b}}]}] as @a[nbt={I
 execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDeviceFrame:1b}}]}] as @a[nbt={Inventory:[{tag:{t_TachyonDeviceFrame:1b}}]}] run function main:td_get_f
 
 #SCORES
-execute if entity @a[predicate=main:sprint,scores={Lag_Run=..19}] as @a[predicate=main:sprint,scores={Lag_Run=..19}] run scoreboard players set @s Lag_Run 20
-execute if entity @a[scores={Lag_Run=1..}] as @a[scores={Lag_Run=1..}] unless entity @s[predicate=main:sprint] run scoreboard players remove @s Lag_Run 1
-execute if entity @a as @a store result score @s RotationY run data get entity @s Rotation[1] 1
-execute if entity @a[tag=Ring] as @a[tag=Ring] run scoreboard players add @s Lag_Suit 1
-execute if entity @a[tag=Ring,scores={Lag_Suit=1..}] as @a[tag=Ring,scores={Lag_Suit=1..}] if score @s Lag_Suit >= .LAG_SUIT Lag_Suit run tag @s remove Ring
-execute if entity @a[tag=!Ring,scores={Lag_Suit=1..}] as @a[tag=!Ring,scores={Lag_Suit=1..}] run scoreboard players set @s Lag_Suit 0
+execute if entity @a[predicate=main:sprint,scores={flash.lag_run=..19}] as @a[predicate=main:sprint,scores={flash.lag_run=..19}] run scoreboard players set @s flash.lag_run 20
+execute if entity @a[scores={flash.lag_run=1..}] as @a[scores={flash.lag_run=1..}] unless entity @s[predicate=main:sprint] run scoreboard players remove @s flash.lag_run 1
+execute if entity @a as @a store result score @s flash.rot_y run data get entity @s Rotation[1] 1
+execute if entity @a[tag=Ring] as @a[tag=Ring] run scoreboard players add @s flash.lag_suit 1
+execute if entity @a[tag=Ring,scores={flash.lag_suit=1..}] as @a[tag=Ring,scores={flash.lag_suit=1..}] if score @s flash.lag_suit >= .LAG_SUIT flash.lag_suit run tag @s remove Ring
+execute if entity @a[tag=!Ring,scores={flash.lag_suit=1..}] as @a[tag=!Ring,scores={flash.lag_suit=1..}] run scoreboard players set @s flash.lag_suit 0
 
 #CONFIG
 execute if entity @a as @a run function flash:config
-execute if entity @a[scores={Config=1}] as @a[scores={Config=1}] run function main:config_1
-execute if entity @a[scores={Config=2..}] as @a[scores={Config=2..}] run function main:config_2
+execute if entity @a[scores={flash.config=1}] as @a[scores={flash.config=1}] run function main:config_1
+execute if entity @a[scores={flash.config=2..}] as @a[scores={flash.config=2..}] run function main:config_2

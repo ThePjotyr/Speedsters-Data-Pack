@@ -6,5 +6,5 @@ execute if entity @s[nbt={Dimension:"flash:negative_speedforce"}] at @s[nbt={Dim
 execute if entity @s[nbt={Dimension:"flash:negative_speedforce"}] at @s[nbt={Dimension:"flash:negative_speedforce"}] if predicate flash:travel_sf in minecraft:the_end run function main:travel_endpoint
 execute if entity @s[nbt={Dimension:"flash:negative_speedforce"}] at @s[nbt={Dimension:"flash:negative_speedforce"}] in minecraft:overworld run function main:travel_endpoint
 
-scoreboard players set @s Time_Running 400
-scoreboard players set @s Time_Dim_Travel 0
+scoreboard players set @s flash.time_running 400
+scoreboard players set @s flash.time_dim_travel 0
