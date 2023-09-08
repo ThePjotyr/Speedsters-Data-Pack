@@ -5,6 +5,7 @@ execute if entity @e[type=marker,tag=liquid_block] as @e[type=marker,tag=liquid_
 execute if entity @e[type=marker,tag=SpeedBlur] as @e[type=marker,tag=SpeedBlur] at @s run function main:speed_blur
 
 #function main:entity_count
+#/data modify entity @e[tag=test,limit=1] ArmorItems set from storage flash:suit Players[0].armor
 
 #INTERDIMENSIONAL TRAVEL
 execute if entity @e[type=marker,tag=Dim_Portal] as @e[type=marker,tag=Dim_Portal] at @s run function main:dim_portal
@@ -40,6 +41,7 @@ execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDeviceN:1b}}]}] as @a[nbt={I
 execute if entity @a[nbt={Inventory:[{tag:{t_TachyonDeviceFrame:1b}}]}] as @a[nbt={Inventory:[{tag:{t_TachyonDeviceFrame:1b}}]}] run function main:td_get_f
 
 #SCORES
+execute as @a unless score @s flash.id matches -2147483648..2147483647 run function main:id_set
 execute if entity @a[predicate=main:sprint,scores={flash.lag_run=..19}] as @a[predicate=main:sprint,scores={flash.lag_run=..19}] run scoreboard players set @s flash.lag_run 20
 execute if entity @a[scores={flash.lag_run=1..}] as @a[scores={flash.lag_run=1..}] unless entity @s[predicate=main:sprint] run scoreboard players remove @s flash.lag_run 1
 execute if entity @a as @a store result score @s flash.rot_y run data get entity @s Rotation[1] 1

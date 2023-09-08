@@ -18,6 +18,7 @@ scoreboard objectives add flash.lvl_velocity9 dummy
 scoreboard objectives add flash.slot dummy
 scoreboard objectives add flash.rot_y dummy
 scoreboard objectives add flash.rate_velocity9 dummy
+scoreboard objectives add flash.id dummy
 
 scoreboard objectives add flash.use_potion minecraft.used:minecraft.potion
 scoreboard objectives add flash.use_pa minecraft.used:minecraft.blast_furnace
@@ -43,6 +44,7 @@ scoreboard players set @a flash.use_potion 0
 scoreboard players set @a flash.use_pa 0
 
 #Constant Values
+execute unless score .COUNTER flash.id matches -2147483648..2147483647 run scoreboard players set .COUNTER flash.id 1
 scoreboard players set .ZERO flash.config 0
 scoreboard players set .ONE flash.config 1
 scoreboard players set .LAG_SUIT flash.lag_suit 10
