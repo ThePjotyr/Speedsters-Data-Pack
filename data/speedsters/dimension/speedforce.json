@@ -1,5 +1,5 @@
 {
-    "type": "flash:speedforce",
+    "type": "speedsters:speedforce",
     "generator" :{
         "type": "minecraft:flat",
         "settings": {

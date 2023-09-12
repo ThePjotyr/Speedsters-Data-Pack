@@ -1,2 +1,2 @@
 spreadplayers 0 0 0 16 false @s
-tag @s remove DimTravel
+tag @s remove speedsters.dim_travel

@@ -112,7 +112,7 @@ All of the commands below will work on the player/entity that executed the comma
 > /reload  *-> reloads all files inside Data Pack folder and resets all scores*
 &nbsp;
 
-> /function flash:load  *-> resets all scores*
+> /function speedsters:load  *-> resets all scores*
 
 *Turn player into a Speedster or remove player powers.*
 > /function speed_source:\<speedforce | negative_speedforce | velocity9 | remove>
@@ -121,7 +121,7 @@ All of the commands below will work on the player/entity that executed the comma
 > /function items:\<id>
 
 *Teleport player from/into Speed Force/Negative Speed Force.*
->/function flash:\<travel_into_sf | travel_from_sf>
+>/function speedsters:\<travel_into_sf | travel_from_sf>
 
 *Deletes scores for safe removal of Data Pack. Reloading world without removed Data Pack will load again default scores.*
 >/function main:remove
@@ -132,12 +132,12 @@ All of the commands below will work on the player/entity that executed the comma
 
 Recommended way to customize certain aspects of this Data Pack is via command below. It will show a mini menu in chat and player would have to just follow instructions on screen.
 
-> /trigger Config
+> /trigger speedsters.config
 
 Those changes are local, which means, that they will only affect player that set them up. There are two ways to make those changes global, for any player on the server.
 The first method includes using command blocks or external Data Pack. Using command below you can change players setting, where "1" means "on", and "0" means "off":
 
-> /scoreboard players set \<player> \<LiquidRunning | WallRunning | SkipBlock | DimensionTravel | Phasing> \<0 | 1>
+> /scoreboard players set \<player> \<speedsters.set_liquid_running | speedsters.set_wall_running | speedsters.set_skip_block | speedsters.set_dim_travel | speedsters.set_phasing> \<0 | 1>
 
 To make this permanent you can put it in always active repeating command block, and to make it affect all players just replace \<player> with selector "@a".
 
