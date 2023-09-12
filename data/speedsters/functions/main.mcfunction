@@ -16,6 +16,7 @@ execute if entity @a[nbt={Dimension:"speedsters:negative_speedforce"}] as @a[nbt
 
 #SUITS
 execute if entity @a[nbt={SelectedItem:{id:"minecraft:gold_nugget",tag:{SuitRing:1b}}},predicate=main:is_sneaking] as @a[nbt={SelectedItem:{id:"minecraft:gold_nugget",tag:{SuitRing:1b}}},predicate=main:is_sneaking] run function suits:use_ring
+execute if entity @a[tag=speedsters.data_stored,predicate=main:not_suited] as @a[tag=speedsters.data_stored,predicate=main:not_suited] at @s run function suits:give_back_armor
 execute if entity @e[type=armor_stand,tag=speedsters.suit_speedster] as @e[type=armor_stand,tag=speedsters.suit_speedster] run function suits:speedster_suit_stand
 
 #SPEED SOURCES
