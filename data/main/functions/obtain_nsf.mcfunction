@@ -2,7 +2,7 @@ effect give @s nausea 20 255 true
 effect give @s instant_health 5 15 true
 effect give @s blindness 1 255 true
 effect give @s slowness 5 1 true
-function speed_source:negative_speedforce
+function source:negative_speedforce
 function main:speed_sparks
 function main:speed_sparks
 function main:speed_sparks

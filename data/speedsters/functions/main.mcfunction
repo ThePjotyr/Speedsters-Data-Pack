@@ -5,7 +5,6 @@ execute if entity @e[type=marker,tag=speedsters.liquid_block] as @e[type=marker,
 execute if entity @e[type=marker,tag=speedsters.speed_blur] as @e[type=marker,tag=speedsters.speed_blur] at @s run function main:speed_blur
 
 #function main:entity_count
-#/data modify entity @e[tag=test,limit=1] ArmorItems set from storage speedsters:suit Players[0].armor
 
 #INTERDIMENSIONAL TRAVEL
 execute if entity @e[type=marker,tag=speedsters.stand_portal] as @e[type=marker,tag=speedsters.stand_portal] at @s run function main:dim_portal
