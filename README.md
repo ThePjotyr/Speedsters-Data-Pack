@@ -25,6 +25,16 @@ This data pack doesn't require any additonal resource pack or any mod, so it's f
 Before installing this or any other data pack, make sure to backup your world/worlds. This is to ensure that you won't lose your work in case of an error.
 Also, this pack uses experimental features, which may result in this data pack not working some day or even corrupting your save files. As of now, there wasn't any reported issues with this, but just keep that in mind before playing.
 
+## Updating
+
+During some major updates there maybe occur some sort of incompatibility that will result in lost progress. In order to fix those issues, run the command below:
+
+> /function main:fix_update
+
+It won't work on any offline player, so use it whenever they join the game.
+
+If there are some troubles with blocks like **Particle Accelerator**, just destroy said block and place it again.
+
 &nbsp;
 
 ## Getting powers
@@ -115,7 +125,7 @@ All of the commands below will work on the player/entity that executed the comma
 > /function speedsters:load  *-> resets all scores*
 
 *Turn player into a Speedster or remove player powers.*
-> /function speed_source:\<speedforce | negative_speedforce | velocity9 | remove>
+> /function source:\<speedforce | negative_speedforce | velocity9 | remove>
 
 *Give player items from this Data Pack.*
 > /function items:\<id>

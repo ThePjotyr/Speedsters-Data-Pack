@@ -5,7 +5,6 @@ execute if entity @e[type=marker,tag=speedsters.liquid_block] as @e[type=marker,
 execute if entity @e[type=marker,tag=speedsters.speed_blur] as @e[type=marker,tag=speedsters.speed_blur] at @s run function main:speed_blur
 
 #function main:entity_count
-#/data modify entity @e[tag=test,limit=1] ArmorItems set from storage speedsters:suit Players[0].armor
 
 #INTERDIMENSIONAL TRAVEL
 execute if entity @e[type=marker,tag=speedsters.stand_portal] as @e[type=marker,tag=speedsters.stand_portal] at @s run function main:dim_portal
@@ -17,6 +16,7 @@ execute if entity @a[nbt={Dimension:"speedsters:negative_speedforce"}] as @a[nbt
 
 #SUITS
 execute if entity @a[nbt={SelectedItem:{id:"minecraft:gold_nugget",tag:{SuitRing:1b}}},predicate=main:is_sneaking] as @a[nbt={SelectedItem:{id:"minecraft:gold_nugget",tag:{SuitRing:1b}}},predicate=main:is_sneaking] run function suits:use_ring
+execute if entity @a[tag=speedsters.data_stored,predicate=main:not_suited] as @a[tag=speedsters.data_stored,predicate=main:not_suited] at @s run function suits:give_back_armor
 execute if entity @e[type=armor_stand,tag=speedsters.suit_speedster] as @e[type=armor_stand,tag=speedsters.suit_speedster] run function suits:speedster_suit_stand
 
 #SPEED SOURCES

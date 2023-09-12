@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "type_specific": {
+        "type": "player"
+      },
+      "nbt": "{Inventory:[{id:\"minecraft:leather_boots\",Count:1b,tag:{SpeedsterSuit:1b,FlashSuit:1b},Slot:100b},{id:\"minecraft:leather_leggings\",Count:1b,tag:{SpeedsterSuit:1b,FlashSuit:1b},Slot:101b},{id:\"minecraft:leather_chestplate\",Count:1b,tag:{SpeedsterSuit:1b,FlashSuit:1b},Slot:102b},{id:\"minecraft:leather_helmet\",Count:1b,tag:{SpeedsterSuit:1b,FlashSuit:1b},Slot:103b}]}"
+    }
+  }
+  

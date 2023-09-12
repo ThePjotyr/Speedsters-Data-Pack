@@ -1,4 +1,4 @@
-execute as @a at @a run function speed_source:remove
+execute as @a at @a run function source:remove
 scoreboard objectives remove speedsters.config
 scoreboard objectives remove speedsters.lag_run
 scoreboard objectives remove speedsters.lag_suit
