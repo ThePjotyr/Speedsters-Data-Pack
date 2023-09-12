@@ -1,2 +1,2 @@
-scoreboard players operation @s flash.id = .COUNTER flash.id
-scoreboard players add .COUNTER flash.id 1
+scoreboard players operation @s speedsters.id = .COUNTER speedsters.id
+scoreboard players add .COUNTER speedsters.id 1

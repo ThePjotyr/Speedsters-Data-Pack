@@ -1,6 +1,6 @@
 {
     "values": [
-    "flash:load",
-    "flash:config_default"
+    "speedsters:load",
+    "speedsters:config_default"
 ]
 }

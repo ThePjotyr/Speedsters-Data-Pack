@@ -20,7 +20,7 @@
       "condition": "minecraft:entity_scores",
       "entity": "this",
       "scores": {
-        "flash.lag_run": {
+        "speedsters.lag_run": {
           "min": 1,
           "max": 20
         }
