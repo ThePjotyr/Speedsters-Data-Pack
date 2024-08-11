@@ -1,5 +1,5 @@
 {
-    "type": "tp_main:speedforce",
+    "type": "tp_speedforce:speedforce",
     "generator": {
       "type": "minecraft:flat",
       "settings": {
