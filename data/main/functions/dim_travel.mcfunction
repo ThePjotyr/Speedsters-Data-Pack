@@ -1,6 +1,0 @@
-scoreboard players add @s[nbt={OnGround:1b}] speedsters.time_dim_travel 1
-
-execute if entity @s[tag=!speedsters.negative_speedforce,nbt=!{Dimension:"speedsters:speedforce"}] as @a[tag=!speedsters.negative_speedforce,nbt=!{Dimension:"speedsters:speedforce"}] at @s if score @s speedsters.time_dim_travel >= .DIM_TRAVEL speedsters.time_dim_travel run function speedsters:travel_into_sf
-execute if entity @s[tag=speedsters.negative_speedforce,nbt=!{Dimension:"speedsters:negative_speedforce"}] as @a[tag=speedsters.negative_speedforce,nbt=!{Dimension:"speedsters:negative_speedforce"}] at @s if score @s speedsters.time_dim_travel >= .DIM_TRAVEL speedsters.time_dim_travel run function speedsters:travel_into_sf
-execute if entity @s[tag=!speedsters.negative_speedforce,nbt={Dimension:"speedsters:speedforce"}] as @a[tag=!speedsters.negative_speedforce,nbt={Dimension:"speedsters:speedforce"}] at @s if score @s speedsters.time_dim_travel >= .DIM_TRAVEL speedsters.time_dim_travel run function speedsters:travel_from_sf
-execute if entity @s[tag=speedsters.negative_speedforce,nbt={Dimension:"speedsters:negative_speedforce"}] as @a[tag=speedsters.negative_speedforce,nbt={Dimension:"speedsters:negative_speedforce"}] at @s if score @s speedsters.time_dim_travel >= .DIM_TRAVEL speedsters.time_dim_travel run function speedsters:travel_from_sf

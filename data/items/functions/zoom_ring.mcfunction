@@ -1,1 +1,0 @@
-give @s gold_nugget{SuitRing:1b,ZoomRing:1b,display:{Name:'[{"text":"Suit Ring ","italic":false,"color":"gold","bold": false},{"text":"(Zoom)","italic":false,"color":"blue","bold": false}]'},HideFlags:255,Enchantments:[{}]} 1

@@ -1,7 +1,0 @@
-execute if entity @s[tag=!speedsters.ring,nbt={SelectedItem:{tag:{FlashRing:1b}}}] as @s[tag=!speedsters.ring,nbt={SelectedItem:{tag:{FlashRing:1b}}}] at @s rotated ~ 0 run function suits:summon_flash_suit
-execute if entity @s[tag=!speedsters.ring,nbt={SelectedItem:{tag:{ReverseFlashRing:1b}}}] as @s[tag=!speedsters.ring,nbt={SelectedItem:{tag:{ReverseFlashRing:1b}}}] at @s rotated ~ 0 run function suits:summon_reverse_flash_suit
-execute if entity @s[tag=!speedsters.ring,nbt={SelectedItem:{tag:{ReverseFlashCWRing:1b}}}] as @s[tag=!speedsters.ring,nbt={SelectedItem:{tag:{ReverseFlashCWRing:1b}}}] at @s rotated ~ 0 run function suits:summon_reverse_flash_cw_suit
-execute if entity @s[tag=!speedsters.ring,nbt={SelectedItem:{tag:{ZoomRing:1b}}}] as @s[tag=!speedsters.ring,nbt={SelectedItem:{tag:{ZoomRing:1b}}}] at @s rotated ~ 0 run function suits:summon_zoom_suit
-
-execute if entity @s[tag=!speedsters.ring,tag=speedsters.data_stored,nbt={SelectedItem:{tag:{EmptyRing:1b}}},predicate=main:is_suited] as @s[tag=!speedsters.ring,tag=speedsters.data_stored,nbt={SelectedItem:{tag:{EmptyRing:1b}}},predicate=main:is_suited] run function suits:replace_speedster_ring
-execute if entity @s[tag=!speedsters.ring,tag=!speedsters.data_stored,nbt={SelectedItem:{tag:{EmptyRing:1b}}},predicate=main:is_suited] as @s[tag=!speedsters.ring,tag=!speedsters.data_stored,nbt={SelectedItem:{tag:{EmptyRing:1b}}},predicate=main:is_suited] run function suits:replace_speedster_ring_no_data

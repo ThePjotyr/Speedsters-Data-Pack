@@ -1,2 +1,0 @@
-function main:td_rb
-give @s[gamemode=!creative] structure_void{t_TachyonDevice:1b,display:{Name:'[{"text":"Tachyon Device","italic":false,"color":"white","bold": false}]'},HideFlags:255,Enchantments:[{}]} 1

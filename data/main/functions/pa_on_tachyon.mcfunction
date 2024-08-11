@@ -1,2 +1,0 @@
-execute if score @s speedsters.time_pa >= .PA_EXP_0 speedsters.time_pa run item replace block ~ ~ ~ container.0 with air
-execute if score @s speedsters.time_pa >= .PA_EXP_0 speedsters.time_pa run item replace block ~ ~ ~ container.2 with structure_void{TachyonDevice:1b,Charged:1b,Positive:0b,Negative:0b,display:{Name:'[{"text":"Tachyon Device","italic":false,"color":"white","bold": false}]'},HideFlags:255,Enchantments:[{}]} 1
