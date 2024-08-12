@@ -27,6 +27,7 @@ scoreboard players set #tp.rotation.y.right.min tp.rotation.y 70
 scoreboard players set #tp.rotation.y.right tp.rotation.y 90
 scoreboard players set #tp.rotation.y.summon.max tp.rotation.y 35
 scoreboard players set #tp.rotation.y.summon.min tp.rotation.y -40
+scoreboard players set #tp.speedforce.roof tp.height 16
 
 # #Create Scoreboards
 # scoreboard objectives add speedsters.lag_run dummy

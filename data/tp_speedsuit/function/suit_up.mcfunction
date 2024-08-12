@@ -1,0 +1,4 @@
+execute if entity @s[tag=tp.speedsuit.flash] as @p[tag=!speedsters.data_stored,predicate=tp_predicate:is_running,predicate=!tp_speedsuit:is_speedsuit,distance=..0.5] run function tp_speedsuit:wear_flash
+execute if entity @s[tag=tp.speedsuit.reverse_flash_cw] as @p[tag=!speedsters.data_stored,predicate=tp_predicate:is_running,predicate=!tp_speedsuit:is_speedsuit,distance=..0.5] run function tp_speedsuit:wear_reverse_flash_cw
+execute if entity @s[tag=tp.speedsuit.reverse_flash] as @p[tag=!speedsters.data_stored,predicate=tp_predicate:is_running,predicate=!tp_speedsuit:is_speedsuit,distance=..0.5] run function tp_speedsuit:wear_reverse_flash
+execute if entity @s[tag=tp.speedsuit.zoom] as @p[tag=!speedsters.data_stored,predicate=tp_predicate:is_running,predicate=!tp_speedsuit:is_speedsuit,distance=..0.5] run function tp_speedsuit:wear_zoom
