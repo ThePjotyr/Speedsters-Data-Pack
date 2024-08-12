@@ -1,0 +1,3 @@
+execute if score @s tp.rotation.y < #tp.rotation.y.min tp.rotation.y at @s as @s rotated ~ 0 run teleport @s ~ ~ ~
+execute if score @s tp.rotation.y > #tp.rotation.y.max tp.rotation.y at @s as @s rotated ~ 0 run teleport @s ~ ~ ~
+execute if score @s tp.rotation.y >= #tp.rotation.y.min tp.rotation.y if score @s tp.rotation.y <= #tp.rotation.y.max tp.rotation.y at @s as @s rotated ~ 0 run teleport @s ^ ^0.2 ^1
