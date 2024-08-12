@@ -1,0 +1,1 @@
+give @s leather_helmet[trim={pattern:snout,material:gold},dyed_color={rgb:16711680},custom_name='[{"text":"Flash Helmet","italic":false,"color":"red","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.flash:1b}]

@@ -1,0 +1,4 @@
+function tp_speed_item:flash_boots
+function tp_speed_item:flash_leggings
+function tp_speed_item:flash_chestplate
+function tp_speed_item:flash_helmet

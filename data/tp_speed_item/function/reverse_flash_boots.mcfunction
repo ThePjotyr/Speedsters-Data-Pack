@@ -1,0 +1,1 @@
+give @s leather_boots[dyed_color={rgb:16711680},custom_name='[{"text":"Reverse Flash Boots","italic":false,"color":"yellow","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.reverseflash:1b}]
