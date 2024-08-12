@@ -1,0 +1,7 @@
+execute unless block ~ ~ ~ #tp_tags:slabs[type=bottom] unless block ~ ~-1 ~ #tp_tags:slabs[type=bottom] anchored eyes positioned ~ ~ ~ rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #tp_speedsters:safe unless block ~ ~ ~ #tp_tags:slabs[type=bottom] unless block ~ ~1 ~ #tp_speedsters:safe at @s anchored eyes rotated ~ 0 positioned ~ ~1 ~ run teleport @s ~ ~ ~
+execute if block ~ ~-1 ~ #tp_speedsters:safe anchored eyes positioned ~ ~ ~ rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #tp_speedsters:safe unless block ~ ~ ~ #tp_tags:slabs[type=bottom] if block ~ ~1 ~ #tp_speedsters:safe at @s anchored eyes rotated ~ 0 positioned ~ ~1.3 ~ run teleport @s ^ ^ ^0.1
+
+execute if block ~ ~ ~ #tp_tags:slabs[type=bottom] anchored eyes positioned ~ ~0.7 ~ rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #tp_speedsters:safe unless block ~ ~ ~ #tp_tags:slabs[type=bottom] unless block ~ ~1 ~ #tp_speedsters:safe at @s anchored eyes rotated ~ 0 positioned ~ ~1.75 ~ run teleport @s ~ ~ ~
+execute if block ~ ~-1 ~ #tp_speedsters:safe anchored eyes positioned ~ ~ ~ rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #tp_speedsters:safe unless block ~ ~ ~ #tp_tags:slabs[type=bottom] if block ~ ~1 ~ #tp_tags:slabs[type=bottom] at @s anchored eyes rotated ~ 0 positioned ~ ~1.75 ~ run teleport @s ^ ^ ^0.1
+
+execute if score @s tp.speedsters.setting.skip matches 0 as @s at @s run function tp_speedsters:skip_block

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#R#",
+        "#L#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone"
+        },
+        "R": {
+            "item": "minecraft:red_dye"
+        },
+        "L": {
+            "item": "minecraft:leather_helmet"
+        }
+    },
+    "result": {
+        "id": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

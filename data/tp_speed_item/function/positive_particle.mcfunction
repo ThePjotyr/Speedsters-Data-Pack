@@ -1,0 +1,1 @@
+give @s turtle_scute[custom_name='[{"text":"Positive Particle","italic":false,"color":"white","bold": false}]',enchantments={levels:{lure:0}},custom_data={tp.particle:1b,tp.fuel.positive:1b},hide_additional_tooltip={}] 1

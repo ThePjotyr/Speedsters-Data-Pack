@@ -1,0 +1,13 @@
+{
+    "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "tp_speed_item:zoom_boots"
+            }
+        }
+    },
+    "rewards": {
+        "function": "tp_speed_get:zoom_boots"
+    }
+}

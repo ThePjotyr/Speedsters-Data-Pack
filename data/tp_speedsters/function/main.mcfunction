@@ -11,7 +11,10 @@ execute if entity @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.lv
 #Speed Blur
 execute if entity @s[predicate=tp_predicate:is_running,scores={tp.speedsters.lvl=1..10}] at @s run function tp_speedsters:blur
 execute if entity @s[predicate=!tp_predicate:is_running,predicate=!tp_predicate:is_sneaking,scores={tp.speedsters.slot=8}] at @s run function tp_speedsters:sparks
-#Phasing
+#Abilities
+execute if score @s tp.speedsters.setting.liquid matches 1 if entity @s[predicate=!tp_speedforce:inside_speedforce,predicate=tp_predicate:is_running,scores={tp.speedsters.lvl=6..}] at @s anchored eyes positioned ~ ~ ~ rotated ~ 0 run function tp_speedsters:liquid_running
+execute if score @s tp.speedsters.setting.skip matches 1 if entity @s[predicate=tp_predicate:is_running,scores={tp.speedsters.lvl=1..},nbt={OnGround:1b}] at @s run function tp_speedsters:skip_block
+execute if score @s tp.speedsters.setting.wall matches 1 if entity @s[predicate=tp_predicate:is_running,predicate=tp_predicate:is_looking_up,scores={tp.speedsters.lvl=4..}] run function tp_speedsters:wall_run
 execute if score @s tp.speedsters.setting.phasing matches 1 if entity @s[scores={tp.speedsters.slot=8},predicate=tp_predicate:is_sneaking] at @s run function tp_speedsters:phasing
 #Passive Effects
 function tp_speedsters:passive

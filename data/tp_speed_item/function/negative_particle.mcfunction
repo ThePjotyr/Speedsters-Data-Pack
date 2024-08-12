@@ -1,0 +1,1 @@
+give @s redstone[custom_name='[{"text":"Negative Particle","italic":false,"color":"white","bold": false}]',enchantments={levels:{lure:0}},custom_data={tp.particle:1b,tp.fuel.negative:1b},hide_additional_tooltip={}] 1

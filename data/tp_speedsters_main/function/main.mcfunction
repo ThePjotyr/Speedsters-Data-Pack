@@ -1,7 +1,7 @@
 #SPEEDSTER
 execute if entity @a[tag=tp.speedsters.speedster] as @a[tag=tp.speedsters.speedster] at @s run function tp_speedsters:main
 execute if entity @e[type=marker,tag=tp.speedsters.blur] as @e[type=marker,tag=tp.speedsters.blur] at @s run function tp_speedsters:blur_stand
-#execute if entity @e[type=marker,tag=speedsters.liquid_block] as @e[type=marker,tag=speedsters.liquid_block] at @s run function main:liquid_block
+execute if entity @e[type=marker,tag=tp.speedsters.liquid_cast] as @e[type=marker,tag=tp.speedsters.liquid_cast] at @s run function tp_speedsters:liquid_block
 
 #SPEEDFORCE
 execute as @a at @s if predicate tp_speedforce:inside_speedforce run function tp_speedforce:main

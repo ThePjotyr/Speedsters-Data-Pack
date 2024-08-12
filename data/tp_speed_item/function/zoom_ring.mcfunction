@@ -1,0 +1,1 @@
+give @s gold_nugget[custom_name='[{"text":"Suit Ring ","italic":false,"color":"gold","bold": false},{"text":"(Zoom)","italic":false,"color":"blue","bold": false}]',enchantments={levels:{lure:0}},custom_data={tp.speed.ring:1b,tp.speed.ring.zoom:1b},hide_additional_tooltip={}] 1

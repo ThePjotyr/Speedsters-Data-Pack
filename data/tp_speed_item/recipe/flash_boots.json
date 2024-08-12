@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "#L#",
+        "g g"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:yellow_dye"
+        },
+        "L": {
+            "item": "minecraft:leather_boots"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "id": "minecraft:knowledge_book",
+        "count": 1
+    }
+}
