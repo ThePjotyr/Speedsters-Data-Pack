@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "items": "minecraft:blast_furnace",
+          "predicates": {
+            "minecraft:custom_data": "{tp.particle.accelerator:1b}"
+          }
+        }
+      }
+    }
+  }

@@ -9,6 +9,7 @@ execute as @a at @s if predicate tp_speedforce:inside_speedforce run function tp
 execute if entity @e[type=marker,tag=tp.speedforce.portal] as @e[type=marker,tag=tp.speedforce.portal] at @s run function tp_speedforce:portal
 
 #SPEED SOURCES
+function tp_particle_accelerator:main
 execute as @a at @s run function tp_speed_obtain:main
 
 #SUITS

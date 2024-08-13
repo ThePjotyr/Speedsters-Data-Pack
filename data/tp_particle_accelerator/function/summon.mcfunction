@@ -1,0 +1,2 @@
+execute unless block ~ ~ ~ blast_furnace{components:{"minecraft:custom_data":{tp.particle.accelerator:1b}}} positioned ^ ^ ^0.01 if entity @s[distance=..6] run function tp_particle_accelerator:summon
+execute if block ~ ~ ~ blast_furnace{components:{"minecraft:custom_data":{tp.particle.accelerator:1b}}} align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[type=marker,tag=tp.particle.accelerator,distance=..0.5] run summon marker ~ ~ ~ {Tags:["tp.particle.accelerator"]}
