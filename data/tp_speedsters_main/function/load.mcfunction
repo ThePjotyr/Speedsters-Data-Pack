@@ -5,11 +5,13 @@ execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~
 scoreboard objectives add tp.speedforce.portal.time dummy
 scoreboard objectives add tp.speedsters.slot dummy
 scoreboard objectives add tp.speedsters.lvl dummy
+scoreboard objectives add tp.speedsters.lvl.v9 dummy
 scoreboard objectives add tp.speedsters.time.travel dummy
 scoreboard objectives add tp.speedsters.time.spawn dummy
 scoreboard objectives add tp.speedsters.time.run dummy
 scoreboard objectives add tp.speedsters.time.ring dummy
 scoreboard objectives add tp.speedsters.time.stand dummy
+scoreboard objectives add tp.speedsters.time.velocity9 dummy
 scoreboard objectives add tp.speedsters.velocity9.rate dummy
 scoreboard objectives add tp.speedsters.setting.liquid dummy
 scoreboard objectives add tp.speedsters.setting.skip dummy

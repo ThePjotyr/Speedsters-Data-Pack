@@ -22,6 +22,7 @@ function tp_speedsters:passive
 #INTERDIMENSIONAL TRAVELLING
 execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[scores={tp.speedsters.lvl=10}] run function tp_speedsters:travel
 execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[tag=tp.speedforce.travelling] run function tp_speedsters:travel_spawn
+execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[scores={tp.speedsters.time.travel=1..}] unless entity @s[scores={tp.speedsters.slot=8},predicate=tp_predicate:is_running] run scoreboard players set @s tp.speedsters.time.travel 0
 execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[tag=!tp.speedforce.travelling,scores={tp.speedsters.time.spawn=1..}] run scoreboard players set @s tp.speedsters.time.spawn 0
 
 #SCOREBOARDS

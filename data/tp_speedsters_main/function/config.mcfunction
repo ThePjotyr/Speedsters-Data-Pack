@@ -32,11 +32,11 @@ execute unless score .LVL_SPEED_8 tp.speedsters.time.run matches -2147483648..21
 execute unless score .LVL_SPEED_9 tp.speedsters.time.run matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_9 tp.speedsters.time.run 1200
 #Tick after which speedster will gain certain level of speed. For example, to gain Speed of level 1, Speedster must run for at least 5 ticks of time. One tick is equivalent to 1/20 of a second. (Default: 1, 5, 15, 30, 80, 160, 390, 840, 1000, 1200)
 
-# execute unless score .LVL_V9_0 speedsters.time_velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_0 speedsters.time_velocity9 6000
-# execute unless score .LVL_V9_1 speedsters.time_velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_1 speedsters.time_velocity9 9000
-# execute unless score .LVL_V9_2 speedsters.time_velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_2 speedsters.time_velocity9 10500
-# execute unless score .LVL_V9_3 speedsters.time_velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_3 speedsters.time_velocity9 12000
-# execute unless score .LVL_V9_4 speedsters.time_velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_4 speedsters.time_velocity9 12200
+execute unless score .LVL_V9_0 tp.speedsters.time.velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_0 tp.speedsters.time.velocity9 6000
+execute unless score .LVL_V9_1 tp.speedsters.time.velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_1 tp.speedsters.time.velocity9 9000
+execute unless score .LVL_V9_2 tp.speedsters.time.velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_2 tp.speedsters.time.velocity9 10500
+execute unless score .LVL_V9_3 tp.speedsters.time.velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_3 tp.speedsters.time.velocity9 12000
+execute unless score .LVL_V9_4 tp.speedsters.time.velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_4 tp.speedsters.time.velocity9 12200
 #Tick after which speedster that is under the influence of Velocity 9 will get more poisoned. For example, to gain Velocity 9 poisoning of level 1, Speedster must run for at least X ticks of time. One tick is equivalent to 1/20 of a second. (Default: X, X, X, X)
 
 execute unless score .MAX_LIQUID_TIME tp.speedsters.time.stand matches -2147483648..2147483647 run scoreboard players set .MAX_LIQUID_TIME tp.speedsters.time.stand 20

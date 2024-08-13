@@ -3,7 +3,8 @@
 # scoreboard players set @s speedsters.time_running 0
 # scoreboard players set @s speedsters.time_dim_travel 0
 # scoreboard players set @s speedsters.time_spawn_prt 0
-# scoreboard players set @s speedsters.time_velocity9 0
+scoreboard players set @s tp.speedsters.time.velocity9 0
+scoreboard players set @s tp.speedsters.lvl.v9 0
 # scoreboard players set @s speedsters.lvl_height 0
 # scoreboard players set @s speedsters.lvl_speed 0
 # scoreboard players set @s speedsters.lvl_velocity9 0
