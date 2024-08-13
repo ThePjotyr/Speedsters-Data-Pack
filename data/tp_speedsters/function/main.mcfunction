@@ -19,12 +19,19 @@ execute if score @s tp.speedsters.setting.phasing matches 1 if entity @s[scores=
 #Passive Effects
 function tp_speedsters:passive
 
+#INTERDIMENSIONAL TRAVELLING
+execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[scores={tp.speedsters.lvl=10}] run function tp_speedsters:travel
+execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[tag=tp.speedforce.travelling] run function tp_speedsters:travel_spawn
+execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[tag=!tp.speedforce.travelling,scores={tp.speedsters.time.spawn=1..}] run scoreboard players set @s tp.speedsters.time.spawn 0
+
 #SCOREBOARDS
-#NOT SUIT
+#Without SpeedSuit
 execute if entity @s[tag=!tp.speedforce.travelling,tag=!tp.speedsters.velocity9,predicate=tp_predicate:is_running,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..6}] if score @s tp.height >= #tp.min.y tp.height run scoreboard players operation @s tp.speedsters.time.run += .TIME_RUNNING_RATE tp.speedsters.time.run
-execute if entity @s[tag=!tp.speedforce.travelling,tag=tp.speedsters.velocity9,predicate=tp_predicate:is_running,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..6}] as @s[tag=!tp.speedforce.travelling,tag=tp.speedsters.velocity9,predicate=tp_predicate:is_running,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..7}] if score @s tp.height >= .MIN_Y tp.height run scoreboard players operation @s tp.speedsters.time.run += .TIME_RUNNING_RATE_VEL tp.speedsters.time.run
-
-
-execute if entity @s[tag=!tp.speedforce.travelling,tag=!tp.speedsters.velocity9,predicate=tp_predicate:is_running,predicate=main:is_suited,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..11}] as @s[tag=!tp.speedforce.travelling,tag=!tp.speedsters.velocity9,predicate=tp_predicate:is_running,predicate=main:is_suited,scores={tp.speedsters.slot=8,tp.speedsters.time.run=..1210}] if score @s tp.height >= .MIN_Y tp.height run scoreboard players operation @s tp.speedsters.time.run += .TIME_RUN_SUIT_RATE tp.speedsters.time.run
-execute if entity @s[tag=!tp.speedforce.travelling,tag=tp.speedsters.velocity9,predicate=tp_predicate:is_running,predicate=main:is_suited,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..11}] as @s[tag=!tp.speedforce.travelling,tag=tp.speedsters.velocity9,predicate=tp_predicate:is_running,predicate=main:is_suited,scores={tp.speedsters.slot=8,tp.speedsters.time.run=..1210}] if score @s tp.height >= .MIN_Y tp.height run scoreboard players operation @s tp.speedsters.time.run += .TIME_RUN_SUIT_RATE_VEL tp.speedsters.time.run
+execute if entity @s[tag=!tp.speedforce.travelling,tag=tp.speedsters.velocity9,predicate=tp_predicate:is_running,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..6}] as @s[tag=!tp.speedforce.travelling,tag=tp.speedsters.velocity9,predicate=tp_predicate:is_running,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..7}] if score @s tp.height >= #tp.min.y tp.height run scoreboard players operation @s tp.speedsters.time.run += .TIME_RUNNING_RATE_VEL tp.speedsters.time.run
+#With SpeedSuit
+execute if entity @s[tag=!tp.speedforce.travelling,tag=!tp.speedsters.velocity9,predicate=tp_predicate:is_running,predicate=tp_speedsuit:is_speedsuit,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..11}] as @s[tag=!tp.speedforce.travelling,tag=!tp.speedsters.velocity9,predicate=tp_predicate:is_running,predicate=tp_speedsuit:is_speedsuit,scores={tp.speedsters.slot=8,tp.speedsters.time.run=..1210}] if score @s tp.height >= #tp.min.y tp.height run scoreboard players operation @s tp.speedsters.time.run += .TIME_RUN_SUIT_RATE tp.speedsters.time.run
+execute if entity @s[tag=!tp.speedforce.travelling,tag=tp.speedsters.velocity9,predicate=tp_predicate:is_running,predicate=tp_speedsuit:is_speedsuit,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..11}] as @s[tag=!tp.speedforce.travelling,tag=tp.speedsters.velocity9,predicate=tp_predicate:is_running,predicate=tp_speedsuit:is_speedsuit,scores={tp.speedsters.slot=8,tp.speedsters.time.run=..1210}] if score @s tp.height >= #tp.min.y tp.height run scoreboard players operation @s tp.speedsters.time.run += .TIME_RUN_SUIT_RATE_VEL tp.speedsters.time.run
 execute if entity @s[scores={tp.speedsters.slot=0..7}] run scoreboard players set @s[scores={tp.speedsters.slot=0..7}] tp.speedsters.time.run 0
+#Rest
+execute if entity @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.spawn=1..}] run scoreboard players set @s tp.speedsters.time.spawn 0
+execute if entity @s[scores={tp.speedsters.time.spawn=1..,tp.speedsters.slot=0..7}] run scoreboard players set @s tp.speedsters.time.spawn 0

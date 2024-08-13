@@ -6,7 +6,9 @@ scoreboard objectives add tp.speedforce.portal.time dummy
 scoreboard objectives add tp.speedsters.slot dummy
 scoreboard objectives add tp.speedsters.lvl dummy
 scoreboard objectives add tp.speedsters.time.travel dummy
+scoreboard objectives add tp.speedsters.time.spawn dummy
 scoreboard objectives add tp.speedsters.time.run dummy
+scoreboard objectives add tp.speedsters.time.ring dummy
 scoreboard objectives add tp.speedsters.time.stand dummy
 scoreboard objectives add tp.speedsters.velocity9.rate dummy
 scoreboard objectives add tp.speedsters.setting.liquid dummy
@@ -27,7 +29,10 @@ scoreboard players set #tp.rotation.y.right.min tp.rotation.y 70
 scoreboard players set #tp.rotation.y.right tp.rotation.y 90
 scoreboard players set #tp.rotation.y.summon.max tp.rotation.y 35
 scoreboard players set #tp.rotation.y.summon.min tp.rotation.y -40
-scoreboard players set #tp.speedforce.roof tp.height 16
+scoreboard players set #tp.speedforce.roof tp.height 1620000
+scoreboard players set #tp.speedsuit.lag tp.speedsters.time.ring 10
+scoreboard players set #tp.travel tp.speedsters.time.travel 220
+scoreboard players set #tp.spawn tp.speedsters.time.spawn 60
 
 # #Create Scoreboards
 # scoreboard objectives add speedsters.lag_run dummy

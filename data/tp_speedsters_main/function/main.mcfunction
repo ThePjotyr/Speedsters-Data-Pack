@@ -9,8 +9,12 @@ execute if entity @e[type=marker,tag=tp.speedforce.portal] as @e[type=marker,tag
 
 #SUITS
 execute if entity @a[predicate=tp_speedsuit:hold_ring,predicate=tp_predicate:is_sneaking] as @a[predicate=tp_speedsuit:hold_ring,predicate=tp_predicate:is_sneaking] run function tp_speedsuit:use_ring
-#execute if entity @a[tag=speedsters.data_stored,predicate=main:not_suited] as @a[tag=speedsters.data_stored,predicate=main:not_suited] at @s run function suits:give_back_armor
 execute if entity @e[type=armor_stand,tag=tp.speedsuit] as @e[type=armor_stand,tag=tp.speedsuit] at @s run function tp_speedsuit:speedsuit
+
+#SCOREBOARDS
+execute if entity @a[tag=tp.speedsuit.ring] as @a[tag=tp.speedsuit.ring] run scoreboard players add @s tp.speedsters.time.ring 1
+execute if entity @a[tag=tp.speedsuit.ring,scores={tp.speedsters.time.ring=1..}] as @a[tag=tp.speedsuit.ring,scores={tp.speedsters.time.ring=1..}] if score @s tp.speedsters.time.ring >= #tp.speedsuit.lag tp.speedsters.time.ring run tag @s remove tp.speedsuit.ring
+execute if entity @a[tag=!tp.speedsuit.ring,scores={tp.speedsters.time.ring=1..}] as @a[tag=!tp.speedsuit.ring,scores={tp.speedsters.time.ring=1..}] run scoreboard players set @s tp.speedsters.time.ring 0
 
 #CONFIG
 execute if entity @a as @a run function tp_speedsters_main:settings

@@ -1,0 +1,8 @@
+execute if entity @s[type=player,predicate=tp_predicate:is_armor] run function tp_speedsuit:store_data
+
+item replace entity @s armor.feet with leather_boots[trim={pattern:rib,material:netherite},dyed_color={rgb:132122},custom_name='[{"text":"Zoom Boots","italic":false,"color":"blue","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.zoom:1b}]
+item replace entity @s armor.legs with leather_leggings[trim={pattern:rib,material:netherite},dyed_color={rgb:132122},custom_name='[{"text":"Zoom Leggings","italic":false,"color":"blue","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.zoom:1b}]
+item replace entity @s armor.chest with leather_chestplate[trim={pattern:rib,material:netherite},dyed_color={rgb:132122},custom_name='[{"text":"Zoom Chestplate","italic":false,"color":"blue","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.zoom:1b}]
+item replace entity @s armor.head with leather_helmet[trim={pattern:snout,material:netherite},dyed_color={rgb:132122},custom_name='[{"text":"Zoom Helmet","italic":false,"color":"blue","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.zoom:1b}]
+
+execute if entity @s[type=player] if entity @e[type=armor_stand,tag=tp.speedsuit,limit=1,sort=nearest,distance=..1] run kill @e[type=armor_stand,tag=tp.speedsuit,limit=1,sort=nearest,distance=..1]
