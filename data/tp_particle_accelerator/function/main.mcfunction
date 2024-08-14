@@ -1,5 +1,2 @@
 execute if entity @e[type=marker,tag=tp.particle.accelerator] as @e[type=marker,tag=tp.particle.accelerator] at @s run function tp_particle_accelerator:marker
-
-#execute if entity @e[type=item,nbt={Item:{id:"minecraft:blast_furnace",tag:{display:{Name:}}}}]  at @s run data merge entity @s {Item:{tag:{HideFlags:255,ParticleAcc:1b,display:{Name:'{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Particle Accelerator"}'},Enchantments:[{}]}}}
-
-say @e[predicate=tp_particle_accelerator:particle_accelerator_name]
+execute if entity @e[predicate=tp_particle_accelerator:particle_accelerator_name,predicate=!tp_particle_accelerator:particle_accelerator] as @e[predicate=tp_particle_accelerator:particle_accelerator_name,predicate=!tp_particle_accelerator:particle_accelerator] run data merge entity @s {Item:{id:"minecraft:blast_furnace",components:{"minecraft:custom_data":{tp.particle.accelerator:1b},"minecraft:custom_name":'{"bold":false,"color":"white","italic":false,"obfuscated":false,"strikethrough":false,"text":"Particle Accelerator","underlined":false}',"minecraft:enchantments":{levels:{"minecraft:lure":0}},"minecraft:hide_additional_tooltip":{}}}} 

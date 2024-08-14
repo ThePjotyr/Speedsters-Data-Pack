@@ -12,6 +12,7 @@ scoreboard objectives add tp.speedsters.time.run dummy
 scoreboard objectives add tp.speedsters.time.ring dummy
 scoreboard objectives add tp.speedsters.time.stand dummy
 scoreboard objectives add tp.speedsters.time.velocity9 dummy
+scoreboard objectives add tp.speedsters.time.particle dummy
 scoreboard objectives add tp.speedsters.velocity9.rate dummy
 scoreboard objectives add tp.speedsters.setting.liquid dummy
 scoreboard objectives add tp.speedsters.setting.skip dummy
@@ -36,6 +37,18 @@ scoreboard players set #tp.speedsuit.lag tp.speedsters.time.ring 10
 scoreboard players set #tp.travel tp.speedsters.time.travel 220
 scoreboard players set #tp.spawn tp.speedsters.time.spawn 60
 
+scoreboard players set #tp.particle.accelerator.0 tp.speedsters.time.particle 50
+scoreboard players set #tp.particle.accelerator.1 tp.speedsters.time.particle 100
+scoreboard players set #tp.particle.accelerator.2 tp.speedsters.time.particle 200
+scoreboard players set #tp.particle.accelerator.3 tp.speedsters.time.particle 250
+scoreboard players set #tp.particle.accelerator.max tp.speedsters.time.particle 320
+scoreboard players set #tp.particle.accelerator.exp.0 tp.speedsters.time.particle 250
+scoreboard players set #tp.particle.accelerator.exp.1 tp.speedsters.time.particle 255
+scoreboard players set #tp.particle.accelerator.exp.2 tp.speedsters.time.particle 260
+scoreboard players set #tp.particle.accelerator.exp.3 tp.speedsters.time.particle 275
+scoreboard players set #tp.particle.accelerator.exp.4 tp.speedsters.time.particle 290
+scoreboard players set #tp.particle.accelerator.exp.5 tp.speedsters.time.particle 310
+
 # #Create Scoreboards
 # scoreboard objectives add speedsters.lag_run dummy
 # scoreboard objectives add speedsters.lag_suit dummy
@@ -46,7 +59,7 @@ scoreboard players set #tp.spawn tp.speedsters.time.spawn 60
 # scoreboard objectives add speedsters.time_spawn_prt dummy
 # scoreboard objectives add speedsters.time_spawn_suit dummy
 # scoreboard objectives add speedsters.time_velocity9 dummy
-# scoreboard objectives add speedsters.time_pa dummy
+# scoreboard objectives add tp.speedsters.time.particle dummy
 # scoreboard objectives add speedsters.lvl_speed dummy
 # scoreboard objectives add tp.height dummy
 # scoreboard objectives add speedsters.lvl_velocity9 dummy
@@ -86,17 +99,17 @@ scoreboard players set #tp.spawn tp.speedsters.time.spawn 60
 # scoreboard players set .DIM_TRAVEL speedsters.time_dim_travel 220
 
 # scoreboard players set .SPAWN_PROTECT speedsters.time_spawn_prt 60
-# scoreboard players set .PA_0 speedsters.time_pa 50
-# scoreboard players set .PA_1 speedsters.time_pa 100
-# scoreboard players set .PA_2 speedsters.time_pa 200
-# scoreboard players set .PA_3 speedsters.time_pa 250
-# scoreboard players set .PA_MAX speedsters.time_pa 320
-# scoreboard players set .PA_EXP_0 speedsters.time_pa 250
-# scoreboard players set .PA_EXP_1 speedsters.time_pa 255
-# scoreboard players set .PA_EXP_2 speedsters.time_pa 260
-# scoreboard players set .PA_EXP_3 speedsters.time_pa 275
-# scoreboard players set .PA_EXP_4 speedsters.time_pa 290
-# scoreboard players set .PA_EXP_5 speedsters.time_pa 310
+# scoreboard players set #tp.particle.accelerator.0 tp.speedsters.time.particle 50
+# scoreboard players set #tp.particle.accelerator.1 tp.speedsters.time.particle 100
+# scoreboard players set #tp.particle.accelerator.2 tp.speedsters.time.particle 200
+# scoreboard players set #tp.particle.accelerator.3 tp.speedsters.time.particle 250
+# scoreboard players set #tp.particle.accelerator.MAX tp.speedsters.time.particle 320
+# scoreboard players set #tp.particle.accelerator.exp.0 tp.speedsters.time.particle 250
+# scoreboard players set #tp.particle.accelerator.exp.1 tp.speedsters.time.particle 255
+# scoreboard players set #tp.particle.accelerator.exp.2 tp.speedsters.time.particle 260
+# scoreboard players set #tp.particle.accelerator.exp.3 tp.speedsters.time.particle 275
+# scoreboard players set #tp.particle.accelerator.exp.4 tp.speedsters.time.particle 290
+# scoreboard players set #tp.particle.accelerator.exp.5 tp.speedsters.time.particle 310
 
 # scoreboard players set .NETHER_ROOF tp.height 128
 # scoreboard players set .SPEEDFORCE_ROOF tp.height 1620000

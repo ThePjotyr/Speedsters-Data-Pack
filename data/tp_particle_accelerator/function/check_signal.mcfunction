@@ -1,0 +1,17 @@
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~ ~-1 ~ if predicate tp_particle_accelerator:is_signal run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~-1 ~ ~ if predicate tp_particle_accelerator:is_signal run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~ ~ ~1 if predicate tp_particle_accelerator:is_signal run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~1 ~ ~ if predicate tp_particle_accelerator:is_signal run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~ ~ ~-1 if predicate tp_particle_accelerator:is_signal run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~ ~1 ~ if predicate tp_particle_accelerator:is_signal run tag @s add tp.particle.accelerator.powered
+
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~-1 ~ ~ if block ~ ~ ~ repeater[facing=west,powered=true] run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~ ~ ~1 if block ~ ~ ~ repeater[facing=south,powered=true] run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~1 ~ ~ if block ~ ~ ~ repeater[facing=east,powered=true] run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~ ~ ~-1 if block ~ ~ ~ repeater[facing=north,powered=true] run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~-1 ~ ~ if block ~ ~ ~ comparator[facing=west,powered=true] run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~ ~ ~1 if block ~ ~ ~ comparator[facing=south,powered=true] run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~1 ~ ~ if block ~ ~ ~ comparator[facing=east,powered=true] run tag @s add tp.particle.accelerator.powered
+execute if entity @s[tag=!tp.particle.accelerator.powered] positioned ~ ~ ~-1 if block ~ ~ ~ comparator[facing=north,powered=true] run tag @s add tp.particle.accelerator.powered
+
+execute if entity @s[tag=tp.particle.accelerator.powered] positioned ~ ~-1 ~ unless predicate tp_particle_accelerator:is_signal at @s positioned ~-1 ~ ~ unless predicate tp_particle_accelerator:is_signal at @s positioned ~ ~ ~1 unless predicate tp_particle_accelerator:is_signal at @s positioned ~1 ~ ~ unless predicate tp_particle_accelerator:is_signal at @s positioned ~ ~ ~-1 unless predicate tp_particle_accelerator:is_signal at @s positioned ~ ~1 ~ unless predicate tp_particle_accelerator:is_signal at @s positioned ~-1 ~ ~ unless block ~ ~ ~ comparator[facing=west,powered=true] at @s positioned ~ ~ ~1 unless block ~ ~ ~ repeater[facing=south,powered=true] at @s positioned ~1 ~ ~ unless block ~ ~ ~ repeater[facing=east,powered=true] at @s positioned ~ ~ ~-1 unless block ~ ~ ~ repeater[facing=north,powered=true] at @s positioned ~ ~ ~1 unless block ~ ~ ~ comparator[facing=south,powered=true] at @s positioned ~1 ~ ~ unless block ~ ~ ~ comparator[facing=east,powered=true] at @s positioned ~ ~ ~-1 unless block ~ ~ ~ comparator[facing=north,powered=true] run tag @s remove tp.particle.accelerator.powered
