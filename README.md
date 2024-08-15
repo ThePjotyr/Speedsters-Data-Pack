@@ -116,7 +116,8 @@ All of the commands below will work on the player/entity that executed the comma
 > /reload  *-> reloads all files inside Data Pack folder and resets all scores*
 &nbsp;
 
-> /function tp_speedsters:reset_scores  *-> resets all scores*
+*Resets all scores.*
+> /function tp_speedsters:reset_scores  
 
 *Turn player into a Speedster or remove player powers.*
 > /function tp_source:\<speedforce | negative_speedforce | velocity9 | remove>
