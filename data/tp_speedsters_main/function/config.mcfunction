@@ -39,5 +39,5 @@ execute unless score .LVL_V9_3 tp.speedsters.time.velocity9 matches -2147483648.
 execute unless score .LVL_V9_4 tp.speedsters.time.velocity9 matches -2147483648..2147483647 run scoreboard players set .LVL_V9_4 tp.speedsters.time.velocity9 12200
 #Tick after which speedster that is under the influence of Velocity 9 will get more poisoned. For example, to gain Velocity 9 poisoning of level 1, Speedster must run for at least X ticks of time. One tick is equivalent to 1/20 of a second. (Default: X, X, X, X)
 
-execute unless score .MAX_LIQUID_TIME tp.speedsters.time.stand matches -2147483648..2147483647 run scoreboard players set .MAX_LIQUID_TIME tp.speedsters.time.stand 20
-#Higher number means longer time for trail left by player running on liquid to disappear. For optimization puropouses, it's better to leave at 20. Can impact performace. (Default: 20)
+execute unless score .MAX_LIQUID_TIME tp.speedsters.time.stand matches -2147483648..2147483647 run scoreboard players set .MAX_LIQUID_TIME tp.speedsters.time.stand 15
+#Higher number means longer time for trail left by player running on liquid to disappear. For optimization puropouses, it's better to leave at 20. Can impact performace. (Default: 15)

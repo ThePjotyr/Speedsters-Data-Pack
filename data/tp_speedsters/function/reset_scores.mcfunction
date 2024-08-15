@@ -1,21 +1,18 @@
-# scoreboard players set @s speedsters.lag_run 0
-# scoreboard players set @s speedsters.lag_suit 0
-# scoreboard players set @s speedsters.time_running 0
-# scoreboard players set @s speedsters.time_dim_travel 0
-# scoreboard players set @s speedsters.time_spawn_prt 0
-scoreboard players set @s tp.speedsters.time.velocity9 0
+scoreboard players set @s tp.speedforce.portal.time 0
+scoreboard players set @s tp.speedsters.slot 0
+scoreboard players set @s tp.speedsters.lvl 0
 scoreboard players set @s tp.speedsters.lvl.v9 0
-# scoreboard players set @s speedsters.lvl_height 0
-# scoreboard players set @s speedsters.lvl_speed 0
-# scoreboard players set @s speedsters.lvl_velocity9 0
-# scoreboard players set @s speedsters.slot 0
-# scoreboard players set @s speedsters.rot_y 0
-# scoreboard players set @s speedsters.use_potion 0
-# scoreboard players set @s speedsters.use_pa 0
-# scoreboard players set @s speedsters.use_td 0
-# scoreboard players set @s speedsters.set_liquid_running 1
-# scoreboard players set @s speedsters.set_skip_block 1
-# scoreboard players set @s speedsters.set_wall_running 1
-# scoreboard players set @s speedsters.set_dim_travel 1
-# scoreboard players set @s speedsters.set_phasing 1
-# scoreboard players set @s speedsters.config 0
+scoreboard players set @s tp.speedsters.lvl.td 0
+scoreboard players set @s tp.speedsters.time.travel 0
+scoreboard players set @s tp.speedsters.time.spawn 0
+scoreboard players set @s tp.speedsters.time.run 0
+scoreboard players set @s tp.speedsters.time.ring 0
+scoreboard players set @s tp.speedsters.time.stand 0
+scoreboard players set @s tp.speedsters.time.velocity9 0
+scoreboard players set @s tp.speedsters.time.particle 0
+scoreboard players set @s tp.speedsters.velocity9.rate 0
+scoreboard players set @s tp.speedsters.setting.liquid 1
+scoreboard players set @s tp.speedsters.setting.skip 1
+scoreboard players set @s tp.speedsters.setting.wall 1
+scoreboard players set @s tp.speedsters.setting.travel 1
+scoreboard players set @s tp.speedsters.setting.phasing 0
