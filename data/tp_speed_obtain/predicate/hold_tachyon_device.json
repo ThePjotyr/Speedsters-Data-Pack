@@ -7,6 +7,10 @@
           "items": "minecraft:structure_void",
           "predicates": {
             "minecraft:custom_data": "{tp.tachyon.device:1b}"
+          },
+          "count": {
+            "min": 1,
+            "max": 1
           }
         }
       }
