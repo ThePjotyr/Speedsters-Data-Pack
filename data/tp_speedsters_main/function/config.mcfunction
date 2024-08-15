@@ -10,14 +10,14 @@ execute unless score .TIME_RUN_SUIT_RATE tp.speedsters.time.run matches -2147483
 execute unless score .TIME_RUN_SUIT_RATE_VEL tp.speedsters.time.run matches -2147483648..2147483647 run scoreboard players set .TIME_RUN_SUIT_RATE_VEL tp.speedsters.time.run 5
 #Rate at which speedster with suit that is under the influence of Velocity 9 gains velocity. Higher number means greater speeds at shorter period of time. (Default: 5)
 
-# execute unless score .TD_CHARGE_MIN speedsters.td_charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MIN speedsters.td_charge -400
-# execute unless score .TD_CHARGE_N_3 speedsters.td_charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_3 speedsters.td_charge -300
-# execute unless score .TD_CHARGE_N_2 speedsters.td_charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_2 speedsters.td_charge -200
-# execute unless score .TD_CHARGE_N_1 speedsters.td_charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_1 speedsters.td_charge -100
-# execute unless score .TD_CHARGE_P_1 speedsters.td_charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_1 speedsters.td_charge 100
-# execute unless score .TD_CHARGE_P_2 speedsters.td_charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_2 speedsters.td_charge 200
-# execute unless score .TD_CHARGE_P_3 speedsters.td_charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_3 speedsters.td_charge 300
-# execute unless score .TD_CHARGE_MAX speedsters.td_charge matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MAX speedsters.td_charge 400
+execute unless score .TD_CHARGE_MIN tp.speedsters.lvl.td matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MIN tp.speedsters.lvl.td -400
+execute unless score .TD_CHARGE_N_3 tp.speedsters.lvl.td matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_3 tp.speedsters.lvl.td -300
+execute unless score .TD_CHARGE_N_2 tp.speedsters.lvl.td matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_2 tp.speedsters.lvl.td -200
+execute unless score .TD_CHARGE_N_1 tp.speedsters.lvl.td matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_N_1 tp.speedsters.lvl.td -100
+execute unless score .TD_CHARGE_P_1 tp.speedsters.lvl.td matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_1 tp.speedsters.lvl.td 100
+execute unless score .TD_CHARGE_P_2 tp.speedsters.lvl.td matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_2 tp.speedsters.lvl.td 200
+execute unless score .TD_CHARGE_P_3 tp.speedsters.lvl.td matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_P_3 tp.speedsters.lvl.td 300
+execute unless score .TD_CHARGE_MAX tp.speedsters.lvl.td matches -2147483648..2147483647 run scoreboard players set .TD_CHARGE_MAX tp.speedsters.lvl.td 400
 #Tick after which Tachyon Device will be charged with positive or negative tachyons. (Default: -400, 400)
 
 execute unless score .LVL_SPEED_0 tp.speedsters.time.run matches -2147483648..2147483647 run scoreboard players set .LVL_SPEED_0 tp.speedsters.time.run 1

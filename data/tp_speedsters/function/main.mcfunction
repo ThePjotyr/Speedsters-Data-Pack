@@ -25,6 +25,11 @@ execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[tag=tp.s
 execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[scores={tp.speedsters.time.travel=1..}] unless entity @s[scores={tp.speedsters.slot=8},predicate=tp_predicate:is_running] run scoreboard players set @s tp.speedsters.time.travel 0
 execute if score @s tp.speedsters.setting.travel matches 1 if entity @s[tag=!tp.speedforce.travelling,scores={tp.speedsters.time.spawn=1..}] run scoreboard players set @s tp.speedsters.time.spawn 0
 
+#TACHYON DEVICE
+execute if entity @s[predicate=tp_speed_obtain:hold_tachyon_device_charged,predicate=!tp_speed_obtain:hold_tachyon_device_negative,predicate=!tp_speed_obtain:hold_tachyon_device_positive,predicate=tp_speedforce:inside_speedforce,predicate=tp_predicate:is_running,scores={tp.speedsters.slot=8}] at @s run function tp_speedsters:charging
+execute unless entity @s[predicate=tp_speed_obtain:hold_tachyon_device_charged,predicate=!tp_speed_obtain:hold_tachyon_device_negative,predicate=!tp_speed_obtain:hold_tachyon_device_positive,predicate=tp_speedforce:inside_speedforce,predicate=tp_predicate:is_running,scores={tp.speedsters.slot=8}] unless score @s tp.speedsters.lvl.td matches 0 run scoreboard players set @s tp.speedsters.lvl.td 0
+execute if entity @s[predicate=tp_speed_obtain:hold_tachyon_device_charging,scores={tp.speedsters.lvl.td=0}] run item replace entity @s weapon.mainhand with structure_void[custom_name='[{"text":"Tachyon Device","italic":false,"color":"white","bold": false}]',enchantments={levels:{lure:0}},custom_data={tp.tachyon.device:1b,tp.charged:1b,tp.tachyon.positive:0b,tp.tachyon.negative:0b},hide_additional_tooltip={}] 1
+
 #SCOREBOARDS
 #Without SpeedSuit
 execute if entity @s[tag=!tp.speedforce.travelling,tag=!tp.speedsters.velocity9,predicate=tp_predicate:is_running,scores={tp.speedsters.slot=8,tp.speedsters.lvl=0..6}] if score @s tp.height >= #tp.min.y tp.height run scoreboard players operation @s tp.speedsters.time.run += .TIME_RUNNING_RATE tp.speedsters.time.run
