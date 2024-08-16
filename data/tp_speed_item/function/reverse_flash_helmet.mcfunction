@@ -1,0 +1,1 @@
+give @s leather_helmet[trim={pattern:snout,material:redstone},dyed_color={rgb:16769029},custom_name='[{"text":"Reverse Flash Helmet","italic":false,"color":"yellow","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.reverseflash:1b}]

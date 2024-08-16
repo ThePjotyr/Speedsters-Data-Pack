@@ -1,0 +1,23 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "tp_speed_obtain:hold_tachyon_device_charged"
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": "minecraft:structure_void",
+            "predicates": {
+              "minecraft:custom_data": "{tp.tachyon.positive:1b}"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

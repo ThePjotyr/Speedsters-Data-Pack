@@ -1,0 +1,6 @@
+scoreboard players add @s[nbt={OnGround:1b}] tp.speedsters.time.travel 1
+
+execute if entity @s[tag=!tp.speedsters.negative_speedforce,nbt=!{Dimension:"tp_speedforce:speedforce"}] if score @s tp.speedsters.time.travel >= #tp.travel tp.speedsters.time.travel run function tp_speedforce:teleport_into {"dimension":"tp_speedforce:speedforce"}
+execute if entity @s[tag=tp.speedsters.negative_speedforce,nbt=!{Dimension:"tp_speedforce:negative_speedforce"}] if score @s tp.speedsters.time.travel >= #tp.travel tp.speedsters.time.travel run function tp_speedforce:teleport_into {"dimension":"tp_speedforce:negative_speedforce"}
+execute if entity @s[tag=!tp.speedsters.negative_speedforce,nbt={Dimension:"tp_speedforce:speedforce"}] if score @s tp.speedsters.time.travel >= #tp.travel tp.speedsters.time.travel run function tp_speedforce:teleport_from
+execute if entity @s[tag=tp.speedsters.negative_speedforce,nbt={Dimension:"tp_speedforce:negative_speedforce"}] if score @s tp.speedsters.time.travel >= #tp.travel tp.speedsters.time.travel run function tp_speedforce:teleport_from

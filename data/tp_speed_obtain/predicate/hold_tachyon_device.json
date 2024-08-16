@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "items": "minecraft:structure_void",
+          "predicates": {
+            "minecraft:custom_data": "{tp.tachyon.device:1b}"
+          },
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      }
+    }
+  }
+  

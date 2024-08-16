@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "tp_predicate:is_sneaking"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "tp_speed_obtain:hold_tachyon_device_charged"
+      }
+    ]
+  }
+  

@@ -1,0 +1,1 @@
+give @s leather_helmet[trim={pattern:snout,material:netherite},dyed_color={rgb:132122},custom_name='[{"text":"Zoom Helmet","italic":false,"color":"blue","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.zoom:1b}]

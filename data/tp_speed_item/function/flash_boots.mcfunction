@@ -1,0 +1,1 @@
+give @s leather_boots[dyed_color={rgb:16769029},custom_name='[{"text":"Flash Boots","italic":false,"color":"red","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.flash:1b}]

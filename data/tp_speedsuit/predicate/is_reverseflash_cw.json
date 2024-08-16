@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "tp_speedsuit:is_speedsuit"
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "minecraft:player",
+                "type_specific": {
+                "type": "player"
+                },
+                "nbt": "{Inventory:[{id:\"minecraft:leather_boots\",Slot:100b,count:1,components:{\"minecraft:custom_data\":{tp.speed.suit.reverseflash.cw:1b}}},{id:\"minecraft:leather_leggings\",count:1,components:{\"minecraft:custom_data\":{tp.speed.suit.reverseflash.cw:1b}},Slot:101b},{id:\"minecraft:leather_chestplate\",count:1,components:{\"minecraft:custom_data\":{tp.speed.suit.reverseflash.cw:1b}},Slot:102b},{id:\"minecraft:leather_helmet\",count:1,components:{\"minecraft:custom_data\":{tp.speed.suit.reverseflash.cw:1b}},Slot:103b}]}"
+            }        
+        }
+    ]
+}
+  

@@ -1,0 +1,1 @@
+give @s structure_void[custom_name='[{"text":"Tachyon Device ","italic":false,"color":"white","bold": false},{"text":"(-)","italic":false,"color":"red","bold": false}]',enchantments={levels:{lure:0}},custom_data={tp.tachyon.device:1b,tp.charged:1b,tp.tachyon.positive:0b,tp.tachyon.negative:1b},hide_additional_tooltip={}] 1

@@ -1,0 +1,1 @@
+give @s blast_furnace[custom_name='[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Particle Accelerator"}]',enchantments={levels:{lure:0}},custom_data={tp.particle.accelerator:1b},hide_additional_tooltip={}] 1

@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:item",
+      "nbt": "{Item:{id:\"minecraft:blast_furnace\",components:{\"minecraft:custom_name\":'{\"bold\":false,\"color\":\"white\",\"italic\":false,\"obfuscated\":false,\"strikethrough\":false,\"text\":\"Particle Accelerator\",\"underlined\":false}'}}}"
+    }
+  }

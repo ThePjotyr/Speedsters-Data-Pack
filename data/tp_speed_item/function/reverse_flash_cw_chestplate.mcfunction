@@ -1,0 +1,1 @@
+give @s leather_chestplate[trim={pattern:raiser,material:netherite},dyed_color={rgb:11915543},custom_name='[{"text":"Reverse Flash Chestplate","italic":false,"color":"yellow","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.reverseflash.cw:1b}]

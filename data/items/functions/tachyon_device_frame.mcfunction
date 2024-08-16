@@ -1,1 +1,0 @@
-give @s structure_void{PA_Fuel:1b,TachyonDevice:1b,Charged:0b,display:{Name:'[{"text":"Tachyon Device Frame","italic":false,"color":"white","bold": false}]'},HideFlags:255} 1

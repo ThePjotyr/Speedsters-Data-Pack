@@ -1,0 +1,18 @@
+{
+  "type": "tp_speedforce:speedforce",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:basalt_deltas",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:barrier",
+          "height": 16
+        }
+      ],
+      "structure_overrides": "minecraft:nether_fossils"
+    }
+  }
+}

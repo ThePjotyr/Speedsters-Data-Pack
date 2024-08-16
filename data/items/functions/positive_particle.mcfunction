@@ -1,1 +1,0 @@
-give @s scute{PA_Fuel:1b,SpeedForceFuel:1b,display:{Name:'[{"text":"Positive Particle","italic":false,"color":"white","bold": false}]'},HideFlags:255,Enchantments:[{}]} 1

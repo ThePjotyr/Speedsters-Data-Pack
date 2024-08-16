@@ -1,0 +1,6 @@
+execute at @s positioned ~ ~ ~32 unless entity @e[type=marker,tag=tp.speedforce.stand,distance=..16] run summon marker ~ ~ ~ {Tags:["tp.speedforce.stand","tp.speedforce.stand.repro"]}
+execute at @s positioned ~ ~ ~-32 unless entity @e[type=marker,tag=tp.speedforce.stand,distance=..16] run summon marker ~ ~ ~ {Tags:["tp.speedforce.stand","tp.speedforce.stand.repro"]}
+execute at @s positioned ~32 ~ ~ unless entity @e[type=marker,tag=tp.speedforce.stand,distance=..16] run summon marker ~ ~ ~ {Tags:["tp.speedforce.stand","tp.speedforce.stand.repro"]}
+execute at @s positioned ~-32 ~ ~ unless entity @e[type=marker,tag=tp.speedforce.stand,distance=..16] run summon marker ~ ~ ~ {Tags:["tp.speedforce.stand","tp.speedforce.stand.repro"]}
+
+execute at @s positioned ~ ~ ~32 if entity @e[type=marker,tag=tp.speedforce.stand,distance=..16] positioned ~ ~ ~-32 if entity @e[type=marker,tag=tp.speedforce.stand,distance=..16] positioned ~32 ~ ~ if entity @e[type=marker,tag=tp.speedforce.stand,distance=..16] positioned ~-32 ~ ~ if entity @e[type=marker,tag=tp.speedforce.stand,distance=..16] run tag @s remove tp.speedforce.stand.repro

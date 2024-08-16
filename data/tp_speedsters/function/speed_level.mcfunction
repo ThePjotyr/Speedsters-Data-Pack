@@ -1,0 +1,15 @@
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_0 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_1 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 1
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_1 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_2 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 2
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_2 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_3 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 3
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_3 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_4 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 4
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_4 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_5 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 5
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_5 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_6 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 6
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_6 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_7 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 7
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_7 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_8 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 8
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_8 tp.speedsters.time.run if score @s tp.speedsters.time.run < .LVL_SPEED_9 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 9
+execute if score @s tp.speedsters.time.run >= .LVL_SPEED_9 tp.speedsters.time.run run scoreboard players set @s tp.speedsters.lvl 10
+
+execute if entity @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.run=1..,tp.speedsters.lvl=1..2}] run scoreboard players remove @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.run=1..,tp.speedsters.lvl=1..2}] tp.speedsters.time.run 5
+execute if entity @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.run=1..,tp.speedsters.lvl=3..5}] run scoreboard players remove @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.run=1..,tp.speedsters.lvl=3..5}] tp.speedsters.time.run 10
+execute if entity @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.run=1..,tp.speedsters.lvl=6..9}] run scoreboard players remove @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.run=1..,tp.speedsters.lvl=6..9}] tp.speedsters.time.run 20
+execute if entity @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.run=1..,tp.speedsters.lvl=10}] run scoreboard players remove @s[predicate=!tp_predicate:is_running,scores={tp.speedsters.time.run=1..,tp.speedsters.lvl=10}] tp.speedsters.time.run 40

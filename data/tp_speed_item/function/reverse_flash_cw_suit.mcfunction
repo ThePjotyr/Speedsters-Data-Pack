@@ -1,0 +1,4 @@
+function tp_speed_item:reverse_flash_cw_boots
+function tp_speed_item:reverse_flash_cw_leggings
+function tp_speed_item:reverse_flash_cw_chestplate
+function tp_speed_item:reverse_flash_cw_helmet

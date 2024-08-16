@@ -27,13 +27,7 @@ Also, this pack uses experimental features, which may result in this data pack n
 
 ## Updating
 
-During some major updates there maybe occur some sort of incompatibility that will result in lost progress. In order to fix those issues, run the command below:
-
-> /function main:fix_update
-
-It won't work on any offline player, so use it whenever they join the game.
-
-If there are some troubles with blocks like **Particle Accelerator**, just destroy said block and place it again.
+During some major updates there maybe occur some sort of incompatibility that will result in lost progress. Unfortunately because of big differences between versions, for now there is no way to fix those issues.
 
 &nbsp;
 
@@ -107,7 +101,7 @@ After dying from **Velocity 9** poisoning, player cannot obtain speed power from
 
 ## Recipes
 
-<img src="https://docs.google.com/uc?export=download&id=18yoEHUPlqSI9lXUq4ekii3wlnx2pF6Hb" alt="FlashDatapackRecipes.png" width="100%" height="auto">
+<img src="https://cdn.modrinth.com/data/jarRvOgK/images/abcec977cb28e51d75679aab377f97074ad11e2f.png" alt="Recipes.png" width="100%" height="auto">
 
 &nbsp;
 
@@ -122,19 +116,17 @@ All of the commands below will work on the player/entity that executed the comma
 > /reload  *-> reloads all files inside Data Pack folder and resets all scores*
 &nbsp;
 
-> /function speedsters:load  *-> resets all scores*
+*Resets all scores.*
+> /function tp_speedsters:reset_scores  
 
 *Turn player into a Speedster or remove player powers.*
-> /function source:\<speedforce | negative_speedforce | velocity9 | remove>
+> /function tp_source:\<speedforce | negative_speedforce | velocity9 | remove>
 
 *Give player items from this Data Pack.*
-> /function items:\<id>
+> /function tp_speed_item:\<id>
 
 *Teleport player from/into Speed Force/Negative Speed Force.*
->/function speedsters:\<travel_into_sf | travel_from_sf>
-
-*Deletes scores for safe removal of Data Pack. Reloading world without removed Data Pack will load again default scores.*
->/function main:remove
+>/function tp_speedforce:teleport_into {"dimension":"tp_speedforce:\<speedforce | negative_speedforce>"}
 
 &nbsp;
 
@@ -142,21 +134,21 @@ All of the commands below will work on the player/entity that executed the comma
 
 Recommended way to customize certain aspects of this Data Pack is via command below. It will show a mini menu in chat and player would have to just follow instructions on screen.
 
-> /trigger speedsters.config
+> /trigger tp.speedsters.setting
 
 Those changes are local, which means, that they will only affect player that set them up. There are two ways to make those changes global, for any player on the server.
 The first method includes using command blocks or external Data Pack. Using command below you can change players setting, where "1" means "on", and "0" means "off":
 
-> /scoreboard players set \<player> \<speedsters.set_liquid_running | speedsters.set_wall_running | speedsters.set_skip_block | speedsters.set_dim_travel | speedsters.set_phasing> \<0 | 1>
+> /scoreboard players set \<player> \<tp.speedsters.setting.liquid | tp.speedsters.setting.wall | tp.speedsters.setting.skip | tp.speedsters.setting.travel | tp.speedsters.setting.phasing> \<0 | 1>
 
 To make this permanent you can put it in always active repeating command block, and to make it affect all players just replace \<player> with selector "@a".
 
 The second method includes working on Data Pack files. It will not only make changes more efficient, but it will also give you access to other configurable options. Locate two files that directories are shown below:
 
-> \<world>/datapacks/\<Data Pack name>/data/flash/functions/config.mcfunction
+> \<world>/datapacks/\<Data Pack name>/data/tp_speedsters_main/function/config.mcfunction
 &nbsp;
 
-> \<world>/datapacks/\<Data Pack name>/data/flash/functions/config_default.mcfunction
+> \<world>/datapacks/\<Data Pack name>/data/tp_speedsters_main/function/settings.mcfunction
 
 Open those files with your favourite text editor (you can just use Windows Notepad) and edit the values. After each command there is a comment describing usage of the constant value above it. After reloading the Data Pack, all changes should be applied.
 
@@ -164,6 +156,6 @@ Open those files with your favourite text editor (you can just use Windows Notep
 
 For all changes inside config files to be applied, you must first reset all those values via command below.
 
-> /function main:reset_config
+> /function tp_speedsters_main:reset
 
 &nbsp;

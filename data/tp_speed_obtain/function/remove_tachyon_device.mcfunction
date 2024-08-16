@@ -1,0 +1,2 @@
+execute unless block ~ ~ ~ structure_void positioned ^ ^ ^0.01 if entity @s[distance=..10] run function tp_speed_obtain:remove_tachyon_device
+execute if block ~ ~ ~ structure_void run setblock ~ ~ ~ air replace

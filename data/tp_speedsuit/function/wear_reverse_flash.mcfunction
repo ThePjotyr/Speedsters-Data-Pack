@@ -1,0 +1,8 @@
+execute if entity @s[type=player,predicate=tp_predicate:is_armor] run function tp_speedsuit:store_data
+
+item replace entity @s armor.feet with leather_boots[dyed_color={rgb:16711680},custom_name='[{"text":"Reverse Flash Boots","italic":false,"color":"yellow","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.reverseflash:1b}]
+item replace entity @s armor.legs with leather_leggings[trim={pattern:raiser,material:redstone},dyed_color={rgb:16769029},custom_name='[{"text":"Reverse Flash Leggings","italic":false,"color":"yellow","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.reverseflash:1b}]
+item replace entity @s armor.chest with leather_chestplate[trim={pattern:raiser,material:redstone},dyed_color={rgb:16769029},custom_name='[{"text":"Reverse Flash Chestplate","italic":false,"color":"yellow","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.reverseflash:1b}]
+item replace entity @s armor.head with leather_helmet[trim={pattern:snout,material:redstone},dyed_color={rgb:16769029},custom_name='[{"text":"Reverse Flash Helmet","italic":false,"color":"yellow","bold": false}]',hide_additional_tooltip={},custom_data={tp.speed.suit:1b,tp.speed.suit.reverseflash:1b}]
+
+execute if entity @s[type=player] if entity @e[type=armor_stand,tag=tp.speedsuit,limit=1,sort=nearest,distance=..1] run kill @e[type=armor_stand,tag=tp.speedsuit,limit=1,sort=nearest,distance=..1]

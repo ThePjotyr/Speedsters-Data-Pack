@@ -1,0 +1,6 @@
+execute if score @s tp.speedsters.time.velocity9 < .LVL_V9_0 tp.speedsters.time.velocity9 run scoreboard players set @s tp.speedsters.lvl.v9 0
+execute if score @s tp.speedsters.time.velocity9 >= .LVL_V9_0 tp.speedsters.time.velocity9 if score @s tp.speedsters.time.velocity9 < .LVL_V9_1 tp.speedsters.time.velocity9 run scoreboard players set @s tp.speedsters.lvl.v9 1
+execute if score @s tp.speedsters.time.velocity9 >= .LVL_V9_1 tp.speedsters.time.velocity9 if score @s tp.speedsters.time.velocity9 < .LVL_V9_2 tp.speedsters.time.velocity9 run scoreboard players set @s tp.speedsters.lvl.v9 2
+execute if score @s tp.speedsters.time.velocity9 >= .LVL_V9_2 tp.speedsters.time.velocity9 if score @s tp.speedsters.time.velocity9 < .LVL_V9_3 tp.speedsters.time.velocity9 run scoreboard players set @s tp.speedsters.lvl.v9 3
+execute if score @s tp.speedsters.time.velocity9 >= .LVL_V9_3 tp.speedsters.time.velocity9 if score @s tp.speedsters.time.velocity9 < .LVL_V9_4 tp.speedsters.time.velocity9 run scoreboard players set @s tp.speedsters.lvl.v9 4
+execute if score @s tp.speedsters.time.velocity9 >= .LVL_V9_4 tp.speedsters.time.velocity9 run scoreboard players set @s tp.speedsters.lvl.v9 5

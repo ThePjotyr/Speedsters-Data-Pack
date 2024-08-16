@@ -1,1 +1,0 @@
-give @s gold_nugget{SuitRing:1b,EmptyRing:1b,display:{Name:'[{"text":"Suit Ring ","italic":false,"color":"gold","bold": false},{"text":"(empty)","italic":false,"color":"gray","bold": false}]'},HideFlags:255,Enchantments:[{}]} 1

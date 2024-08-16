@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "tp_particle_accelerator:hold_particle_accelerator"
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:blast_furnace"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "tp_particle_accelerator:place"
+  }
+}
