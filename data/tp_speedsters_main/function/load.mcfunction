@@ -1,6 +1,8 @@
 tellraw @a ["",{"text":">> ","bold":true,"italic":true,"color":"aqua"},{"text":"ThePjotyr's Speedsters v1.4 - Datapack for Minecraft 1.20","bold":true,"italic":true,"color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"haha szwagier","obfuscated":true,"color":"dark_purple"}]}},{"text":" << ","bold":true,"italic":true,"color":"aqua"},{"text":"successfully loaded!","italic":true,"color":"yellow"}]
 execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~
 
+function tp_main:load
+
 #SCOREBOARDS
 scoreboard objectives add tp.speedforce.portal.time dummy
 scoreboard objectives add tp.speedsters.slot dummy
@@ -26,7 +28,6 @@ scoreboard objectives add tp.speedsters.setting trigger
 
 #CONSTANTS
 function tp_speedsters_main:config
-
 scoreboard players set #tp.blur tp.speedsters.time.stand 20
 scoreboard players set #tp.min.y tp.height -64
 scoreboard players set #tp.rotation.y.max tp.rotation.y 40

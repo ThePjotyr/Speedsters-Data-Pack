@@ -1,2 +1,2 @@
-execute if block ~ ~ ~ #tp_speedsters:liquid if entity @s[distance=..8] unless entity @e[type=marker,tag=tp.speedsters.liquid_cast,distance=..1] run summon marker ~ ~ ~ {Tags:["tp.speedsters.liquid_cast"]}
+execute align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~ ~ #tp_speedsters:liquid if entity @s[distance=..8] unless entity @e[type=marker,tag=tp.speedsters.liquid_cast,distance=..1] run summon marker ~ ~ ~ {Tags:["tp.speedsters.liquid_cast"]}
 execute unless block ~ ~ ~ #tp_speedsters:liquid if entity @s[distance=..7] positioned ^ ^ ^0.5 run function tp_speedsters:cast

@@ -8,7 +8,7 @@ Obtain super speed, run faster than ever, defy rules of physics and become the i
 
 ## Installation
 
-This data pack doesn't require any additonal resource pack or any mod, so it's fairly simple to install into any Minecraft world. Just download .zip file containing this data pack, unpack it and do one of the following:
+This Data Pack is fairly simple to install into any Minecraft world. It's only requirement is [TP-Core](https://github.com/ThePjotyr/TP-Core) for versions 1.4 and newer. Just download .zip files containing those Data Packs, unpack it and do one of the following:
 
 - You can add the data pack to your world during it's creation in "More" tab. In "Data Packs" option click on the "Open Pack Folder" and drop this data pack folder into opened directory. Then make sure that this datapack is selected and proceed with world creation.
 
