@@ -7,7 +7,7 @@ scoreboard players set @s tp_spd.tier 2
 scoreboard players set #sp tp_spd.tmp 1
 function tp_speedsters:source/get
 function tp_speedsters:fx/prep
-execute unless data storage tp_speedsters:cur fx{n:20,dx:0.15d} run function tp_speedsters:test/fail {what:"fx/prep tier data"}
+execute unless data storage tp_speedsters:cur fx{n:20,n2:10} run function tp_speedsters:test/fail {what:"fx/prep tier data"}
 execute unless data storage tp_speedsters:cur fx{p:"dust_color_transition{from_color:[0.067,0.518,0.941],to_color:[0.075,0.404,0.839],scale:0.45}"} run function tp_speedsters:test/fail {what:"fx/prep palette"}
 function tp_speedsters:fx/blur
 function tp_speedsters:fx/periodic

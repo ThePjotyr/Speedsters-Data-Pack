@@ -53,5 +53,5 @@ data modify storage tp_speedsters:levels list set value [ \
 # Actionbar bar pieces: sq[n] = n black squares.
 data modify storage tp_speedsters:hud sq set value ['','⬛','⬛⬛','⬛⬛⬛','⬛⬛⬛⬛','⬛⬛⬛⬛⬛','⬛⬛⬛⬛⬛⬛','⬛⬛⬛⬛⬛⬛⬛','⬛⬛⬛⬛⬛⬛⬛⬛','⬛⬛⬛⬛⬛⬛⬛⬛⬛','⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛']
 
-# fx: tiers = blur particle count/spread and wind sound volume/pitch per tier; sparks = spark burst; idle = random delay (ticks) between idle spark bursts.
-data merge storage tp_speedsters:fx {tiers:[{n:10,dx:0.1,vol:0.03,pitch:0.8},{n:15,dx:0.15,vol:0.05,pitch:0.9},{n:20,dx:0.15,vol:0.07,pitch:1.0},{n:25,dx:0.2,vol:0.09,pitch:1.1}],sparks:{n:30,dx:0.1},idle:{min:30,max:100}}
+# fx: tiers = blur per tier: n particles at the player, n2 at each of two trail points b1/b2 blocks behind, spread dx, plus wind sound volume/pitch; sparks = spark burst; idle = random delay (ticks) between idle spark bursts.
+data merge storage tp_speedsters:fx {tiers:[{n:10,n2:5,b1:-0.5,b2:-1.0,dx:0.1,vol:0.03,pitch:0.8},{n:15,n2:8,b1:-0.8,b2:-1.6,dx:0.15,vol:0.05,pitch:0.9},{n:20,n2:10,b1:-1.2,b2:-2.4,dx:0.15,vol:0.07,pitch:1.0},{n:25,n2:12,b1:-1.6,b2:-3.2,dx:0.2,vol:0.09,pitch:1.1}],sparks:{n:30,dx:0.1},idle:{min:30,max:100}}
