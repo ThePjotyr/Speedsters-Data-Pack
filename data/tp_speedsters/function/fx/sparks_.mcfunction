@@ -1,2 +1,2 @@
-# Macro: p (particle), dx, n.
-$particle $(p) ~ ~1 ~ $(dx) 0.35 $(dx) 0.01 $(n) force
+# Macro: p (particle), dx, dy, speed, n.
+$particle $(p) ~ ~1 ~ $(dx) $(dy) $(dx) $(speed) $(n) force
