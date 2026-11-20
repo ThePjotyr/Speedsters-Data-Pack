@@ -1,4 +1,0 @@
-function tp_speed_item:zoom_boots
-function tp_speed_item:zoom_leggings
-function tp_speed_item:zoom_chestplate
-function tp_speed_item:zoom_helmet

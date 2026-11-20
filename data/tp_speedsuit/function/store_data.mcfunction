@@ -1,2 +1,0 @@
-function tp_armor:save_armor
-function tp_armor:clear_armor

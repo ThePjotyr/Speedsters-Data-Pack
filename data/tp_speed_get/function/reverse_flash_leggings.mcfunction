@@ -1,3 +1,0 @@
-advancement revoke @s only tp_speed_item:get_reverse_flash_leggings
-function tp_speed_item:reverse_flash_leggings
-clear @s knowledge_book 1

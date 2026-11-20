@@ -1,6 +1,7 @@
 {
-    "pack": {
-      "pack_format": 48,
-      "description": "ThePjotyr's Speedsters v1.4 - Datapack for Minecraft 1.21"
-    }
+  "pack": {
+    "description": "ThePjotyr's Speedsters 2.0 - requires TP-Core (Minecraft 26.3)",
+    "min_format": 121,
+    "max_format": 121
   }
+}
