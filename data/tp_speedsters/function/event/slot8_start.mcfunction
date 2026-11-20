@@ -1,5 +1,6 @@
 # #tp_core:event/player/slot8_start: the speedster selected the last hotbar slot.
 execute unless entity @s[tag=tp_spd.speedster] run return 0
+execute if score #debug tp_core.tmp matches 1 run function tp_core:debug/log {msg:"speedsters: slot8_start"}
 execute if predicate tp_speedsters:sprinting run return run function tp_speedsters:speed/start
 function tp_speedsters:source/get
 function tp_speedsters:hud/show
